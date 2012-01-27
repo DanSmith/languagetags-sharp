@@ -1,0 +1,362 @@
+﻿<#@ template language="C#" debug="True" hostspecific="True"#>
+<#@ output extension=".generated.cs" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Collections.ObjectModel" #>
+<#
+    
+    string registryFile = Host.ResolvePath( "RegistryData\\language-subtag-registry.txt");
+    StreamReader reader = new StreamReader(registryFile, Encoding.UTF8);
+    
+    
+
+    string fileDateTag = "File-Date: ";
+    string separatorTag= "%%";
+
+    SortedDictionary<string, RegistryItem> language = new SortedDictionary<string, RegistryItem>();
+    SortedDictionary<string, RegistryItem> extlang = new SortedDictionary<string, RegistryItem>();
+    SortedDictionary<string, RegistryItem> script = new SortedDictionary<string, RegistryItem>();
+    SortedDictionary<string, RegistryItem> region = new SortedDictionary<string, RegistryItem>();
+    SortedDictionary<string, RegistryItem> variant = new SortedDictionary<string, RegistryItem>();
+    SortedDictionary<string, RegistryItem> grandfathered = new SortedDictionary<string, RegistryItem>();
+    SortedDictionary<string, RegistryItem> redundant = new SortedDictionary<string, RegistryItem>();
+
+    string fileDateString = null;
+    
+    Collection<string> temp = new Collection<string>();
+    Dictionary<string, int> temp2 = new Dictionary<string, int>();
+
+    Collection<Collection<string>> lines = new Collection<Collection<string>>();
+    string line;
+    Collection<string> bundle = null;
+    while((line = reader.ReadLine()) != null) 
+    {
+        if(line.StartsWith(fileDateTag))
+        {
+            fileDateString = line.Remove(0, fileDateTag.Length);
+            continue;
+        }
+        if(line.StartsWith(separatorTag)) 
+        {
+            if(bundle != null) 
+            {
+                lines.Add(bundle);
+            }
+            bundle = new Collection<string>();
+            continue;
+        }
+
+        if (line.StartsWith(" ")) 
+        {
+            if(bundle.Count == 0) {throw new InvalidOperationException("No line to append multiline statement to.");}
+            bundle[bundle.Count - 1] = bundle[bundle.Count - 1].TrimEnd(' ') + line.TrimStart(' ');
+        } 
+        else 
+        {
+            bundle.Add(line);
+        }
+    }
+    if(bundle != null) 
+    {
+        lines.Add(bundle);
+    }
+
+
+    Collection<RegistryItem> items= new Collection<RegistryItem>();
+    foreach(Collection<string> pack in lines) 
+    {
+        RegistryItem item = new RegistryItem(pack);
+
+        if(item.Subtag != null && item.Subtag.Contains("..")) 
+        {
+            // Expand private use tags
+            string[] separator = new string[] {".."};
+            string[] range = item.Subtag.ToLowerInvariant().Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            if(range.Length != 2) 
+            {
+                throw new InvalidOperationException("Could not expand Subtag Range");
+            }
+            int start = FromBase26(range[0]);
+            int end = FromBase26(range[1]);
+            for(int i = start; i <= end; ++i) 
+            {
+                item = new RegistryItem(pack);
+                item.Subtag = ToBase26(i);
+                item.IsExpanded = true;
+                items.Add(item);
+            }
+        } 
+        else 
+        {
+            items.Add(item);
+        }
+    }
+
+    foreach(RegistryItem item in items) 
+    {
+        if(item.ItemType == "language") 
+        {
+            language.Add(item.Subtag, item);
+        } 
+        else if(item.ItemType == "extlang") 
+        {
+            extlang.Add(item.Subtag, item);
+        } 
+        else if(item.ItemType == "script") 
+        {
+            script.Add(item.Subtag, item);
+        } 
+        else if(item.ItemType == "region") 
+        {
+            region.Add(item.Subtag, item);
+        } 
+        else if(item.ItemType == "variant") 
+        {
+            variant.Add(item.Subtag, item);
+        } 
+        else if(item.ItemType == "grandfathered") 
+        {
+            grandfathered.Add(item.Tag, item);
+        } 
+        else if(item.ItemType == "redundant") 
+        {
+            redundant.Add(item.Tag, item);
+        } 
+        else 
+        {
+            throw new InvalidOperationException("Unknown type tag- " + item.ItemType);
+        }
+    }
+
+#>
+
+using System.Text;
+using System.Collections.ObjectModel;
+using System.IO;
+
+namespace Algenta.Globalization.LanguageTags 
+{
+
+    public partial class TagRegistry 
+    {
+        #region Languages 
+        public string[] Languages { get { return _languages; } }
+        private string[] _languages =
+        {
+<#
+    for(int i = 0; i < language.Keys.Count; ++i) {#>
+            "<#=language.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != language.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+
+        #region Extended Languages 
+        public string[] ExtLangs { get { return _extlangs; } }
+        private string[] _extlangs =
+        {
+<#
+    for(int i = 0; i < extlang.Keys.Count; ++i) {#>
+            "<#=extlang.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != extlang.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+
+        #region Scripts 
+        public string[] Scripts { get { return _scripts; } }
+        private string[] _scripts =
+        {
+<#
+    for(int i = 0; i < script.Keys.Count; ++i) {#>
+            "<#=script.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != script.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+
+        #region Regions
+        public string[] Regions { get { return _regions; } }
+        private string[] _regions =
+        {
+<#
+    for(int i = 0; i < region.Keys.Count; ++i) {#>
+            "<#=region.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != region.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+
+        #region Variants 
+        public string[] Variants { get { return _variants; } }
+        private string[] _variants =
+        {
+<#
+    for(int i = 0; i < variant.Keys.Count; ++i) {#>
+            "<#=variant.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != variant.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+
+        #region Grandfathered 
+        public string[] Grandfathered { get { return _grandfathered; } }
+        private string[] _grandfathered =
+        {
+<#
+    for(int i = 0; i < grandfathered.Keys.Count; ++i) {#>
+            "<#=grandfathered.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != grandfathered.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+
+        #region Redundant 
+        public string[] Redundant { get { return _redundant; } }
+        private string[] _redundant =
+        {
+<#
+    for(int i = 0; i < redundant.Keys.Count; ++i) {#>
+            "<#=redundant.Keys.ElementAt(i).ToLower()#>"<# if(i + 1 != redundant.Keys.Count) {Write(", ");} #>
+
+<#
+    }
+#>      };
+        #endregion
+    }
+}
+
+
+
+<#+
+
+    public static String ToBase26(int number){
+        number = Math.Abs(number);
+        String converted = "";
+        do
+        {
+            int remainder = number % 26;
+            converted = (char)(remainder + 'a') + converted;
+            number = (number - remainder) / 26;
+        } while (number > 0);
+ 
+        return converted;
+    }
+
+    public static int FromBase26(String number) {
+        int s = 0;
+        if (number != null && number.Length > 0) {
+            s = (number[0] - 'a');
+            for (int i = 1; i < number.Length; i++) {
+                s *= 26;
+                s += (number[i] - 'a');
+            }
+        }
+        return s;
+    }
+
+    internal class RegistryItem
+    {
+
+        private string TypeTag = "Type";
+        private string SubtagTag = "Subtag";
+        private string DescriptionTag = "Description";
+        private string AddedTag = "Added";
+        private string SuppressTag = "Suppress-Script";
+        private string ScopeTag = "Scope";
+        private string MacrolanguageTag = "Macrolanguage";
+        private string DeprecatedTag = "Deprecated";
+        private string PreferredValueTag = "Preferred-Value";
+        private string CommentsTag = "Comments";
+        private string PrefixTag = "Prefix";
+        private string TagTag = "Tag";
+
+        #region Properties
+        public string ItemType { get; set; }
+        public string Subtag { get; set; }
+        public string Tag { get; set; }
+        public DateTime? Added { get; set; }
+        public DateTime? Deprecated { get; set; }
+
+        private Collection<string> descriptions = new Collection<string>();
+        public Collection<string> Descriptions { get { return descriptions; } }
+        public string Comments { get; set; }
+
+        public string SuppressScript { get; set; }
+        public string Scope { get; set; }
+        public string Macrolanguage { get; set; }
+        public string PreferredValue { get; set; }
+        private Collection<string> prefixes = new Collection<string>();
+        public Collection<string> Prefixes { get { return prefixes; } }
+
+        public bool IsExpanded { get; set; }
+        #endregion
+
+
+        public override string ToString() {
+            if(Tag != null) { return Tag;}
+            return Subtag;
+        }
+
+        public RegistryItem() {}
+        public RegistryItem(Collection<string> lines)
+        {
+            foreach(string line in lines) 
+            {
+                if(!line.Contains(": ")) { throw new InvalidOperationException("Line does not start with tag- " + line);}
+
+                string tag = line.Substring(0, line.IndexOf(": "));
+                string tagValue = line.Substring(line.IndexOf(": ") + 2);
+
+                if(tag == TypeTag) {
+                    this.ItemType = tagValue;
+                } else if(tag == SubtagTag) {
+                    this.Subtag = tagValue;
+                } else if(tag == DescriptionTag) {
+                    descriptions.Add(tagValue);
+                } else if(tag == AddedTag) {
+                    DateTime date;
+                    bool success = DateTime.TryParse(tagValue, out date);
+                    if(!success) {throw new InvalidOperationException("Unable to parse DateTime- '" + tagValue + "'");}
+                    Added = date;
+                } else if(tag == SuppressTag) {
+                    SuppressScript = tagValue;
+                } else if(tag == ScopeTag) {
+                    Scope = tagValue;
+                } else if(tag == MacrolanguageTag) {
+                    Macrolanguage = tagValue;
+                } else if(tag == DeprecatedTag) {
+                    DateTime date;
+                    bool success = DateTime.TryParse(tagValue, out date);
+                    if(!success) {throw new InvalidOperationException("Unable to parse DateTime- '" + tagValue + "'");}
+                    Deprecated = date;
+                } else if(tag == PreferredValueTag) {
+                    PreferredValue = tagValue;
+                } else if(tag == CommentsTag) {
+                    Comments = tagValue;
+                } else if(tag == PrefixTag) {
+                    Prefixes.Add(tagValue);
+                } else if(tag == TagTag) {
+                    Tag = tagValue;
+                } 
+                else 
+                {
+                    throw new InvalidOperationException("Unknown tag- " + line);
+                }
+            }
+        }
+    }
+
+
+
+    #>
+
