@@ -49,6 +49,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TagRegistry.tt</DependentUpon>
     </Compile>
+    <Compile Include="ValidationResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Docs\rfc5645.txt" />

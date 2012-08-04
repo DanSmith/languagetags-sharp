@@ -132,7 +132,7 @@
     }
 
 #>
-
+using System;
 using System.Text;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -140,11 +140,11 @@ using System.IO;
 namespace Algenta.Globalization.LanguageTags 
 {
 
-    public partial class TagRegistry 
+    public static partial class TagRegistry 
     {
         #region Languages 
-        public string[] Languages { get { return _languages; } }
-        private string[] _languages =
+        public static string[] Languages { get { return _languages; } }
+        private static string[] _languages =
         {
 <#
     for(int i = 0; i < language.Keys.Count; ++i) {#>
@@ -153,11 +153,32 @@ namespace Algenta.Globalization.LanguageTags
 <#
     }
 #>      };
+
+        public static Language GetLanguage(string language) 
+        {
+            language = language.ToLower();
+
+            switch(language)
+            {
+<#
+    for(int i = 0; i < language.Keys.Count; ++i) {
+        string langString = language.Keys.ElementAt(i).ToLower();
+        string langStringProperty = char.ToUpper(langString[0]) + langString.Substring(1);
+#>
+                case "<#=langString#>": return Language.<#=langStringProperty#>;
+<#
+    }
+#>
+                default:
+                    throw new InvalidOperationException("Invalid Language Code: " + language);
+            }
+
+        }
         #endregion
 
         #region Extended Languages 
-        public string[] ExtLangs { get { return _extlangs; } }
-        private string[] _extlangs =
+        public static string[] ExtLangs { get { return _extlangs; } }
+        private static string[] _extlangs =
         {
 <#
     for(int i = 0; i < extlang.Keys.Count; ++i) {#>
@@ -169,8 +190,8 @@ namespace Algenta.Globalization.LanguageTags
         #endregion
 
         #region Scripts 
-        public string[] Scripts { get { return _scripts; } }
-        private string[] _scripts =
+        public static string[] Scripts { get { return _scripts; } }
+        private static string[] _scripts =
         {
 <#
     for(int i = 0; i < script.Keys.Count; ++i) {#>
@@ -182,8 +203,8 @@ namespace Algenta.Globalization.LanguageTags
         #endregion
 
         #region Regions
-        public string[] Regions { get { return _regions; } }
-        private string[] _regions =
+        public static string[] Regions { get { return _regions; } }
+        private static string[] _regions =
         {
 <#
     for(int i = 0; i < region.Keys.Count; ++i) {#>
@@ -192,11 +213,37 @@ namespace Algenta.Globalization.LanguageTags
 <#
     }
 #>      };
+
+        public static Region GetRegion(string region) 
+        {
+            region = region.ToLower();
+
+            switch(region)
+            {
+<#
+    for(int i = 0; i < region.Keys.Count; ++i) {
+        string regionString = region.Keys.ElementAt(i).ToLower();
+        string regionStringProperty = regionString.ToUpper();
+
+        if(char.IsDigit(regionStringProperty, 0)) 
+        {
+            regionStringProperty = "M49_" + regionStringProperty;
+        }
+#>
+                case "<#=regionString#>": return Region.<#=regionStringProperty#>;
+<#
+    }
+#>
+                default:
+                    throw new InvalidOperationException("Invalid Region Code: " + region);
+            }
+
+        }
         #endregion
 
         #region Variants 
-        public string[] Variants { get { return _variants; } }
-        private string[] _variants =
+        public static string[] Variants { get { return _variants; } }
+        private static string[] _variants =
         {
 <#
     for(int i = 0; i < variant.Keys.Count; ++i) {#>
@@ -208,8 +255,8 @@ namespace Algenta.Globalization.LanguageTags
         #endregion
 
         #region Grandfathered 
-        public string[] Grandfathered { get { return _grandfathered; } }
-        private string[] _grandfathered =
+        public static string[] Grandfathered { get { return _grandfathered; } }
+        private static string[] _grandfathered =
         {
 <#
     for(int i = 0; i < grandfathered.Keys.Count; ++i) {#>
@@ -221,8 +268,8 @@ namespace Algenta.Globalization.LanguageTags
         #endregion
 
         #region Redundant 
-        public string[] Redundant { get { return _redundant; } }
-        private string[] _redundant =
+        public static string[] Redundant { get { return _redundant; } }
+        private static string[] _redundant =
         {
 <#
     for(int i = 0; i < redundant.Keys.Count; ++i) {#>
@@ -236,27 +283,408 @@ namespace Algenta.Globalization.LanguageTags
 }
 
 
+<#
+
+    Dictionary<string, Collection<string>> usesTag= new Dictionary<string, Collection<string>>();
+    foreach(RegistryItem item in items) 
+    {
+        if(!usesTag.ContainsKey(item.ItemType)) 
+        {
+            usesTag[item.ItemType] = new Collection<string>();
+        }
+
+        Collection<string> used= usesTag[item.ItemType];
+        foreach(string l in item.Lines) {
+            string tag = l.Substring(0, l.IndexOf(": "));
+            if(!used.Contains(tag)) {used.Add(tag);}
+        }
+    }
+
+    foreach(string itemType in usesTag.Keys) 
+    {
+        #>
+//<#=itemType#>: <#
+        foreach(string usedTag in usesTag[itemType])
+        {
+            bool optional = false;
+            bool multiple = false;            
+            foreach(RegistryItem item in items) 
+            {
+                int count = 0;
+                if(item.ItemType == itemType) 
+                {
+                    Collection<string> used = new Collection<string>();
+                    foreach(string l in item.Lines) 
+                    {
+                        string tag = l.Substring(0, l.IndexOf(": "));
+                        if(tag == usedTag) { count++;}
+                    }
+                    if(count == 0) { optional = true;}
+                    if(count > 1) { multiple = true;}
+                }                
+            }
+            if(optional) {#>(<#}
+            #><#=usedTag#><#            
+            if(optional) {#>)<#}
+            if(multiple) {#>*<#}
+            #> <#
+        }
+        
+#>
+
+<#  } 
+
+
+#>
+
+    public partial class Language 
+    {
+
+        private Language(string subtag, 
+            string[] descriptions, 
+            DateTime added, 
+            string suppressScript, 
+            string scope, 
+            string macrolanguage, 
+            DateTime? deprecated, 
+            string preferredValue, 
+            string comment)
+        {
+            this.Subtag = subtag;
+            this.descriptions = new ReadOnlyCollection<string>(descriptions);
+            this.Added = added;
+            this.SuppressScript = suppressScript;
+            this.Scope = scope;
+            this.Macrolanguage = macrolanguage;
+            this.Deprecated = deprecated;
+            this.PreferredValue = preferredValue;
+            this.Comments = comment;
+        }
+
+        public string Subtag { get; private set; }
+
+        private ReadOnlyCollection<string> descriptions = null;
+        public ReadOnlyCollection<string> Descriptions { get { return descriptions; } }
+                
+        public DateTime Added { get; private set; }
+        public string SuppressScript { get; private set; }
+        public string Scope { get; private set; }
+        public string Macrolanguage { get; private set; }
+        public DateTime? Deprecated { get; private set; }
+        public string PreferredValue { get; private set; }
+        public string Comments { get; private set; }
+
+        #region static languages
+<#
+    for(int i = 0; i < language.Keys.Count; ++i) {
+        string langString = language.Keys.ElementAt(i);
+        RegistryItem item = language[langString];
+        langString = langString.ToLower();
+        langString = char.ToUpper(langString[0]) + langString.Substring(1);
+#>
+        #region <#=langString#>
+        /// <summary>
+<#foreach(string desc in item.Descriptions){#>
+        /// <#=desc#>
+<#}#>
+        /// </summary>
+<#if(!string.IsNullOrEmpty(item.Comments)){#>
+        /// <remarks><#=item.Comments#></remarks>
+<#}#>
+        public static Language <#=langString#> { get { return _<#=langString#>; } }
+        private static Language _<#=langString#> = new Language("<#=item.Subtag#>", // Subtag
+                                new string[]{ <#=QuoteList(item.Descriptions)#> }, // Descriptions
+                                new DateTime(<#=item.Added.Value.Year#>, <#=item.Added.Value.Month#>, <#=item.Added.Value.Day#> ), // Added
+                                <#=NullOrQuoted(item.SuppressScript)#>, // SuppressScript
+                                <#=NullOrQuoted(item.Scope)#>, // Scope
+                                <#=NullOrQuoted(item.Macrolanguage)#>, // Macrolanguage
+                                <# if(item.Deprecated.HasValue) { 
+                                    #>new DateTime(<#=item.Deprecated.Value.Year#>, <#=item.Deprecated.Value.Month#>, <#=item.Deprecated.Value.Day#> ), //Deprecated
+<# 
+                                }else {#>null, // Deprecated
+<#}#>
+                                <#=NullOrQuoted(item.PreferredValue)#>, // PreferredValue
+                                <#=NullOrQuoted(item.Comments)#>); // Comments
+
+        #endregion
+
+<#
+}
+#>
+
+        #region Language Collection
+        private static object languagesLock = new object();
+        private static Collection<Language> languages = null;
+        public static ReadOnlyCollection<Language> Languages
+        {
+            get
+            {
+                if(languages == null) 
+                {
+                    lock(languagesLock) 
+                    {
+                        if(languages == null) 
+                        {
+                            languages = new Collection<Language>();
+<#                          for(int i = 0; i < language.Keys.Count; ++i) 
+                            {
+                                string langString = language.Keys.ElementAt(i).ToLower();
+                                langString = char.ToUpper(langString[0]) + langString.Substring(1);#>
+                            languages.Add(<#=langString#>);
+<#
+                            }
+#>
+                        }
+                    }
+                }
+                return new ReadOnlyCollection<Language>(languages);
+            }
+
+        }
+        #endregion
+        #endregion
+
+
+    }
+
+    
+//region: Type Subtag Description Added (Deprecated) (Comments) (Preferred-Value) 
+
+    public partial class Region 
+    {
+
+        private Region(string subtag, 
+            string[] descriptions,
+            DateTime added,
+            DateTime? deprecated,
+            string perferredValue, 
+            string comment)
+        {
+            this.Subtag = subtag;
+            this.descriptions = new ReadOnlyCollection<string>(descriptions);
+            this.Added = added;
+            this.Comments = comment;
+            this.Deprecated = deprecated;
+            this.PreferredValue = perferredValue;
+        }
+
+        public string Subtag { get; private set; }
+
+        private ReadOnlyCollection<string> descriptions = null;
+        public ReadOnlyCollection<string> Descriptions { get { return descriptions; } }
+                
+        public DateTime Added { get; private set; }
+        public DateTime? Deprecated { get; private set; }
+        public string PreferredValue { get; private set; }
+        public string Comments { get; private set; }
+
+        #region static Regions
+<#
+    for(int i = 0; i < region.Keys.Count; ++i) {
+        string regionString = region.Keys.ElementAt(i);
+        RegistryItem item = region[regionString];
+        regionString = regionString.ToUpper();
+#>
+        #region <#=regionString#>
+        /// <summary>
+<#foreach(string desc in item.Descriptions){#>
+        /// <#=desc#>
+<#}#>
+        /// </summary>
+<#if(!string.IsNullOrEmpty(item.Comments)){#>
+        /// <remarks><#=item.Comments#></remarks>
+<#}
+        if(char.IsDigit(regionString, 0)) 
+        {
+            regionString = "M49_" + regionString;
+        }
+
+#>
+        public static Region <#=regionString#> { get { return _<#=regionString#>; } }
+        private static Region _<#=regionString#> = new Region("<#=item.Subtag#>", // Subtag
+                                new string[]{ <#=QuoteList(item.Descriptions)#> }, // Description
+                                new DateTime(<#=item.Added.Value.Year#>, <#=item.Added.Value.Month#>, <#=item.Added.Value.Day#> ), // Added
+                                <# if(item.Deprecated.HasValue) { 
+                                    #>new DateTime(<#=item.Deprecated.Value.Year#>, <#=item.Deprecated.Value.Month#>, <#=item.Deprecated.Value.Day#> ), //Deprecated
+                                <# 
+                                }else {#>null, // Deprecated
+<#}#>
+                                <#=NullOrQuoted(item.PreferredValue)#>, // PreferredValue
+                                <#=NullOrQuoted(item.Comments)#>); // Comments
+
+        #endregion
+
+<#
+}
+#>
+
+        #region Region Collection
+        private static object regionsLock = new object();
+        private static Collection<Region> regions = null;
+        public static ReadOnlyCollection<Region> Regions
+        {
+            get
+            {
+                if(regions == null) 
+                {
+                    lock(regionsLock) 
+                    {
+                        if(regions == null) 
+                        {
+                            regions = new Collection<Region>();
+<#                          for(int i = 0; i < region.Keys.Count; ++i) 
+                            {
+                                string s = region.Keys.ElementAt(i).ToUpper();
+                                if(char.IsDigit(s, 0)) 
+                                {
+                                    s = "M49_" + s;
+                                }
+#>  
+                            regions.Add(<#=s#>);
+<#
+                            }
+#>
+                        }
+                    }
+                }
+                return new ReadOnlyCollection<Region>(regions);
+            }
+
+        }
+        #endregion
+        #endregion
+
+
+    }
+
+
+//
+
+    public partial class Script 
+    {
+
+        private Script(string subtag, 
+            string[] descriptions, 
+            DateTime added, 
+            string comment)
+        {
+            this.Subtag = subtag;
+            this.descriptions = new ReadOnlyCollection<string>(descriptions);
+            this.Added = added;
+            this.Comments = comment;
+        }
+
+        public string Subtag { get; private set; }
+
+        private ReadOnlyCollection<string> descriptions = null;
+        public ReadOnlyCollection<string> Descriptions { get { return descriptions; } }
+                
+        public DateTime Added { get; private set; }
+        public string Comments { get; private set; }
+
+        #region static scripts
+<#
+    for(int i = 0; i < script.Keys.Count; ++i) {
+        string scriptString = script.Keys.ElementAt(i);
+        RegistryItem item = script[scriptString];
+        scriptString = scriptString.ToLower();
+        scriptString = char.ToUpper(scriptString[0]) + scriptString.Substring(1);
+#>
+        #region <#=scriptString#>
+        /// <summary>
+<#foreach(string desc in item.Descriptions){#>
+        /// <#=desc#>
+<#}#>
+        /// </summary>
+<#if(!string.IsNullOrEmpty(item.Comments)){#>
+        /// <remarks><#=item.Comments#></remarks>
+<#}#>
+        public static Script <#=scriptString#> { get { return _<#=scriptString#>; } }
+        private static Script _<#=scriptString#> = new Script("<#=item.Subtag#>", // Subtag
+                                new string[]{ <#=QuoteList(item.Descriptions)#> }, // Descriptions
+                                new DateTime(<#=item.Added.Value.Year#>, <#=item.Added.Value.Month#>, <#=item.Added.Value.Day#> ), // Added
+                                <#=NullOrQuoted(item.Comments)#>); // Comments
+
+        #endregion
+
+<#
+}
+#>
+
+        #region Script Collection
+        private static object scriptsLock = new object();
+        private static Collection<Script> scripts = null;
+        public static ReadOnlyCollection<Script> Scripts
+        {
+            get
+            {
+                if(scripts == null) 
+                {
+                    lock(scriptsLock) 
+                    {
+                        if(scripts == null) 
+                        {
+                            scripts = new Collection<Script>();
+<#                          for(int i = 0; i < script.Keys.Count; ++i) 
+                            {
+                                string s = script.Keys.ElementAt(i).ToLower();
+                                s = char.ToUpper(s[0]) + s.Substring(1);#>
+                            scripts.Add(<#=s#>);
+<#
+                            }
+#>
+                        }
+                    }
+                }
+                return new ReadOnlyCollection<Script>(scripts);
+            }
+
+        }
+        #endregion
+        #endregion
+
+
+    }
 
 <#+
 
-    public static String ToBase26(int number){
+    public static string NullOrQuoted(string s) 
+    {
+        if(s == null) {return "null";}
+        return "\"" + s + "\"";
+    }
+
+
+    public static string QuoteList(IList<string> list) 
+    {
+        string commas = string.Join(",", list.ToArray());
+        string replaced = "\"" + commas.Replace(",", "\", \"") + "\"";
+        return replaced;
+    }
+
+    public static string ToBase26(int number)
+    {
         number = Math.Abs(number);
-        String converted = "";
+        string converted = "";
         do
         {
             int remainder = number % 26;
             converted = (char)(remainder + 'a') + converted;
             number = (number - remainder) / 26;
-        } while (number > 0);
+        } 
+        while (number > 0);
  
         return converted;
     }
 
-    public static int FromBase26(String number) {
+    public static int FromBase26(string number) 
+    {
         int s = 0;
-        if (number != null && number.Length > 0) {
+        if (!string.IsNullOrEmpty(number)) 
+        {
             s = (number[0] - 'a');
-            for (int i = 1; i < number.Length; i++) {
+            for (int i = 1; i < number.Length; i++) 
+            {
                 s *= 26;
                 s += (number[i] - 'a');
             }
@@ -299,6 +727,7 @@ namespace Algenta.Globalization.LanguageTags
         public Collection<string> Prefixes { get { return prefixes; } }
 
         public bool IsExpanded { get; set; }
+        internal Collection<string> Lines {get;set;}
         #endregion
 
 
@@ -310,6 +739,7 @@ namespace Algenta.Globalization.LanguageTags
         public RegistryItem() {}
         public RegistryItem(Collection<string> lines)
         {
+            this.Lines = lines;
             foreach(string line in lines) 
             {
                 if(!line.Contains(": ")) { throw new InvalidOperationException("Line does not start with tag- " + line);}
@@ -317,35 +747,67 @@ namespace Algenta.Globalization.LanguageTags
                 string tag = line.Substring(0, line.IndexOf(": "));
                 string tagValue = line.Substring(line.IndexOf(": ") + 2);
 
-                if(tag == TypeTag) {
+                if(tag == TypeTag) 
+                {
+                    if(this.ItemType != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     this.ItemType = tagValue;
-                } else if(tag == SubtagTag) {
+                } 
+                else if(tag == SubtagTag) 
+                {
+                    if(this.Subtag != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     this.Subtag = tagValue;
-                } else if(tag == DescriptionTag) {
+                } 
+                else if(tag == DescriptionTag) 
+                {
                     descriptions.Add(tagValue);
-                } else if(tag == AddedTag) {
+                } 
+                else if(tag == AddedTag) 
+                {
+                    if(this.Added.HasValue) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     DateTime date;
                     bool success = DateTime.TryParse(tagValue, out date);
                     if(!success) {throw new InvalidOperationException("Unable to parse DateTime- '" + tagValue + "'");}
                     Added = date;
-                } else if(tag == SuppressTag) {
+                } 
+                else if(tag == SuppressTag) 
+                {
+                    if(this.SuppressScript != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     SuppressScript = tagValue;
-                } else if(tag == ScopeTag) {
+                } 
+                else if(tag == ScopeTag) 
+                {
+                    if(this.Scope != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     Scope = tagValue;
-                } else if(tag == MacrolanguageTag) {
+                } 
+                else if(tag == MacrolanguageTag) 
+                {
                     Macrolanguage = tagValue;
-                } else if(tag == DeprecatedTag) {
+                } 
+                else if(tag == DeprecatedTag) 
+                {
+                    if(this.Deprecated.HasValue) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     DateTime date;
                     bool success = DateTime.TryParse(tagValue, out date);
                     if(!success) {throw new InvalidOperationException("Unable to parse DateTime- '" + tagValue + "'");}
                     Deprecated = date;
-                } else if(tag == PreferredValueTag) {
+                } 
+                else if(tag == PreferredValueTag) 
+                {
+                    if(this.PreferredValue != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     PreferredValue = tagValue;
-                } else if(tag == CommentsTag) {
+                } 
+                else if(tag == CommentsTag) 
+                {
+                    if(this.Comments != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     Comments = tagValue;
-                } else if(tag == PrefixTag) {
+                } 
+                else if(tag == PrefixTag) 
+                {
                     Prefixes.Add(tagValue);
-                } else if(tag == TagTag) {
+                } 
+                else if(tag == TagTag) 
+                {
+                    if(this.Tag != null) { throw new InvalidOperationException("Unexpected tag:" + tag);}
                     Tag = tagValue;
                 } 
                 else 

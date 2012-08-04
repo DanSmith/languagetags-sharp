@@ -6,16 +6,18 @@ using System.Collections.ObjectModel;
 
 namespace Algenta.Globalization.LanguageTags
 {
-    public partial class TagRegistry
+    /// <summary>
+    /// Tag Registry
+    /// </summary>
+    /// <remarks></remarks>
+    public static partial class TagRegistry
     {
-        public bool ValidateTag(string languageTag)
+        public static bool ValidateTag(string languageTag)
         {
             CheckNullOrEmpty(languageTag, "languageTag");
-
             languageTag = languageTag.ToLowerInvariant();
-
             if (IsPrivateUse(languageTag)) { return true; }
-
+            
             if (Array.BinarySearch<string>(Grandfathered, languageTag) >= 0) { return true; }
             
             string language = null;
@@ -249,7 +251,7 @@ namespace Algenta.Globalization.LanguageTags
         }
 
         #region Faster Than Regex
-        public bool IsUsAsciiLetters(string s)
+        public static bool IsUsAsciiLetters(string s)
         {
             for (int i = 0; i < s.Length; ++i)
             {
@@ -261,7 +263,7 @@ namespace Algenta.Globalization.LanguageTags
             }
             return true;
         }
-        public bool IsUsAsciiLettersOrDigits(string s)
+        public static bool IsUsAsciiLettersOrDigits(string s)
         {
             for (int i = 0; i < s.Length; ++i)
             {
@@ -273,7 +275,7 @@ namespace Algenta.Globalization.LanguageTags
             }
             return true;
         }
-        public bool IsUsAsciiLetters(char c)
+        public static bool IsUsAsciiLetters(char c)
         {            
             if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
             {
@@ -288,7 +290,7 @@ namespace Algenta.Globalization.LanguageTags
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        private bool IsPrivateUse(string s)
+        private static bool IsPrivateUse(string s)
         {
             if (s.Length < 3) { return false; }
             if (s.Length > 10) { return false; }
