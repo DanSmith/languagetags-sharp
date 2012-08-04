@@ -1,4 +1,4 @@
-File-Date: 2012-01-04
+File-Date: 2012-07-05
 %%
 Type: language
 Subtag: aa
@@ -44495,11 +44495,35 @@ Comments: The dialect of San Giorgio/Bila is one of the four major local
   dialects of Resian
 %%
 Type: variant
+Subtag: bohoric
+Description: Slovene in Bohorič alphabet
+Added: 2012-06-27
+Prefix: sl
+Comments: The subtag represents the alphabet codified by Adam Bohorič in
+  1584 and used from the first printed Slovene book and up to the mid-
+  19th century.
+%%
+Type: variant
 Subtag: boont
 Description: Boontling
 Added: 2006-09-18
 Prefix: en
 Comments: Jargon embedded in American English
+%%
+Type: variant
+Subtag: dajnko
+Description: Slovene in Dajnko alphabet
+Added: 2012-06-27
+Prefix: sl
+Comments: The subtag represents the alphabet codified by Peter Dajnko
+  and used from 1824 to 1839 mostly in Styria (in what is now Eastern
+  Slovenia).
+%%
+Type: variant
+Subtag: emodeng
+Description: Early Modern English (1500-1700)
+Added: 2012-02-05
+Prefix: en
 %%
 Type: variant
 Subtag: fonipa
@@ -44568,6 +44592,13 @@ Added: 2008-10-14
 Prefix: kw
 %%
 Type: variant
+Subtag: kscor
+Description: Standard Cornish orthography of Revived Cornish
+Description: Kernowek Standard
+Added: 2012-06-27
+Prefix: kw
+%%
+Type: variant
 Subtag: laukika
 Description: Classical Sanskrit
 Added: 2010-07-28
@@ -44589,6 +44620,14 @@ Added: 2010-10-10
 Prefix: ru
 Comments: Russian orthography as established by the 1917/1918
   orthographic reforms
+%%
+Type: variant
+Subtag: metelko
+Description: Slovene in Metelko alphabet
+Added: 2012-06-27
+Prefix: sl
+Comments: The subtag represents the alphabet codified by Franc Serafin
+  Metelko and used from 1825 to 1833.
 %%
 Type: variant
 Subtag: monoton
@@ -44620,6 +44659,18 @@ Added: 2007-07-05
 Prefix: sl-rozaj
 Comments: The dialect of Gniva/Njiva is one of the four major local
   dialects of Resian
+%%
+Type: variant
+Subtag: nulik
+Description: Volapük nulik
+Description: Volapük perevidöl
+Description: Volapük nulädik
+Description: de Jong's Volapük
+Description: New Volapük
+Description: Revised Volapük
+Description: Modern Volapük
+Added: 2012-01-28
+Prefix: vo
 %%
 Type: variant
 Subtag: osojs
@@ -44666,6 +44717,15 @@ Added: 2010-06-29
 Prefix: rm
 Comments: Puter is one of the five traditional written standards or
   "idioms" of the Romansh language.
+%%
+Type: variant
+Subtag: rigik
+Description: Volapük rigik
+Description: Schleyer's Volapük
+Description: Original Volapük
+Description: Classic Volapük
+Added: 2012-01-28
+Prefix: vo
 %%
 Type: variant
 Subtag: rozaj
