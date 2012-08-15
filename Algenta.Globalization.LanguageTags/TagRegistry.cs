@@ -12,24 +12,46 @@ namespace Algenta.Globalization.LanguageTags
     /// <remarks></remarks>
     public static partial class TagRegistry
     {
-        public static bool ValidateTag(string languageTag)
+
+        public static bool ValidateTag(string textTag)
         {
-            CheckNullOrEmpty(languageTag, "languageTag");
-            languageTag = languageTag.ToLowerInvariant();
-            if (IsPrivateUse(languageTag)) { return true; }
+            LanguageTag tag = null;
+            bool result = TryParse(textTag, out tag);
+            return result;
+        }
+
+
+        public static bool TryParse(string textTag, out LanguageTag tag)
+        {
+            CheckNullOrEmpty(textTag, "languageTag");
+            textTag = textTag.ToLowerInvariant();
             
-            if (Array.BinarySearch<string>(Grandfathered, languageTag) >= 0) { return true; }
-            
+            /*
             string language = null;
             string extlang;
             string script = null;
             string region = null;
             Collection<string> variants = null;
             Dictionary<char, string> extensions = null;
-            string privateUse = null;
+            string privateUse = null;*/
+            tag = new LanguageTag();
+
+            if (IsPrivateUse(textTag)) 
+            {
+                tag.IsPrivateUse = true;
+                return true; 
+            }
+
+            if (Array.BinarySearch<string>(Grandfathered, textTag) >= 0)
+            {
+                tag.IsGrandfathered = true;
+                return true;
+
+            }
+
 
             char[] separator = new char[] {'-'};
-            string[] parts = languageTag.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            string[] parts = textTag.Split(separator, StringSplitOptions.RemoveEmptyEntries);
             
             ParseState state = ParseState.None;
                         
@@ -47,7 +69,7 @@ namespace Algenta.Globalization.LanguageTags
                 // "Invalid language."
                 return false;            
             }
-            language = nextPart;
+            tag.Language = nextPart;
             state = ParseState.Language;
             #endregion
 
@@ -68,7 +90,7 @@ namespace Algenta.Globalization.LanguageTags
                         // "Invalid ext Language, see selected ISO 639 codes"
                         return false;
                     }
-                    extlang = nextPart;
+                    tag.Extlang = nextPart;
                     state = ParseState.ExtLang;                    
                     continue;
                 }
@@ -86,7 +108,7 @@ namespace Algenta.Globalization.LanguageTags
                         // "Invalid Script, see ISO 15924 codes."
                         return false;
                     }
-                    script = nextPart;
+                    tag.Script = nextPart;
                     state = ParseState.Script;
                     continue;
                 }
@@ -105,7 +127,7 @@ namespace Algenta.Globalization.LanguageTags
                         // "Invalid Region, see ISO 3166-1 codes and UN M.49 codes
                         return false;
                     }
-                    region = nextPart;
+                    tag.Region = nextPart;
                     state = ParseState.Region;
                     continue;
                 }
@@ -124,13 +146,13 @@ namespace Algenta.Globalization.LanguageTags
                         // "Invalid Variant"
                         return false;
                     }
-                    if (variants == null) { variants = new Collection<string>(); }
-                    if (variants.Contains(nextPart))
+                    //if (variants == null) { variants = new Collection<string>(); }
+                    if (tag.Variants.Contains(nextPart))
                     {
                         // "Repeated Variant"
                         return false;
                     }
-                    variants.Add(nextPart);
+                    tag.Variants.Add(nextPart);
                     state = ParseState.Variant;
                     continue;
                 }
@@ -175,13 +197,13 @@ namespace Algenta.Globalization.LanguageTags
                         extValue = extValue + "-" + nextPart;
                     }
 
-                    if (extensions == null) { extensions = new Dictionary<char, string>(); }
-                    if (extensions.ContainsKey(singleton))
+                    //if (extensions == null) { extensions = new Dictionary<char, string>(); }
+                    if (tag.Extensions.ContainsKey(singleton))
                     {
                         // "Repeated Extension"
                         return false;
                     }
-                    extensions.Add(singleton, extValue);
+                    tag.Extensions.Add(singleton, extValue);
                     state = ParseState.Extension;
                     continue;
                 }
@@ -223,7 +245,7 @@ namespace Algenta.Globalization.LanguageTags
                         privateValue = privateValue + "-" + nextPart;
                     }
 
-                    privateUse = privateValue;
+                    tag.PrivateUse = privateValue;
                     state = ParseState.PrivateUse;
                     continue;
                 }

@@ -8,18 +8,28 @@ namespace Algenta.Globalization.LanguageTags
 {
     public class LanguageTag
     {
-        private string languageTag;
+        internal LanguageTag() { }
 
-        public bool IsPrivateUse { get; private set; }
-        public bool IsGrandfathered { get; private set; }
+        public string Value
+        {
+            get { return string.Empty; } //TODO
+        }
 
-        private string language;
-        private string extlang;
-        private string script;
-        private string region;
-        private Collection<string> variants;
-        private Dictionary<char,string> extensions;
-        private string privateUse;
+        public bool IsPrivateUse { get; internal set; }
+        public bool IsGrandfathered { get; internal set; }
+
+        public string Language { get; internal set; }
+        public string Extlang { get; internal set; }
+        public string Script { get; internal set; }
+        public string Region { get; internal set; }
+        
+        private Collection<string> variants = new Collection<string>();
+        public Collection<string> Variants { get { return variants; } }
+        
+        private Dictionary<char, string> extensions = new Dictionary<char, string>();
+        public Dictionary<char, string> Extensions { get { return extensions; } }
+        
+        public string PrivateUse { get; internal set; }
 
     }
 }

@@ -136,6 +136,7 @@ using System;
 using System.Text;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Threading;
 
 namespace Algenta.Globalization.LanguageTags 
 {
@@ -391,8 +392,13 @@ namespace Algenta.Globalization.LanguageTags
 <#if(!string.IsNullOrEmpty(item.Comments)){#>
         /// <remarks><#=item.Comments#></remarks>
 <#}#>
-        public static Language <#=langString#> { get { return _<#=langString#>; } }
-        private static Language _<#=langString#> = new Language("<#=item.Subtag#>", // Subtag
+        public static Language <#=langString#> 
+        { 
+            get 
+            { 
+                LazyInitializer.EnsureInitialized(ref _<#=langString#>, () =>
+                {                    
+                    return new Language("<#=item.Subtag#>", // Subtag
                                 new string[]{ <#=QuoteList(item.Descriptions)#> }, // Descriptions
                                 new DateTime(<#=item.Added.Value.Year#>, <#=item.Added.Value.Month#>, <#=item.Added.Value.Day#> ), // Added
                                 <#=NullOrQuoted(item.SuppressScript)#>, // SuppressScript
@@ -404,7 +410,13 @@ namespace Algenta.Globalization.LanguageTags
                                 }else {#>null, // Deprecated
 <#}#>
                                 <#=NullOrQuoted(item.PreferredValue)#>, // PreferredValue
-                                <#=NullOrQuoted(item.Comments)#>); // Comments
+                                <#=NullOrQuoted(item.Comments)#>); // Comments;
+                });
+                    
+                return _<#=langString#>; 
+            } 
+        }
+        private static Language _<#=langString#>;
 
         #endregion
 
