@@ -10,14 +10,20 @@ namespace Algenta.Globalization.LanguageTags.Test
     [TestClass]
     public class UnitTest
     {
+
+        // Ignore case on round trip through parser/canonicalization
+        private bool ignoreCase = true;
+
+
         [TestMethod]
         public void TestPrivateUseValidation()
         {
-            
+            LanguageTag result = null;
+            Assert.IsTrue(TagRegistry.TryParse("x-a", out result));
+            Assert.AreEqual("x-a", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("x-aaaaaaaa", out result));
+            Assert.AreEqual("x-aaaaaaaa", result.Value, ignoreCase);
 
-            Assert.IsTrue(TagRegistry.ValidateTag("x-a"));
-            Assert.IsTrue(TagRegistry.ValidateTag("x-aaaaaaaa"));
-            Assert.IsTrue(TagRegistry.ValidateTag("x-a"));
             Assert.IsFalse(TagRegistry.ValidateTag("x-aaaaaaaaa"));
             Assert.IsFalse(TagRegistry.ValidateTag("xaaaaaaaa"));
         }
@@ -25,9 +31,9 @@ namespace Algenta.Globalization.LanguageTags.Test
         [TestMethod]
         public void TestGrandfatheredValidation()
         {
-                        
-
-            Assert.IsTrue(TagRegistry.ValidateTag("zh-xiang"));
+            LanguageTag result = null;
+            Assert.IsTrue(TagRegistry.TryParse("zh-xiang", out result));
+            Assert.AreEqual("zh-xiang", result.Value, ignoreCase);
         }
 
 
@@ -51,102 +57,134 @@ namespace Algenta.Globalization.LanguageTags.Test
         [TestMethod]
         public void TestLanguageValidation()
         {
-            
+            LanguageTag result = null;
+            Assert.IsTrue(TagRegistry.TryParse("de", out result));//German
+            Assert.AreEqual("de", result.Value, ignoreCase);
 
-            Assert.IsTrue(TagRegistry.ValidateTag("de"));//German
-            Assert.IsTrue(TagRegistry.ValidateTag("fr"));//French
-            Assert.IsTrue(TagRegistry.ValidateTag("ja"));//Japanese
-            Assert.IsTrue(TagRegistry.ValidateTag("i-enochian"));//example of a grandfathered tag
+            Assert.IsTrue(TagRegistry.TryParse("fr", out result));//French
+            Assert.AreEqual("fr", result.Value, ignoreCase);
+
+            Assert.IsTrue(TagRegistry.TryParse("ja", out result));//Japanese
+            Assert.AreEqual("ja", result.Value, ignoreCase);
+
+            Assert.IsTrue(TagRegistry.TryParse("i-enochian", out result));//example of a grandfathered tag
+            Assert.AreEqual("i-enochian", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestLanguageScriptValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("zh-Hant"));//Chinese written using the Traditional Chinese script
-            Assert.IsTrue(TagRegistry.ValidateTag("zh-Hans"));//Chinese written using the Simplified Chinese script
-            Assert.IsTrue(TagRegistry.ValidateTag("sr-Cyrl"));//Serbian written using the Cyrillic script
-            Assert.IsTrue(TagRegistry.ValidateTag("sr-Latn"));//Serbian written using the Latin script
+            Assert.IsTrue(TagRegistry.TryParse("zh-Hant", out result));//Chinese written using the Traditional Chinese script
+            Assert.AreEqual("zh-Hant", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("zh-Hans", out result));//Chinese written using the Simplified Chinese script
+            Assert.AreEqual("zh-Hans", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sr-Cyrl", out result));//Serbian written using the Cyrillic script
+            Assert.AreEqual("sr-Cyrl", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sr-Latn", out result));//Serbian written using the Latin script
+            Assert.AreEqual("sr-Latn", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestExtendedLanguageSubtagsValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("zh-cmn-Hans-CN")); //Chinese, Mandarin, Simplified script, as used in China
-            Assert.IsTrue(TagRegistry.ValidateTag("cmn-Hans-CN")); //Mandarin Chinese, Simplified script, as used in China
-            Assert.IsTrue(TagRegistry.ValidateTag("zh-yue-HK")); //Chinese, Cantonese, as used in Hong Kong SAR
-            Assert.IsTrue(TagRegistry.ValidateTag("yue-HK")); //Cantonese Chinese, as used in Hong Kong SAR
+            Assert.IsTrue(TagRegistry.TryParse("zh-cmn-Hans-CN", out result)); //Chinese, Mandarin, Simplified script, as used in China
+            Assert.AreEqual("zh-cmn-Hans-CN", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("cmn-Hans-CN", out result)); //Mandarin Chinese, Simplified script, as used in China
+            Assert.AreEqual("cmn-Hans-CN", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("zh-yue-HK", out result)); //Chinese, Cantonese, as used in Hong Kong SAR
+            Assert.AreEqual("zh-yue-HK", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("yue-HK", out result)); //Cantonese Chinese, as used in Hong Kong SAR
+            Assert.AreEqual("yue-HK", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestLanguageScriptRegionValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("zh-Hans-CN")); //Chinese written using the Simplified script as used in mainland China
-            Assert.IsTrue(TagRegistry.ValidateTag("sr-Latn-RS")); //Serbian written using the Latin script as used in Serbia
+            Assert.IsTrue(TagRegistry.TryParse("zh-Hans-CN", out result)); //Chinese written using the Simplified script as used in mainland China
+            Assert.AreEqual("zh-Hans-CN", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sr-Latn-RS", out result)); //Serbian written using the Latin script as used in Serbia
+            Assert.AreEqual("sr-Latn-RS", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestLanguageVariantValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("sl-rozaj")); //Resian dialect of Slovenian
-            Assert.IsTrue(TagRegistry.ValidateTag("sl-rozaj-biske")); //San Giorgio dialect of Resian dialect of Slovenian
-            Assert.IsTrue(TagRegistry.ValidateTag("sl-nedis")); //Nadiza dialect of Slovenian
+            Assert.IsTrue(TagRegistry.TryParse("sl-rozaj", out result)); //Resian dialect of Slovenian
+            Assert.AreEqual("sl-rozaj", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sl-rozaj-biske", out result)); //San Giorgio dialect of Resian dialect of Slovenian
+            Assert.AreEqual("sl-rozaj-biske", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sl-nedis", out result)); //Nadiza dialect of Slovenian
+            Assert.AreEqual("sl-nedis", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestLanguageRegionVariantValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("de-CH-1901")); //German as used in Switzerland using the 1901 variant [orthography]
-            Assert.IsTrue(TagRegistry.ValidateTag("sl-IT-nedis")); //Slovenian as used in Italy, Nadiza dialect
+            Assert.IsTrue(TagRegistry.TryParse("de-CH-1901", out result)); //German as used in Switzerland using the 1901 variant [orthography]
+            Assert.AreEqual("de-CH-1901", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sl-IT-nedis", out result)); //Slovenian as used in Italy, Nadiza dialect
+            Assert.AreEqual("sl-IT-nedis", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestLanguageScriptRegionVariantValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("hy-Latn-IT-arevela")); //Eastern Armenian written in Latin script, as used in Italy
+            Assert.IsTrue(TagRegistry.TryParse("hy-Latn-IT-arevela", out result)); //Eastern Armenian written in Latin script, as used in Italy
+            Assert.AreEqual("hy-Latn-IT-arevela", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestLanguageRegionValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("de-DE")); //German for Germany
-            Assert.IsTrue(TagRegistry.ValidateTag("en-US")); //English as used in the United States
-            Assert.IsTrue(TagRegistry.ValidateTag("es-419"));//Spanish appropriate for the Latin America 
+            Assert.IsTrue(TagRegistry.TryParse("de-DE", out result)); //German for Germany
+            Assert.AreEqual("de-DE", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("en-US", out result)); //English as used in the United States
+            Assert.AreEqual("en-US", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("es-419", out result));//Spanish appropriate for the Latin America 
                                                           //  and Caribbean region using the UN region code
+            Assert.AreEqual("es-419", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestPrivateUseSubtagValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("de-CH-x-phonebk"));
-            Assert.IsTrue(TagRegistry.ValidateTag("az-Arab-x-AZE-derbend"));
+            Assert.IsTrue(TagRegistry.TryParse("de-CH-x-phonebk", out result));
+            Assert.AreEqual("de-CH-x-phonebk", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("az-Arab-x-AZE-derbend", out result));
+            Assert.AreEqual("az-Arab-x-AZE-derbend", result.Value, ignoreCase);
         }
 
         [TestMethod]
         public void TestPrivateUseTagRegistryValuesValidation()
         {
-            
+            LanguageTag result = null;
 
-            Assert.IsTrue(TagRegistry.ValidateTag("x-whatever")); //private use using the singleton 'x'
-            Assert.IsTrue(TagRegistry.ValidateTag("qaa-Qaaa-QM-x-southern")); //all private tags
-            Assert.IsTrue(TagRegistry.ValidateTag("de-Qaaa")); //German, with a private script
-            Assert.IsTrue(TagRegistry.ValidateTag("sr-Latn-QM")); //Serbian, Latin script, private region
-            Assert.IsTrue(TagRegistry.ValidateTag("sr-Qaaa-RS")); //Serbian, private script, for Serbia
+            Assert.IsTrue(TagRegistry.TryParse("x-whatever", out result)); //private use using the singleton 'x'
+            Assert.AreEqual("x-whatever", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("qaa-Qaaa-QM-x-southern", out result)); //all private tags
+            Assert.AreEqual("qaa-Qaaa-QM-x-southern", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("de-Qaaa", out result)); //German, with a private script
+            Assert.AreEqual("de-Qaaa", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sr-Latn-QM", out result)); //Serbian, Latin script, private region
+            Assert.AreEqual("sr-Latn-QM", result.Value, ignoreCase);
+            Assert.IsTrue(TagRegistry.TryParse("sr-Qaaa-RS", out result)); //Serbian, private script, for Serbia
+            Assert.AreEqual("sr-Qaaa-RS", result.Value, ignoreCase);
         }
 
         [TestMethod]

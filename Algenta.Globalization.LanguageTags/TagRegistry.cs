@@ -39,12 +39,14 @@ namespace Algenta.Globalization.LanguageTags
             if (IsPrivateUse(textTag)) 
             {
                 tag.IsPrivateUse = true;
+                tag.PrivateUse = textTag;
                 return true; 
             }
 
             if (Array.BinarySearch<string>(Grandfathered, textTag) >= 0)
             {
                 tag.IsGrandfathered = true;
+                tag.Grandfathered = textTag;
                 return true;
 
             }

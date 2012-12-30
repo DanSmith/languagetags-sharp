@@ -6,6 +6,8 @@
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.Collections.ObjectModel" #>
+<#@include file="T4\MultipleOutputHelper.ttinclude"
+#><# var manager = Manager.Create(Host, GenerationEnvironment); #>
 <#
     
     string registryFile = Host.ResolvePath( "RegistryData\\language-subtag-registry.txt");
@@ -132,6 +134,7 @@
     }
 
 #>
+<# manager.StartHeader(); #>
 using System;
 using System.Text;
 using System.Collections.ObjectModel;
@@ -140,6 +143,7 @@ using System.Threading;
 
 namespace Algenta.Globalization.LanguageTags 
 {
+<# manager.EndBlock(); #>
 
     public static partial class TagRegistry 
     {
@@ -281,8 +285,10 @@ namespace Algenta.Globalization.LanguageTags
 #>      };
         #endregion
     }
-}
 
+<# manager.StartFooter(); #>
+}
+<# manager.EndBlock(); #>
 
 <#
 
@@ -336,7 +342,7 @@ namespace Algenta.Globalization.LanguageTags
 <#  } 
 
 
-#>
+#><# manager.StartNewFile("Language.generated.cs"); #>
 
     public partial class Language 
     {
@@ -459,6 +465,8 @@ namespace Algenta.Globalization.LanguageTags
 
     }
 
+<# manager.EndBlock(); #>
+<# manager.StartNewFile("Region.generated.cs"); #>
     
 //region: Type Subtag Description Added (Deprecated) (Comments) (Preferred-Value) 
 
@@ -571,6 +579,8 @@ namespace Algenta.Globalization.LanguageTags
 
 
 //
+<# manager.EndBlock(); #>
+<# manager.StartNewFile("Script.generated.cs"); #>
 
     public partial class Script 
     {
@@ -657,7 +667,8 @@ namespace Algenta.Globalization.LanguageTags
 
 
     }
-
+<# manager.EndBlock(); #>
+<# manager.Process(true); #>
 <#+
 
     public static string NullOrQuoted(string s) 

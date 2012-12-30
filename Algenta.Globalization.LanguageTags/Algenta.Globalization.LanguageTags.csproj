@@ -40,9 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Language.generated.cs">
+      <DependentUpon>TagRegistry.tt</DependentUpon>
+    </Compile>
     <Compile Include="LanguageTag.cs" />
+    <Compile Include="Region.generated.cs">
+      <DependentUpon>TagRegistry.tt</DependentUpon>
+    </Compile>
     <Compile Include="RegistryData\RegistryItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script.generated.cs">
+      <DependentUpon>TagRegistry.tt</DependentUpon>
+    </Compile>
     <Compile Include="TagRegistry.cs" />
     <Compile Include="TagRegistry.generated.cs">
       <AutoGen>True</AutoGen>
@@ -60,6 +69,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="T4\MultipleOutputHelper.ttinclude" />
     <None Include="TagRegistry.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TagRegistry.generated.cs</LastGenOutput>
