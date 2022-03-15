@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/LanguageTags)
+[![Nuget](https://img.shields.io/nuget/v/LanguageTags)](https://www.nuget.org/packages/LanguageTags/)
 
 # languagetags-sharp
 Languagetags-sharp is a library to validate xml:lang tags commonly found in xml and html documents.
