@@ -30,6 +30,18 @@ namespace Algenta.Globalization.LanguageTags
         public string Comments { get; private set; }
 
         #region static scripts
+        #region Adlm
+        /// <summary>
+        /// Adlam
+        /// </summary>
+        public static Script Adlm { get { return _Adlm; } }
+        private static Script _Adlm = new Script("Adlm", // Subtag
+                                new string[]{ "Adlam" }, // Descriptions
+                                new DateTime(2014, 12, 11 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Afak
         /// <summary>
         /// Afaka
@@ -54,6 +66,19 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Ahom
+        /// <summary>
+        /// Ahom
+        /// Tai Ahom
+        /// </summary>
+        public static Script Ahom { get { return _Ahom; } }
+        private static Script _Ahom = new Script("Ahom", // Subtag
+                                new string[]{ "Ahom", "Tai Ahom" }, // Descriptions
+                                new DateTime(2013, 12, 2 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Arab
         /// <summary>
         /// Arabic
@@ -62,6 +87,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Arab = new Script("Arab", // Subtag
                                 new string[]{ "Arabic" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Aran
+        /// <summary>
+        /// Arabic (Nastaliq variant)
+        /// </summary>
+        public static Script Aran { get { return _Aran; } }
+        private static Script _Aran = new Script("Aran", // Subtag
+                                new string[]{ "Arabic (Nastaliq variant)" }, // Descriptions
+                                new DateTime(2014, 12, 11 ), // Added
                                 null); // Comments
 
         #endregion
@@ -153,11 +190,24 @@ namespace Algenta.Globalization.LanguageTags
         #region Beng
         /// <summary>
         /// Bengali
+        /// Bangla
         /// </summary>
         public static Script Beng { get { return _Beng; } }
         private static Script _Beng = new Script("Beng", // Subtag
-                                new string[]{ "Bengali" }, // Descriptions
+                                new string[]{ "Bengali", "Bangla" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Bhks
+        /// <summary>
+        /// Bhaiksuki
+        /// </summary>
+        public static Script Bhks { get { return _Bhks; } }
+        private static Script _Bhks = new Script("Bhks", // Subtag
+                                new string[]{ "Bhaiksuki" }, // Descriptions
+                                new DateTime(2015, 7, 24 ), // Added
                                 null); // Comments
 
         #endregion
@@ -294,6 +344,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Chrs
+        /// <summary>
+        /// Chorasmian
+        /// </summary>
+        public static Script Chrs { get { return _Chrs; } }
+        private static Script _Chrs = new Script("Chrs", // Subtag
+                                new string[]{ "Chorasmian" }, // Descriptions
+                                new DateTime(2019, 9, 11 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Cirt
         /// <summary>
         /// Cirth
@@ -318,13 +380,25 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Cpmn
+        /// <summary>
+        /// Cypro-Minoan
+        /// </summary>
+        public static Script Cpmn { get { return _Cpmn; } }
+        private static Script _Cpmn = new Script("Cpmn", // Subtag
+                                new string[]{ "Cypro-Minoan" }, // Descriptions
+                                new DateTime(2017, 8, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Cprt
         /// <summary>
-        /// Cypriot
+        /// Cypriot syllabary
         /// </summary>
         public static Script Cprt { get { return _Cprt; } }
         private static Script _Cprt = new Script("Cprt", // Subtag
-                                new string[]{ "Cypriot" }, // Descriptions
+                                new string[]{ "Cypriot syllabary" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
                                 null); // Comments
 
@@ -363,6 +437,30 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Deva = new Script("Deva", // Subtag
                                 new string[]{ "Devanagari", "Nagari" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Diak
+        /// <summary>
+        /// Dives Akuru
+        /// </summary>
+        public static Script Diak { get { return _Diak; } }
+        private static Script _Diak = new Script("Diak", // Subtag
+                                new string[]{ "Dives Akuru" }, // Descriptions
+                                new DateTime(2019, 9, 11 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Dogr
+        /// <summary>
+        /// Dogra
+        /// </summary>
+        public static Script Dogr { get { return _Dogr; } }
+        private static Script _Dogr = new Script("Dogr", // Subtag
+                                new string[]{ "Dogra" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
                                 null); // Comments
 
         #endregion
@@ -441,6 +539,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Elym
+        /// <summary>
+        /// Elymaic
+        /// </summary>
+        public static Script Elym { get { return _Elym; } }
+        private static Script _Elym = new Script("Elym", // Subtag
+                                new string[]{ "Elymaic" }, // Descriptions
+                                new DateTime(2018, 10, 28 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Ethi
         /// <summary>
         /// Ethiopic
@@ -469,11 +579,11 @@ namespace Algenta.Globalization.LanguageTags
 
         #region Geor
         /// <summary>
-        /// Georgian (Mkhedruli)
+        /// Georgian (Mkhedruli and Mtavruli)
         /// </summary>
         public static Script Geor { get { return _Geor; } }
         private static Script _Geor = new Script("Geor", // Subtag
-                                new string[]{ "Georgian (Mkhedruli)" }, // Descriptions
+                                new string[]{ "Georgian (Mkhedruli and Mtavruli)" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
                                 null); // Comments
 
@@ -487,6 +597,30 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Glag = new Script("Glag", // Subtag
                                 new string[]{ "Glagolitic" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Gong
+        /// <summary>
+        /// Gunjala Gondi
+        /// </summary>
+        public static Script Gong { get { return _Gong; } }
+        private static Script _Gong = new Script("Gong", // Subtag
+                                new string[]{ "Gunjala Gondi" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Gonm
+        /// <summary>
+        /// Masaram Gondi
+        /// </summary>
+        public static Script Gonm { get { return _Gonm; } }
+        private static Script _Gonm = new Script("Gonm", // Subtag
+                                new string[]{ "Masaram Gondi" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
                                 null); // Comments
 
         #endregion
@@ -547,6 +681,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Guru = new Script("Guru", // Subtag
                                 new string[]{ "Gurmukhi" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Hanb
+        /// <summary>
+        /// Han with Bopomofo (alias for Han + Bopomofo)
+        /// </summary>
+        public static Script Hanb { get { return _Hanb; } }
+        private static Script _Hanb = new Script("Hanb", // Subtag
+                                new string[]{ "Han with Bopomofo (alias for Han + Bopomofo)" }, // Descriptions
+                                new DateTime(2016, 2, 8 ), // Added
                                 null); // Comments
 
         #endregion
@@ -617,6 +763,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Hatr
+        /// <summary>
+        /// Hatran
+        /// </summary>
+        public static Script Hatr { get { return _Hatr; } }
+        private static Script _Hatr = new Script("Hatr", // Subtag
+                                new string[]{ "Hatran" }, // Descriptions
+                                new DateTime(2013, 12, 2 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Hebr
         /// <summary>
         /// Hebrew
@@ -667,6 +825,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Hmnp
+        /// <summary>
+        /// Nyiakeng Puachue Hmong
+        /// </summary>
+        public static Script Hmnp { get { return _Hmnp; } }
+        private static Script _Hmnp = new Script("Hmnp", // Subtag
+                                new string[]{ "Nyiakeng Puachue Hmong" }, // Descriptions
+                                new DateTime(2017, 8, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Hrkt
         /// <summary>
         /// Japanese syllabaries (alias for Hiragana + Katakana)
@@ -713,6 +883,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Ital = new Script("Ital", // Subtag
                                 new string[]{ "Old Italic (Etruscan", " Oscan", " etc.)" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Jamo
+        /// <summary>
+        /// Jamo (alias for Jamo subset of Hangul)
+        /// </summary>
+        public static Script Jamo { get { return _Jamo; } }
+        private static Script _Jamo = new Script("Jamo", // Subtag
+                                new string[]{ "Jamo (alias for Jamo subset of Hangul)" }, // Descriptions
+                                new DateTime(2016, 2, 8 ), // Added
                                 null); // Comments
 
         #endregion
@@ -777,6 +959,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Kawi
+        /// <summary>
+        /// Kawi
+        /// </summary>
+        public static Script Kawi { get { return _Kawi; } }
+        private static Script _Kawi = new Script("Kawi", // Subtag
+                                new string[]{ "Kawi" }, // Descriptions
+                                new DateTime(2021, 12, 24 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Khar
         /// <summary>
         /// Kharoshthi
@@ -809,6 +1003,30 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Khoj = new Script("Khoj", // Subtag
                                 new string[]{ "Khojki" }, // Descriptions
                                 new DateTime(2011, 8, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Kitl
+        /// <summary>
+        /// Khitan large script
+        /// </summary>
+        public static Script Kitl { get { return _Kitl; } }
+        private static Script _Kitl = new Script("Kitl", // Subtag
+                                new string[]{ "Khitan large script" }, // Descriptions
+                                new DateTime(2014, 12, 11 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Kits
+        /// <summary>
+        /// Khitan small script
+        /// </summary>
+        public static Script Kits { get { return _Kits; } }
+        private static Script _Kits = new Script("Kits", // Subtag
+                                new string[]{ "Khitan small script" }, // Descriptions
+                                new DateTime(2014, 12, 11 ), // Added
                                 null); // Comments
 
         #endregion
@@ -918,6 +1136,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Latn = new Script("Latn", // Subtag
                                 new string[]{ "Latin" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Leke
+        /// <summary>
+        /// Leke
+        /// </summary>
+        public static Script Leke { get { return _Leke; } }
+        private static Script _Leke = new Script("Leke", // Subtag
+                                new string[]{ "Leke" }, // Descriptions
+                                new DateTime(2015, 7, 24 ), // Added
                                 null); // Comments
 
         #endregion
@@ -1032,6 +1262,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Maka
+        /// <summary>
+        /// Makasar
+        /// </summary>
+        public static Script Maka { get { return _Maka; } }
+        private static Script _Maka = new Script("Maka", // Subtag
+                                new string[]{ "Makasar" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Mand
         /// <summary>
         /// Mandaic
@@ -1057,6 +1299,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Marc
+        /// <summary>
+        /// Marchen
+        /// </summary>
+        public static Script Marc { get { return _Marc; } }
+        private static Script _Marc = new Script("Marc", // Subtag
+                                new string[]{ "Marchen" }, // Descriptions
+                                new DateTime(2014, 12, 11 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Maya
         /// <summary>
         /// Mayan hieroglyphs
@@ -1069,13 +1323,27 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Medf
+        /// <summary>
+        /// Medefaidrin
+        /// Oberi Okaime
+        /// Oberi Ɔkaimɛ
+        /// </summary>
+        public static Script Medf { get { return _Medf; } }
+        private static Script _Medf = new Script("Medf", // Subtag
+                                new string[]{ "Medefaidrin", "Oberi Okaime", "Oberi Ɔkaimɛ" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Mend
         /// <summary>
-        /// Mende
+        /// Mende Kikakui
         /// </summary>
         public static Script Mend { get { return _Mend; } }
         private static Script _Mend = new Script("Mend", // Subtag
-                                new string[]{ "Mende" }, // Descriptions
+                                new string[]{ "Mende Kikakui" }, // Descriptions
                                 new DateTime(2010, 4, 10 ), // Added
                                 null); // Comments
 
@@ -1113,6 +1381,19 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Mlym = new Script("Mlym", // Subtag
                                 new string[]{ "Malayalam" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Modi
+        /// <summary>
+        /// Modi
+        /// Moḍī
+        /// </summary>
+        public static Script Modi { get { return _Modi; } }
+        private static Script _Modi = new Script("Modi", // Subtag
+                                new string[]{ "Modi", "Moḍī" }, // Descriptions
+                                new DateTime(2013, 12, 2 ), // Added
                                 null); // Comments
 
         #endregion
@@ -1171,6 +1452,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Mult
+        /// <summary>
+        /// Multani
+        /// </summary>
+        public static Script Mult { get { return _Mult; } }
+        private static Script _Mult = new Script("Mult", // Subtag
+                                new string[]{ "Multani" }, // Descriptions
+                                new DateTime(2013, 12, 2 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Mymr
         /// <summary>
         /// Myanmar
@@ -1180,6 +1473,30 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Mymr = new Script("Mymr", // Subtag
                                 new string[]{ "Myanmar", "Burmese" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Nagm
+        /// <summary>
+        /// Nag Mundari
+        /// </summary>
+        public static Script Nagm { get { return _Nagm; } }
+        private static Script _Nagm = new Script("Nagm", // Subtag
+                                new string[]{ "Nag Mundari" }, // Descriptions
+                                new DateTime(2021, 12, 24 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Nand
+        /// <summary>
+        /// Nandinagari
+        /// </summary>
+        public static Script Nand { get { return _Nand; } }
+        private static Script _Nand = new Script("Nand", // Subtag
+                                new string[]{ "Nandinagari" }, // Descriptions
+                                new DateTime(2018, 10, 28 ), // Added
                                 null); // Comments
 
         #endregion
@@ -1209,15 +1526,45 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Newa
+        /// <summary>
+        /// Newa
+        /// Newar
+        /// Newari
+        /// Nepāla lipi
+        /// </summary>
+        public static Script Newa { get { return _Newa; } }
+        private static Script _Newa = new Script("Newa", // Subtag
+                                new string[]{ "Newa", "Newar", "Newari", "Nepāla lipi" }, // Descriptions
+                                new DateTime(2016, 1, 4 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Nkdb
+        /// <summary>
+        /// Naxi Dongba
+        /// na²¹ɕi³³ to³³ba²¹
+        /// Nakhi Tomba
+        /// </summary>
+        public static Script Nkdb { get { return _Nkdb; } }
+        private static Script _Nkdb = new Script("Nkdb", // Subtag
+                                new string[]{ "Naxi Dongba", "na²¹ɕi³³ to³³ba²¹", "Nakhi Tomba" }, // Descriptions
+                                new DateTime(2017, 8, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Nkgb
         /// <summary>
-        /// Nakhi Geba
-        /// 'Na-'Khi ²Ggŏ-¹baw
         /// Naxi Geba
+        /// na²¹ɕi³³ gʌ²¹ba²¹
+        /// 'Na-'Khi ²Ggŏ-¹baw
+        /// Nakhi Geba
         /// </summary>
         public static Script Nkgb { get { return _Nkgb; } }
         private static Script _Nkgb = new Script("Nkgb", // Subtag
-                                new string[]{ "Nakhi Geba", "'Na-'Khi ²Ggŏ-¹baw", "Naxi Geba" }, // Descriptions
+                                new string[]{ "Naxi Geba", "na²¹ɕi³³ gʌ²¹ba²¹", "'Na-'Khi ²Ggŏ-¹baw", "Nakhi Geba" }, // Descriptions
                                 new DateTime(2009, 3, 13 ), // Added
                                 null); // Comments
 
@@ -1291,11 +1638,24 @@ namespace Algenta.Globalization.LanguageTags
         #region Orya
         /// <summary>
         /// Oriya
+        /// Odia
         /// </summary>
         public static Script Orya { get { return _Orya; } }
         private static Script _Orya = new Script("Orya", // Subtag
-                                new string[]{ "Oriya" }, // Descriptions
+                                new string[]{ "Oriya", "Odia" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Osge
+        /// <summary>
+        /// Osage
+        /// </summary>
+        public static Script Osge { get { return _Osge; } }
+        private static Script _Osge = new Script("Osge", // Subtag
+                                new string[]{ "Osage" }, // Descriptions
+                                new DateTime(2014, 12, 11 ), // Added
                                 null); // Comments
 
         #endregion
@@ -1312,6 +1672,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Ougr
+        /// <summary>
+        /// Old Uyghur
+        /// </summary>
+        public static Script Ougr { get { return _Ougr; } }
+        private static Script _Ougr = new Script("Ougr", // Subtag
+                                new string[]{ "Old Uyghur" }, // Descriptions
+                                new DateTime(2021, 2, 12 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Palm
         /// <summary>
         /// Palmyrene
@@ -1320,6 +1692,42 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Palm = new Script("Palm", // Subtag
                                 new string[]{ "Palmyrene" }, // Descriptions
                                 new DateTime(2010, 4, 10 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Pauc
+        /// <summary>
+        /// Pau Cin Hau
+        /// </summary>
+        public static Script Pauc { get { return _Pauc; } }
+        private static Script _Pauc = new Script("Pauc", // Subtag
+                                new string[]{ "Pau Cin Hau" }, // Descriptions
+                                new DateTime(2013, 12, 2 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Pcun
+        /// <summary>
+        /// Proto-Cuneiform
+        /// </summary>
+        public static Script Pcun { get { return _Pcun; } }
+        private static Script _Pcun = new Script("Pcun", // Subtag
+                                new string[]{ "Proto-Cuneiform" }, // Descriptions
+                                new DateTime(2021, 2, 12 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Pelm
+        /// <summary>
+        /// Proto-Elamite
+        /// </summary>
+        public static Script Pelm { get { return _Pelm; } }
+        private static Script _Pelm = new Script("Pelm", // Subtag
+                                new string[]{ "Proto-Elamite" }, // Descriptions
+                                new DateTime(2021, 2, 12 ), // Added
                                 null); // Comments
 
         #endregion
@@ -1396,6 +1804,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Piqd
+        /// <summary>
+        /// Klingon (KLI pIqaD)
+        /// </summary>
+        public static Script Piqd { get { return _Piqd; } }
+        private static Script _Piqd = new Script("Piqd", // Subtag
+                                new string[]{ "Klingon (KLI pIqaD)" }, // Descriptions
+                                new DateTime(2016, 1, 4 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Plrd
         /// <summary>
         /// Miao
@@ -1417,6 +1837,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Prti = new Script("Prti", // Subtag
                                 new string[]{ "Inscriptional Parthian" }, // Descriptions
                                 new DateTime(2007, 12, 5 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Psin
+        /// <summary>
+        /// Proto-Sinaitic
+        /// </summary>
+        public static Script Psin { get { return _Psin; } }
+        private static Script _Psin = new Script("Psin", // Subtag
+                                new string[]{ "Proto-Sinaitic" }, // Descriptions
+                                new DateTime(2021, 2, 12 ), // Added
                                 null); // Comments
 
         #endregion
@@ -2021,6 +2453,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Ranj
+        /// <summary>
+        /// Ranjana
+        /// </summary>
+        public static Script Ranj { get { return _Ranj; } }
+        private static Script _Ranj = new Script("Ranj", // Subtag
+                                new string[]{ "Ranjana" }, // Descriptions
+                                new DateTime(2021, 2, 12 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Rjng
         /// <summary>
         /// Rejang
@@ -2031,6 +2475,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Rjng = new Script("Rjng", // Subtag
                                 new string[]{ "Rejang", "Redjang", "Kaganga" }, // Descriptions
                                 new DateTime(2006, 10, 17 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Rohg
+        /// <summary>
+        /// Hanifi Rohingya
+        /// </summary>
+        public static Script Rohg { get { return _Rohg; } }
+        private static Script _Rohg = new Script("Rohg", // Subtag
+                                new string[]{ "Hanifi Rohingya" }, // Descriptions
+                                new DateTime(2017, 12, 13 ), // Added
                                 null); // Comments
 
         #endregion
@@ -2145,6 +2601,32 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Shui
+        /// <summary>
+        /// Shuishu
+        /// </summary>
+        public static Script Shui { get { return _Shui; } }
+        private static Script _Shui = new Script("Shui", // Subtag
+                                new string[]{ "Shuishu" }, // Descriptions
+                                new DateTime(2017, 8, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Sidd
+        /// <summary>
+        /// Siddham
+        /// Siddhaṃ
+        /// Siddhamātṛkā
+        /// </summary>
+        public static Script Sidd { get { return _Sidd; } }
+        private static Script _Sidd = new Script("Sidd", // Subtag
+                                new string[]{ "Siddham", "Siddhaṃ", "Siddhamātṛkā" }, // Descriptions
+                                new DateTime(2013, 12, 2 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Sind
         /// <summary>
         /// Khudawadi
@@ -2170,6 +2652,30 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Sogd
+        /// <summary>
+        /// Sogdian
+        /// </summary>
+        public static Script Sogd { get { return _Sogd; } }
+        private static Script _Sogd = new Script("Sogd", // Subtag
+                                new string[]{ "Sogdian" }, // Descriptions
+                                new DateTime(2017, 12, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Sogo
+        /// <summary>
+        /// Old Sogdian
+        /// </summary>
+        public static Script Sogo { get { return _Sogo; } }
+        private static Script _Sogo = new Script("Sogo", // Subtag
+                                new string[]{ "Old Sogdian" }, // Descriptions
+                                new DateTime(2017, 12, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Sora
         /// <summary>
         /// Sora Sompeng
@@ -2182,6 +2688,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Soyo
+        /// <summary>
+        /// Soyombo
+        /// </summary>
+        public static Script Soyo { get { return _Soyo; } }
+        private static Script _Soyo = new Script("Soyo", // Subtag
+                                new string[]{ "Soyombo" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Sund
         /// <summary>
         /// Sundanese
@@ -2190,6 +2708,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Sund = new Script("Sund", // Subtag
                                 new string[]{ "Sundanese" }, // Descriptions
                                 new DateTime(2006, 7, 21 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Sunu
+        /// <summary>
+        /// Sunuwar
+        /// </summary>
+        public static Script Sunu { get { return _Sunu; } }
+        private static Script _Sunu = new Script("Sunu", // Subtag
+                                new string[]{ "Sunuwar" }, // Descriptions
+                                new DateTime(2021, 12, 24 ), // Added
                                 null); // Comments
 
         #endregion
@@ -2439,6 +2969,30 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Tnsa
+        /// <summary>
+        /// Tangsa
+        /// </summary>
+        public static Script Tnsa { get { return _Tnsa; } }
+        private static Script _Tnsa = new Script("Tnsa", // Subtag
+                                new string[]{ "Tangsa" }, // Descriptions
+                                new DateTime(2021, 3, 5 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Toto
+        /// <summary>
+        /// Toto
+        /// </summary>
+        public static Script Toto { get { return _Toto; } }
+        private static Script _Toto = new Script("Toto", // Subtag
+                                new string[]{ "Toto" }, // Descriptions
+                                new DateTime(2020, 5, 12 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Ugar
         /// <summary>
         /// Ugaritic
@@ -2475,6 +3029,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Vith
+        /// <summary>
+        /// Vithkuqi
+        /// </summary>
+        public static Script Vith { get { return _Vith; } }
+        private static Script _Vith = new Script("Vith", // Subtag
+                                new string[]{ "Vithkuqi" }, // Descriptions
+                                new DateTime(2021, 3, 5 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Wara
         /// <summary>
         /// Warang Citi
@@ -2484,6 +3050,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Wara = new Script("Wara", // Subtag
                                 new string[]{ "Warang Citi", "Varang Kshiti" }, // Descriptions
                                 new DateTime(2009, 12, 9 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Wcho
+        /// <summary>
+        /// Wancho
+        /// </summary>
+        public static Script Wcho { get { return _Wcho; } }
+        private static Script _Wcho = new Script("Wcho", // Subtag
+                                new string[]{ "Wancho" }, // Descriptions
+                                new DateTime(2017, 8, 13 ), // Added
                                 null); // Comments
 
         #endregion
@@ -2524,6 +3102,18 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region Yezi
+        /// <summary>
+        /// Yezidi
+        /// </summary>
+        public static Script Yezi { get { return _Yezi; } }
+        private static Script _Yezi = new Script("Yezi", // Subtag
+                                new string[]{ "Yezidi" }, // Descriptions
+                                new DateTime(2019, 9, 11 ), // Added
+                                null); // Comments
+
+        #endregion
+
         #region Yiii
         /// <summary>
         /// Yi
@@ -2532,6 +3122,21 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Yiii = new Script("Yiii", // Subtag
                                 new string[]{ "Yi" }, // Descriptions
                                 new DateTime(2005, 10, 16 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Zanb
+        /// <summary>
+        /// Zanabazar Square
+        /// Zanabazarin Dörböljin Useg
+        /// Xewtee Dörböljin Bicig
+        /// Horizontal Square Script
+        /// </summary>
+        public static Script Zanb { get { return _Zanb; } }
+        private static Script _Zanb = new Script("Zanb", // Subtag
+                                new string[]{ "Zanabazar Square", "Zanabazarin Dörböljin Useg", "Xewtee Dörböljin Bicig", "Horizontal Square Script" }, // Descriptions
+                                new DateTime(2017, 1, 13 ), // Added
                                 null); // Comments
 
         #endregion
@@ -2557,6 +3162,18 @@ namespace Algenta.Globalization.LanguageTags
         private static Script _Zmth = new Script("Zmth", // Subtag
                                 new string[]{ "Mathematical notation" }, // Descriptions
                                 new DateTime(2007, 12, 5 ), // Added
+                                null); // Comments
+
+        #endregion
+
+        #region Zsye
+        /// <summary>
+        /// Symbols (Emoji variant)
+        /// </summary>
+        public static Script Zsye { get { return _Zsye; } }
+        private static Script _Zsye = new Script("Zsye", // Subtag
+                                new string[]{ "Symbols (Emoji variant)" }, // Descriptions
+                                new DateTime(2016, 1, 4 ), // Added
                                 null); // Comments
 
         #endregion
@@ -2624,9 +3241,12 @@ namespace Algenta.Globalization.LanguageTags
                         if(scripts == null) 
                         {
                             scripts = new Collection<Script>();
+                            scripts.Add(Adlm);
                             scripts.Add(Afak);
                             scripts.Add(Aghb);
+                            scripts.Add(Ahom);
                             scripts.Add(Arab);
+                            scripts.Add(Aran);
                             scripts.Add(Armi);
                             scripts.Add(Armn);
                             scripts.Add(Avst);
@@ -2635,6 +3255,7 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Bass);
                             scripts.Add(Batk);
                             scripts.Add(Beng);
+                            scripts.Add(Bhks);
                             scripts.Add(Blis);
                             scripts.Add(Bopo);
                             scripts.Add(Brah);
@@ -2646,48 +3267,62 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Cari);
                             scripts.Add(Cham);
                             scripts.Add(Cher);
+                            scripts.Add(Chrs);
                             scripts.Add(Cirt);
                             scripts.Add(Copt);
+                            scripts.Add(Cpmn);
                             scripts.Add(Cprt);
                             scripts.Add(Cyrl);
                             scripts.Add(Cyrs);
                             scripts.Add(Deva);
+                            scripts.Add(Diak);
+                            scripts.Add(Dogr);
                             scripts.Add(Dsrt);
                             scripts.Add(Dupl);
                             scripts.Add(Egyd);
                             scripts.Add(Egyh);
                             scripts.Add(Egyp);
                             scripts.Add(Elba);
+                            scripts.Add(Elym);
                             scripts.Add(Ethi);
                             scripts.Add(Geok);
                             scripts.Add(Geor);
                             scripts.Add(Glag);
+                            scripts.Add(Gong);
+                            scripts.Add(Gonm);
                             scripts.Add(Goth);
                             scripts.Add(Gran);
                             scripts.Add(Grek);
                             scripts.Add(Gujr);
                             scripts.Add(Guru);
+                            scripts.Add(Hanb);
                             scripts.Add(Hang);
                             scripts.Add(Hani);
                             scripts.Add(Hano);
                             scripts.Add(Hans);
                             scripts.Add(Hant);
+                            scripts.Add(Hatr);
                             scripts.Add(Hebr);
                             scripts.Add(Hira);
                             scripts.Add(Hluw);
                             scripts.Add(Hmng);
+                            scripts.Add(Hmnp);
                             scripts.Add(Hrkt);
                             scripts.Add(Hung);
                             scripts.Add(Inds);
                             scripts.Add(Ital);
+                            scripts.Add(Jamo);
                             scripts.Add(Java);
                             scripts.Add(Jpan);
                             scripts.Add(Jurc);
                             scripts.Add(Kali);
                             scripts.Add(Kana);
+                            scripts.Add(Kawi);
                             scripts.Add(Khar);
                             scripts.Add(Khmr);
                             scripts.Add(Khoj);
+                            scripts.Add(Kitl);
+                            scripts.Add(Kits);
                             scripts.Add(Knda);
                             scripts.Add(Kore);
                             scripts.Add(Kpel);
@@ -2697,6 +3332,7 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Latf);
                             scripts.Add(Latg);
                             scripts.Add(Latn);
+                            scripts.Add(Leke);
                             scripts.Add(Lepc);
                             scripts.Add(Limb);
                             scripts.Add(Lina);
@@ -2706,20 +3342,29 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Lyci);
                             scripts.Add(Lydi);
                             scripts.Add(Mahj);
+                            scripts.Add(Maka);
                             scripts.Add(Mand);
                             scripts.Add(Mani);
+                            scripts.Add(Marc);
                             scripts.Add(Maya);
+                            scripts.Add(Medf);
                             scripts.Add(Mend);
                             scripts.Add(Merc);
                             scripts.Add(Mero);
                             scripts.Add(Mlym);
+                            scripts.Add(Modi);
                             scripts.Add(Mong);
                             scripts.Add(Moon);
                             scripts.Add(Mroo);
                             scripts.Add(Mtei);
+                            scripts.Add(Mult);
                             scripts.Add(Mymr);
+                            scripts.Add(Nagm);
+                            scripts.Add(Nand);
                             scripts.Add(Narb);
                             scripts.Add(Nbat);
+                            scripts.Add(Newa);
+                            scripts.Add(Nkdb);
                             scripts.Add(Nkgb);
                             scripts.Add(Nkoo);
                             scripts.Add(Nshu);
@@ -2727,16 +3372,23 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Olck);
                             scripts.Add(Orkh);
                             scripts.Add(Orya);
+                            scripts.Add(Osge);
                             scripts.Add(Osma);
+                            scripts.Add(Ougr);
                             scripts.Add(Palm);
+                            scripts.Add(Pauc);
+                            scripts.Add(Pcun);
+                            scripts.Add(Pelm);
                             scripts.Add(Perm);
                             scripts.Add(Phag);
                             scripts.Add(Phli);
                             scripts.Add(Phlp);
                             scripts.Add(Phlv);
                             scripts.Add(Phnx);
+                            scripts.Add(Piqd);
                             scripts.Add(Plrd);
                             scripts.Add(Prti);
+                            scripts.Add(Psin);
                             scripts.Add(Qaaa);
                             scripts.Add(Qaab);
                             scripts.Add(Qaac);
@@ -2787,7 +3439,9 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Qabv);
                             scripts.Add(Qabw);
                             scripts.Add(Qabx);
+                            scripts.Add(Ranj);
                             scripts.Add(Rjng);
+                            scripts.Add(Rohg);
                             scripts.Add(Roro);
                             scripts.Add(Runr);
                             scripts.Add(Samr);
@@ -2797,10 +3451,16 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Sgnw);
                             scripts.Add(Shaw);
                             scripts.Add(Shrd);
+                            scripts.Add(Shui);
+                            scripts.Add(Sidd);
                             scripts.Add(Sind);
                             scripts.Add(Sinh);
+                            scripts.Add(Sogd);
+                            scripts.Add(Sogo);
                             scripts.Add(Sora);
+                            scripts.Add(Soyo);
                             scripts.Add(Sund);
+                            scripts.Add(Sunu);
                             scripts.Add(Sylo);
                             scripts.Add(Syrc);
                             scripts.Add(Syre);
@@ -2821,16 +3481,23 @@ namespace Algenta.Globalization.LanguageTags
                             scripts.Add(Thai);
                             scripts.Add(Tibt);
                             scripts.Add(Tirh);
+                            scripts.Add(Tnsa);
+                            scripts.Add(Toto);
                             scripts.Add(Ugar);
                             scripts.Add(Vaii);
                             scripts.Add(Visp);
+                            scripts.Add(Vith);
                             scripts.Add(Wara);
+                            scripts.Add(Wcho);
                             scripts.Add(Wole);
                             scripts.Add(Xpeo);
                             scripts.Add(Xsux);
+                            scripts.Add(Yezi);
                             scripts.Add(Yiii);
+                            scripts.Add(Zanb);
                             scripts.Add(Zinh);
                             scripts.Add(Zmth);
+                            scripts.Add(Zsye);
                             scripts.Add(Zsym);
                             scripts.Add(Zxxx);
                             scripts.Add(Zyyy);

@@ -2,8 +2,8 @@
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algenta.Globalization.LanguageTags;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Algenta.Globalization.LanguageTags.Test
 {

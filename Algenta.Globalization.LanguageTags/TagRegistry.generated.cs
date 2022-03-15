@@ -208,6 +208,7 @@ namespace Algenta.Globalization.LanguageTags
             "aji", 
             "ajn", 
             "ajp", 
+            "ajs", 
             "ajt", 
             "aju", 
             "ajw", 
@@ -364,11 +365,13 @@ namespace Algenta.Globalization.LanguageTags
             "aqc", 
             "aqd", 
             "aqg", 
+            "aqk", 
             "aql", 
             "aqm", 
             "aqn", 
             "aqp", 
             "aqr", 
+            "aqt", 
             "aqz", 
             "ar", 
             "arb", 
@@ -506,6 +509,7 @@ namespace Algenta.Globalization.LanguageTags
             "axe", 
             "axg", 
             "axk", 
+            "axl", 
             "axm", 
             "axx", 
             "ay", 
@@ -785,6 +789,7 @@ namespace Algenta.Globalization.LanguageTags
             "bjm", 
             "bjn", 
             "bjo", 
+            "bjp", 
             "bjq", 
             "bjr", 
             "bjs", 
@@ -924,7 +929,9 @@ namespace Algenta.Globalization.LanguageTags
             "boz", 
             "bpa", 
             "bpb", 
+            "bpc", 
             "bpd", 
+            "bpe", 
             "bpg", 
             "bph", 
             "bpi", 
@@ -1086,6 +1093,7 @@ namespace Algenta.Globalization.LanguageTags
             "bvm", 
             "bvn", 
             "bvo", 
+            "bvp", 
             "bvq", 
             "bvr", 
             "bvt", 
@@ -1234,6 +1242,7 @@ namespace Algenta.Globalization.LanguageTags
             "cbl", 
             "cbn", 
             "cbo", 
+            "cbq", 
             "cbr", 
             "cbs", 
             "cbt", 
@@ -1280,6 +1289,7 @@ namespace Algenta.Globalization.LanguageTags
             "cel", 
             "cen", 
             "cet", 
+            "cey", 
             "cfa", 
             "cfd", 
             "cfg", 
@@ -1339,6 +1349,8 @@ namespace Algenta.Globalization.LanguageTags
             "ckb", 
             "ckh", 
             "ckl", 
+            "ckm", 
+            "ckn", 
             "cko", 
             "ckq", 
             "ckr", 
@@ -1386,6 +1398,9 @@ namespace Algenta.Globalization.LanguageTags
             "cnk", 
             "cnl", 
             "cno", 
+            "cnp", 
+            "cnq", 
+            "cnr", 
             "cns", 
             "cnt", 
             "cnu", 
@@ -1423,6 +1438,7 @@ namespace Algenta.Globalization.LanguageTags
             "cpg", 
             "cpi", 
             "cpn", 
+            "cpo", 
             "cpp", 
             "cps", 
             "cpu", 
@@ -1465,11 +1481,13 @@ namespace Algenta.Globalization.LanguageTags
             "csg", 
             "csh", 
             "csi", 
+            "csj", 
             "csk", 
             "csl", 
             "csm", 
             "csn", 
             "cso", 
+            "csp", 
             "csq", 
             "csr", 
             "css", 
@@ -1477,6 +1495,7 @@ namespace Algenta.Globalization.LanguageTags
             "csu", 
             "csv", 
             "csw", 
+            "csx", 
             "csy", 
             "csz", 
             "cta", 
@@ -1493,6 +1512,7 @@ namespace Algenta.Globalization.LanguageTags
             "cts", 
             "ctt", 
             "ctu", 
+            "cty", 
             "ctz", 
             "cu", 
             "cua", 
@@ -1515,6 +1535,7 @@ namespace Algenta.Globalization.LanguageTags
             "cuv", 
             "cuw", 
             "cux", 
+            "cuy", 
             "cv", 
             "cvg", 
             "cvn", 
@@ -1640,6 +1661,7 @@ namespace Algenta.Globalization.LanguageTags
             "dhu", 
             "dhv", 
             "dhw", 
+            "dhx", 
             "dia", 
             "dib", 
             "dic", 
@@ -1681,12 +1703,14 @@ namespace Algenta.Globalization.LanguageTags
             "dju", 
             "djw", 
             "dka", 
+            "dkg", 
             "dkk", 
             "dkl", 
             "dkr", 
             "dks", 
             "dkx", 
             "dlg", 
+            "dlk", 
             "dlm", 
             "dln", 
             "dma", 
@@ -1694,6 +1718,7 @@ namespace Algenta.Globalization.LanguageTags
             "dmc", 
             "dmd", 
             "dme", 
+            "dmf", 
             "dmg", 
             "dmk", 
             "dml", 
@@ -1704,6 +1729,7 @@ namespace Algenta.Globalization.LanguageTags
             "dms", 
             "dmu", 
             "dmv", 
+            "dmw", 
             "dmx", 
             "dmy", 
             "dna", 
@@ -1711,8 +1737,10 @@ namespace Algenta.Globalization.LanguageTags
             "dne", 
             "dng", 
             "dni", 
+            "dnj", 
             "dnk", 
             "dnn", 
+            "dno", 
             "dnr", 
             "dnt", 
             "dnu", 
@@ -1767,6 +1795,7 @@ namespace Algenta.Globalization.LanguageTags
             "dsn", 
             "dso", 
             "dsq", 
+            "dsz", 
             "dta", 
             "dtb", 
             "dtd", 
@@ -1774,6 +1803,7 @@ namespace Algenta.Globalization.LanguageTags
             "dti", 
             "dtk", 
             "dtm", 
+            "dtn", 
             "dto", 
             "dtp", 
             "dtr", 
@@ -1809,10 +1839,14 @@ namespace Algenta.Globalization.LanguageTags
             "dv", 
             "dva", 
             "dwa", 
+            "dwk", 
             "dwl", 
             "dwr", 
             "dws", 
+            "dwu", 
             "dww", 
+            "dwy", 
+            "dwz", 
             "dya", 
             "dyb", 
             "dyd", 
@@ -1826,9 +1860,12 @@ namespace Algenta.Globalization.LanguageTags
             "dz", 
             "dza", 
             "dzd", 
+            "dze", 
             "dzg", 
             "dzl", 
             "dzn", 
+            "eaa", 
+            "ebc", 
             "ebg", 
             "ebk", 
             "ebo", 
@@ -1844,15 +1881,18 @@ namespace Algenta.Globalization.LanguageTags
             "efi", 
             "ega", 
             "egl", 
+            "egm", 
             "ego", 
             "egx", 
             "egy", 
+            "ehs", 
             "ehu", 
             "eip", 
             "eit", 
             "eiv", 
             "eja", 
             "eka", 
+            "ekc", 
             "eke", 
             "ekg", 
             "eki", 
@@ -1883,11 +1923,13 @@ namespace Algenta.Globalization.LanguageTags
             "emn", 
             "emo", 
             "emp", 
+            "emq", 
             "ems", 
             "emu", 
             "emw", 
             "emx", 
             "emy", 
+            "emz", 
             "en", 
             "ena", 
             "enb", 
@@ -1895,6 +1937,7 @@ namespace Algenta.Globalization.LanguageTags
             "end", 
             "enf", 
             "enh", 
+            "enl", 
             "enm", 
             "enn", 
             "eno", 
@@ -1903,6 +1946,7 @@ namespace Algenta.Globalization.LanguageTags
             "enu", 
             "env", 
             "enw", 
+            "enx", 
             "eo", 
             "eot", 
             "epi", 
@@ -1918,6 +1962,7 @@ namespace Algenta.Globalization.LanguageTags
             "erw", 
             "es", 
             "ese", 
+            "esg", 
             "esh", 
             "esi", 
             "esk", 
@@ -1929,6 +1974,7 @@ namespace Algenta.Globalization.LanguageTags
             "ess", 
             "esu", 
             "esx", 
+            "esy", 
             "et", 
             "etb", 
             "etc", 
@@ -1950,6 +1996,7 @@ namespace Algenta.Globalization.LanguageTags
             "ext", 
             "eya", 
             "eyo", 
+            "eza", 
             "eze", 
             "fa", 
             "faa", 
@@ -1981,6 +2028,7 @@ namespace Algenta.Globalization.LanguageTags
             "fi", 
             "fia", 
             "fie", 
+            "fif", 
             "fil", 
             "fip", 
             "fir", 
@@ -1999,6 +2047,7 @@ namespace Algenta.Globalization.LanguageTags
             "fly", 
             "fmp", 
             "fmu", 
+            "fnb", 
             "fng", 
             "fni", 
             "fo", 
@@ -2093,6 +2142,7 @@ namespace Algenta.Globalization.LanguageTags
             "gbs", 
             "gbu", 
             "gbv", 
+            "gbw", 
             "gbx", 
             "gby", 
             "gbz", 
@@ -2123,12 +2173,14 @@ namespace Algenta.Globalization.LanguageTags
             "gdq", 
             "gdr", 
             "gds", 
+            "gdt", 
             "gdu", 
             "gdx", 
             "gea", 
             "geb", 
             "gec", 
             "ged", 
+            "gef", 
             "geg", 
             "geh", 
             "gei", 
@@ -2138,6 +2190,7 @@ namespace Algenta.Globalization.LanguageTags
             "gem", 
             "geq", 
             "ges", 
+            "gev", 
             "gew", 
             "gex", 
             "gey", 
@@ -2173,7 +2226,10 @@ namespace Algenta.Globalization.LanguageTags
             "gib", 
             "gic", 
             "gid", 
+            "gie", 
             "gig", 
+            "gih", 
+            "gii", 
             "gil", 
             "gim", 
             "gin", 
@@ -2190,20 +2246,26 @@ namespace Algenta.Globalization.LanguageTags
             "giz", 
             "gji", 
             "gjk", 
+            "gjm", 
             "gjn", 
+            "gjr", 
             "gju", 
             "gka", 
+            "gkd", 
             "gke", 
             "gkn", 
             "gko", 
             "gkp", 
+            "gku", 
             "gl", 
+            "glb", 
             "glc", 
             "gld", 
             "glh", 
             "gli", 
             "glj", 
             "glk", 
+            "gll", 
             "glo", 
             "glr", 
             "glu", 
@@ -2213,16 +2275,19 @@ namespace Algenta.Globalization.LanguageTags
             "gmb", 
             "gmd", 
             "gme", 
+            "gmg", 
             "gmh", 
             "gml", 
             "gmm", 
             "gmn", 
             "gmq", 
+            "gmr", 
             "gmu", 
             "gmv", 
             "gmw", 
             "gmx", 
             "gmy", 
+            "gmz", 
             "gn", 
             "gna", 
             "gnb", 
@@ -2232,6 +2297,7 @@ namespace Algenta.Globalization.LanguageTags
             "gng", 
             "gnh", 
             "gni", 
+            "gnj", 
             "gnk", 
             "gnl", 
             "gnm", 
@@ -2264,6 +2330,7 @@ namespace Algenta.Globalization.LanguageTags
             "gos", 
             "got", 
             "gou", 
+            "gov", 
             "gow", 
             "gox", 
             "goy", 
@@ -2308,6 +2375,7 @@ namespace Algenta.Globalization.LanguageTags
             "gsw", 
             "gta", 
             "gti", 
+            "gtu", 
             "gu", 
             "gua", 
             "gub", 
@@ -2374,8 +2442,10 @@ namespace Algenta.Globalization.LanguageTags
             "gyl", 
             "gym", 
             "gyn", 
+            "gyo", 
             "gyr", 
             "gyy", 
+            "gyz", 
             "gza", 
             "gzi", 
             "gzn", 
@@ -2446,7 +2516,9 @@ namespace Algenta.Globalization.LanguageTags
             "hji", 
             "hka", 
             "hke", 
+            "hkh", 
             "hkk", 
+            "hkn", 
             "hks", 
             "hla", 
             "hlb", 
@@ -2482,6 +2554,7 @@ namespace Algenta.Globalization.LanguageTags
             "hna", 
             "hnd", 
             "hne", 
+            "hng", 
             "hnh", 
             "hni", 
             "hnj", 
@@ -2514,13 +2587,16 @@ namespace Algenta.Globalization.LanguageTags
             "hps", 
             "hr", 
             "hra", 
+            "hrc", 
             "hre", 
             "hrk", 
             "hrm", 
             "hro", 
+            "hrp", 
             "hrr", 
             "hrt", 
             "hru", 
+            "hrw", 
             "hrx", 
             "hrz", 
             "hsb", 
@@ -2569,6 +2645,7 @@ namespace Algenta.Globalization.LanguageTags
             "hwo", 
             "hy", 
             "hya", 
+            "hyw", 
             "hyx", 
             "hz", 
             "ia", 
@@ -2581,6 +2658,7 @@ namespace Algenta.Globalization.LanguageTags
             "ibd", 
             "ibe", 
             "ibg", 
+            "ibh", 
             "ibi", 
             "ibl", 
             "ibm", 
@@ -2627,6 +2705,7 @@ namespace Algenta.Globalization.LanguageTags
             "ihp", 
             "ihw", 
             "ii", 
+            "iin", 
             "iir", 
             "ijc", 
             "ije", 
@@ -2641,6 +2720,8 @@ namespace Algenta.Globalization.LanguageTags
             "ikl", 
             "iko", 
             "ikp", 
+            "ikr", 
+            "iks", 
             "ikt", 
             "ikv", 
             "ikw", 
@@ -2652,7 +2733,9 @@ namespace Algenta.Globalization.LanguageTags
             "ili", 
             "ilk", 
             "ill", 
+            "ilm", 
             "ilo", 
+            "ilp", 
             "ils", 
             "ilu", 
             "ilv", 
@@ -2665,6 +2748,7 @@ namespace Algenta.Globalization.LanguageTags
             "imo", 
             "imr", 
             "ims", 
+            "imt", 
             "imy", 
             "in", 
             "inb", 
@@ -2688,6 +2772,7 @@ namespace Algenta.Globalization.LanguageTags
             "ipi", 
             "ipo", 
             "iqu", 
+            "iqw", 
             "ira", 
             "ire", 
             "irh", 
@@ -2717,6 +2802,7 @@ namespace Algenta.Globalization.LanguageTags
             "it", 
             "itb", 
             "itc", 
+            "itd", 
             "ite", 
             "iti", 
             "itk", 
@@ -2748,6 +2834,7 @@ namespace Algenta.Globalization.LanguageTags
             "izh", 
             "izi", 
             "izr", 
+            "izz", 
             "ja", 
             "jaa", 
             "jab", 
@@ -2771,8 +2858,10 @@ namespace Algenta.Globalization.LanguageTags
             "jay", 
             "jaz", 
             "jbe", 
+            "jbi", 
             "jbj", 
             "jbk", 
+            "jbm", 
             "jbn", 
             "jbo", 
             "jbr", 
@@ -2818,11 +2907,14 @@ namespace Algenta.Globalization.LanguageTags
             "jiu", 
             "jiv", 
             "jiy", 
+            "jje", 
             "jjr", 
+            "jka", 
             "jkm", 
             "jko", 
             "jkp", 
             "jkr", 
+            "jks", 
             "jku", 
             "jle", 
             "jls", 
@@ -2846,6 +2938,7 @@ namespace Algenta.Globalization.LanguageTags
             "jns", 
             "job", 
             "jod", 
+            "jog", 
             "jor", 
             "jos", 
             "jow", 
@@ -3131,6 +3224,7 @@ namespace Algenta.Globalization.LanguageTags
             "kjs", 
             "kjt", 
             "kju", 
+            "kjv", 
             "kjx", 
             "kjy", 
             "kjz", 
@@ -3609,6 +3703,7 @@ namespace Algenta.Globalization.LanguageTags
             "lcp", 
             "lcq", 
             "lcs", 
+            "lda", 
             "ldb", 
             "ldd", 
             "ldg", 
@@ -3660,6 +3755,7 @@ namespace Algenta.Globalization.LanguageTags
             "lgl", 
             "lgm", 
             "lgn", 
+            "lgo", 
             "lgq", 
             "lgr", 
             "lgt", 
@@ -3699,10 +3795,13 @@ namespace Algenta.Globalization.LanguageTags
             "lix", 
             "liy", 
             "liz", 
+            "lja", 
             "lje", 
             "lji", 
             "ljl", 
             "ljp", 
+            "ljw", 
+            "ljx", 
             "lka", 
             "lkb", 
             "lkc", 
@@ -3712,11 +3811,13 @@ namespace Algenta.Globalization.LanguageTags
             "lki", 
             "lkj", 
             "lkl", 
+            "lkm", 
             "lkn", 
             "lko", 
             "lkr", 
             "lks", 
             "lkt", 
+            "lku", 
             "lky", 
             "lla", 
             "llb", 
@@ -3776,6 +3877,7 @@ namespace Algenta.Globalization.LanguageTags
             "lno", 
             "lns", 
             "lnu", 
+            "lnw", 
             "lnz", 
             "lo", 
             "loa", 
@@ -3808,6 +3910,7 @@ namespace Algenta.Globalization.LanguageTags
             "lpn", 
             "lpo", 
             "lpx", 
+            "lqr", 
             "lra", 
             "lrc", 
             "lre", 
@@ -3823,6 +3926,8 @@ namespace Algenta.Globalization.LanguageTags
             "lrv", 
             "lrz", 
             "lsa", 
+            "lsb", 
+            "lsc", 
             "lsd", 
             "lse", 
             "lsg", 
@@ -3830,15 +3935,19 @@ namespace Algenta.Globalization.LanguageTags
             "lsi", 
             "lsl", 
             "lsm", 
+            "lsn", 
             "lso", 
             "lsp", 
             "lsr", 
             "lss", 
             "lst", 
+            "lsv", 
+            "lsw", 
             "lsy", 
             "lt", 
             "ltc", 
             "ltg", 
+            "lth", 
             "lti", 
             "ltn", 
             "lto", 
@@ -3869,6 +3978,7 @@ namespace Algenta.Globalization.LanguageTags
             "luz", 
             "lv", 
             "lva", 
+            "lvi", 
             "lvk", 
             "lvs", 
             "lvu", 
@@ -3879,8 +3989,11 @@ namespace Algenta.Globalization.LanguageTags
             "lwl", 
             "lwm", 
             "lwo", 
+            "lws", 
             "lwt", 
+            "lwu", 
             "lww", 
+            "lxm", 
             "lya", 
             "lyg", 
             "lyn", 
@@ -4115,6 +4228,7 @@ namespace Algenta.Globalization.LanguageTags
             "miy", 
             "miz", 
             "mja", 
+            "mjb", 
             "mjc", 
             "mjd", 
             "mje", 
@@ -4609,6 +4723,7 @@ namespace Algenta.Globalization.LanguageTags
             "ncn", 
             "nco", 
             "ncp", 
+            "ncq", 
             "ncr", 
             "ncs", 
             "nct", 
@@ -4795,11 +4910,14 @@ namespace Algenta.Globalization.LanguageTags
             "nlj", 
             "nlk", 
             "nll", 
+            "nlm", 
             "nln", 
             "nlo", 
+            "nlq", 
             "nlr", 
             "nlu", 
             "nlv", 
+            "nlw", 
             "nlx", 
             "nly", 
             "nlz", 
@@ -4866,6 +4984,7 @@ namespace Algenta.Globalization.LanguageTags
             "noi", 
             "noj", 
             "nok", 
+            "nol", 
             "nom", 
             "non", 
             "noo", 
@@ -4888,20 +5007,26 @@ namespace Algenta.Globalization.LanguageTags
             "npo", 
             "nps", 
             "npu", 
+            "npx", 
             "npy", 
             "nqg", 
             "nqk", 
+            "nql", 
             "nqm", 
             "nqn", 
             "nqo", 
+            "nqq", 
+            "nqt", 
             "nqy", 
             "nr", 
             "nra", 
             "nrb", 
             "nrc", 
             "nre", 
+            "nrf", 
             "nrg", 
             "nri", 
+            "nrk", 
             "nrl", 
             "nrm", 
             "nrn", 
@@ -4912,6 +5037,7 @@ namespace Algenta.Globalization.LanguageTags
             "nrx", 
             "nrz", 
             "nsa", 
+            "nsb", 
             "nsc", 
             "nsd", 
             "nse", 
@@ -4935,7 +5061,9 @@ namespace Algenta.Globalization.LanguageTags
             "nsx", 
             "nsy", 
             "nsz", 
+            "ntd", 
             "nte", 
+            "ntg", 
             "nti", 
             "ntj", 
             "ntk", 
@@ -4988,6 +5116,7 @@ namespace Algenta.Globalization.LanguageTags
             "nwm", 
             "nwo", 
             "nwr", 
+            "nww", 
             "nwx", 
             "nwy", 
             "nxa", 
@@ -4999,6 +5128,7 @@ namespace Algenta.Globalization.LanguageTags
             "nxl", 
             "nxm", 
             "nxn", 
+            "nxo", 
             "nxq", 
             "nxr", 
             "nxu", 
@@ -5030,6 +5160,7 @@ namespace Algenta.Globalization.LanguageTags
             "nyy", 
             "nza", 
             "nzb", 
+            "nzd", 
             "nzi", 
             "nzk", 
             "nzm", 
@@ -5052,6 +5183,7 @@ namespace Algenta.Globalization.LanguageTags
             "oc", 
             "oca", 
             "och", 
+            "ocm", 
             "oco", 
             "ocu", 
             "oda", 
@@ -5070,6 +5202,7 @@ namespace Algenta.Globalization.LanguageTags
             "oht", 
             "ohu", 
             "oia", 
+            "oie", 
             "oin", 
             "oj", 
             "ojb", 
@@ -5081,6 +5214,7 @@ namespace Algenta.Globalization.LanguageTags
             "ojw", 
             "oka", 
             "okb", 
+            "okc", 
             "okd", 
             "oke", 
             "okg", 
@@ -5097,12 +5231,16 @@ namespace Algenta.Globalization.LanguageTags
             "oku", 
             "okv", 
             "okx", 
+            "okz", 
             "ola", 
             "old", 
             "ole", 
+            "olk", 
             "olm", 
             "olo", 
             "olr", 
+            "olt", 
+            "olu", 
             "om", 
             "oma", 
             "omb", 
@@ -5122,6 +5260,7 @@ namespace Algenta.Globalization.LanguageTags
             "omv", 
             "omw", 
             "omx", 
+            "omy", 
             "ona", 
             "onb", 
             "one", 
@@ -5170,6 +5309,7 @@ namespace Algenta.Globalization.LanguageTags
             "osa", 
             "osc", 
             "osi", 
+            "osn", 
             "oso", 
             "osp", 
             "ost", 
@@ -5200,6 +5340,7 @@ namespace Algenta.Globalization.LanguageTags
             "oui", 
             "oum", 
             "oun", 
+            "ovd", 
             "owi", 
             "owl", 
             "oyb", 
@@ -5240,6 +5381,7 @@ namespace Algenta.Globalization.LanguageTags
             "pbh", 
             "pbi", 
             "pbl", 
+            "pbm", 
             "pbn", 
             "pbo", 
             "pbp", 
@@ -5298,6 +5440,7 @@ namespace Algenta.Globalization.LanguageTags
             "pfe", 
             "pfl", 
             "pga", 
+            "pgd", 
             "pgg", 
             "pgi", 
             "pgk", 
@@ -5306,11 +5449,13 @@ namespace Algenta.Globalization.LanguageTags
             "pgs", 
             "pgu", 
             "pgy", 
+            "pgz", 
             "pha", 
             "phd", 
             "phg", 
             "phh", 
             "phi", 
+            "phj", 
             "phk", 
             "phl", 
             "phm", 
@@ -5410,11 +5555,14 @@ namespace Algenta.Globalization.LanguageTags
             "pna", 
             "pnb", 
             "pnc", 
+            "pnd", 
             "pne", 
             "png", 
             "pnh", 
             "pni", 
+            "pnj", 
             "pnk", 
+            "pnl", 
             "pnm", 
             "pnn", 
             "pno", 
@@ -5518,6 +5666,7 @@ namespace Algenta.Globalization.LanguageTags
             "ptn", 
             "pto", 
             "ptp", 
+            "ptq", 
             "ptr", 
             "ptt", 
             "ptu", 
@@ -5548,6 +5697,7 @@ namespace Algenta.Globalization.LanguageTags
             "pwa", 
             "pwb", 
             "pwg", 
+            "pwi", 
             "pwm", 
             "pwn", 
             "pwo", 
@@ -5561,6 +5711,7 @@ namespace Algenta.Globalization.LanguageTags
             "pyu", 
             "pyx", 
             "pyy", 
+            "pzh", 
             "pzn", 
             "qaa", 
             "qab", 
@@ -6195,6 +6346,7 @@ namespace Algenta.Globalization.LanguageTags
             "rhg", 
             "rhp", 
             "ria", 
+            "rib", 
             "rie", 
             "rif", 
             "ril", 
@@ -6212,6 +6364,7 @@ namespace Algenta.Globalization.LanguageTags
             "rki", 
             "rkm", 
             "rkt", 
+            "rkw", 
             "rm", 
             "rma", 
             "rmb", 
@@ -6240,6 +6393,7 @@ namespace Algenta.Globalization.LanguageTags
             "rmz", 
             "rn", 
             "rna", 
+            "rnb", 
             "rnd", 
             "rng", 
             "rnl", 
@@ -6269,10 +6423,14 @@ namespace Algenta.Globalization.LanguageTags
             "rrt", 
             "rsb", 
             "rsi", 
+            "rsk", 
             "rsl", 
+            "rsm", 
+            "rsn", 
             "rtc", 
             "rth", 
             "rtm", 
+            "rts", 
             "rtw", 
             "ru", 
             "rub", 
@@ -6293,12 +6451,16 @@ namespace Algenta.Globalization.LanguageTags
             "rw", 
             "rwa", 
             "rwk", 
+            "rwl", 
             "rwm", 
             "rwo", 
             "rwr", 
+            "rxd", 
+            "rxw", 
             "ryn", 
             "rys", 
             "ryu", 
+            "rzh", 
             "sa", 
             "saa", 
             "sab", 
@@ -6365,6 +6527,7 @@ namespace Algenta.Globalization.LanguageTags
             "scp", 
             "scq", 
             "scs", 
+            "sct", 
             "scu", 
             "scv", 
             "scw", 
@@ -6384,6 +6547,7 @@ namespace Algenta.Globalization.LanguageTags
             "sdn", 
             "sdo", 
             "sdp", 
+            "sdq", 
             "sdr", 
             "sds", 
             "sdt", 
@@ -6644,6 +6808,7 @@ namespace Algenta.Globalization.LanguageTags
             "spk", 
             "spl", 
             "spm", 
+            "spn", 
             "spo", 
             "spp", 
             "spq", 
@@ -6667,6 +6832,7 @@ namespace Algenta.Globalization.LanguageTags
             "sqs", 
             "sqt", 
             "squ", 
+            "sqx", 
             "sr", 
             "sra", 
             "srb", 
@@ -6740,6 +6906,7 @@ namespace Algenta.Globalization.LanguageTags
             "stu", 
             "stv", 
             "stw", 
+            "sty", 
             "su", 
             "sua", 
             "sub", 
@@ -6751,6 +6918,7 @@ namespace Algenta.Globalization.LanguageTags
             "suk", 
             "sul", 
             "sum", 
+            "suo", 
             "suq", 
             "sur", 
             "sus", 
@@ -6766,6 +6934,7 @@ namespace Algenta.Globalization.LanguageTags
             "svc", 
             "sve", 
             "svk", 
+            "svm", 
             "svr", 
             "svs", 
             "svx", 
@@ -6818,6 +6987,7 @@ namespace Algenta.Globalization.LanguageTags
             "syr", 
             "sys", 
             "syw", 
+            "syx", 
             "syy", 
             "sza", 
             "szb", 
@@ -6828,8 +6998,10 @@ namespace Algenta.Globalization.LanguageTags
             "szl", 
             "szn", 
             "szp", 
+            "szs", 
             "szv", 
             "szw", 
+            "szy", 
             "ta", 
             "taa", 
             "tab", 
@@ -6915,6 +7087,7 @@ namespace Algenta.Globalization.LanguageTags
             "tdj", 
             "tdk", 
             "tdl", 
+            "tdm", 
             "tdn", 
             "tdo", 
             "tdq", 
@@ -6949,6 +7122,7 @@ namespace Algenta.Globalization.LanguageTags
             "tew", 
             "tex", 
             "tey", 
+            "tez", 
             "tfi", 
             "tfn", 
             "tfo", 
@@ -7028,12 +7202,15 @@ namespace Algenta.Globalization.LanguageTags
             "tja", 
             "tjg", 
             "tji", 
+            "tjj", 
             "tjl", 
             "tjm", 
             "tjn", 
             "tjo", 
+            "tjp", 
             "tjs", 
             "tju", 
+            "tjw", 
             "tk", 
             "tka", 
             "tkb", 
@@ -7051,6 +7228,7 @@ namespace Algenta.Globalization.LanguageTags
             "tks", 
             "tkt", 
             "tku", 
+            "tkv", 
             "tkw", 
             "tkx", 
             "tkz", 
@@ -7140,6 +7318,7 @@ namespace Algenta.Globalization.LanguageTags
             "toh", 
             "toi", 
             "toj", 
+            "tok", 
             "tol", 
             "tom", 
             "too", 
@@ -7300,6 +7479,7 @@ namespace Algenta.Globalization.LanguageTags
             "tvt", 
             "tvu", 
             "tvw", 
+            "tvx", 
             "tvy", 
             "tw", 
             "twa", 
@@ -7329,6 +7509,7 @@ namespace Algenta.Globalization.LanguageTags
             "txg", 
             "txh", 
             "txi", 
+            "txj", 
             "txm", 
             "txn", 
             "txo", 
@@ -7354,10 +7535,12 @@ namespace Algenta.Globalization.LanguageTags
             "tyu", 
             "tyv", 
             "tyx", 
+            "tyy", 
             "tyz", 
             "tza", 
             "tzh", 
             "tzj", 
+            "tzl", 
             "tzm", 
             "tzn", 
             "tzo", 
@@ -7385,6 +7568,7 @@ namespace Algenta.Globalization.LanguageTags
             "uga", 
             "ugb", 
             "uge", 
+            "ugh", 
             "ugn", 
             "ugo", 
             "ugy", 
@@ -7397,16 +7581,20 @@ namespace Algenta.Globalization.LanguageTags
             "uka", 
             "ukg", 
             "ukh", 
+            "uki", 
+            "ukk", 
             "ukl", 
             "ukp", 
             "ukq", 
             "uks", 
             "uku", 
+            "ukv", 
             "ukw", 
             "uky", 
             "ula", 
             "ulb", 
             "ulc", 
+            "ule", 
             "ulf", 
             "uli", 
             "ulk", 
@@ -7432,13 +7620,17 @@ namespace Algenta.Globalization.LanguageTags
             "und", 
             "une", 
             "ung", 
+            "uni", 
             "unk", 
             "unm", 
+            "unn", 
             "unp", 
             "unr", 
+            "unu", 
             "unx", 
             "unz", 
             "uok", 
+            "uon", 
             "upi", 
             "upv", 
             "ur", 
@@ -7470,9 +7662,11 @@ namespace Algenta.Globalization.LanguageTags
             "usi", 
             "usk", 
             "usp", 
+            "uss", 
             "usu", 
             "uta", 
             "ute", 
+            "uth", 
             "utp", 
             "utr", 
             "utu", 
@@ -7533,10 +7727,12 @@ namespace Algenta.Globalization.LanguageTags
             "vkk", 
             "vkl", 
             "vkm", 
+            "vkn", 
             "vko", 
             "vkp", 
             "vkt", 
             "vku", 
+            "vkz", 
             "vlp", 
             "vls", 
             "vma", 
@@ -7620,6 +7816,7 @@ namespace Algenta.Globalization.LanguageTags
             "wbp", 
             "wbq", 
             "wbr", 
+            "wbs", 
             "wbt", 
             "wbv", 
             "wbw", 
@@ -7628,10 +7825,14 @@ namespace Algenta.Globalization.LanguageTags
             "wdd", 
             "wdg", 
             "wdj", 
+            "wdk", 
+            "wdt", 
             "wdu", 
+            "wdy", 
             "wea", 
             "wec", 
             "wed", 
+            "weg", 
             "weh", 
             "wei", 
             "wem", 
@@ -7680,12 +7881,15 @@ namespace Algenta.Globalization.LanguageTags
             "wkb", 
             "wkd", 
             "wkl", 
+            "wkr", 
             "wku", 
             "wkw", 
+            "wky", 
             "wla", 
             "wlc", 
             "wle", 
             "wlg", 
+            "wlh", 
             "wli", 
             "wlk", 
             "wll", 
@@ -7703,6 +7907,7 @@ namespace Algenta.Globalization.LanguageTags
             "wmc", 
             "wmd", 
             "wme", 
+            "wmg", 
             "wmh", 
             "wmi", 
             "wmm", 
@@ -7720,9 +7925,11 @@ namespace Algenta.Globalization.LanguageTags
             "wni", 
             "wnk", 
             "wnm", 
+            "wnn", 
             "wno", 
             "wnp", 
             "wnu", 
+            "wnw", 
             "wny", 
             "wo", 
             "woa", 
@@ -7763,6 +7970,7 @@ namespace Algenta.Globalization.LanguageTags
             "wry", 
             "wrz", 
             "wsa", 
+            "wsg", 
             "wsi", 
             "wsk", 
             "wsr", 
@@ -7770,6 +7978,7 @@ namespace Algenta.Globalization.LanguageTags
             "wsu", 
             "wsv", 
             "wtf", 
+            "wth", 
             "wti", 
             "wtk", 
             "wtm", 
@@ -7793,9 +8002,12 @@ namespace Algenta.Globalization.LanguageTags
             "wwr", 
             "www", 
             "wxa", 
+            "wxw", 
             "wya", 
             "wyb", 
+            "wyi", 
             "wym", 
+            "wyn", 
             "wyr", 
             "wyy", 
             "xaa", 
@@ -7805,6 +8017,8 @@ namespace Algenta.Globalization.LanguageTags
             "xae", 
             "xag", 
             "xai", 
+            "xaj", 
+            "xak", 
             "xal", 
             "xam", 
             "xan", 
@@ -7821,13 +8035,19 @@ namespace Algenta.Globalization.LanguageTags
             "xba", 
             "xbb", 
             "xbc", 
+            "xbd", 
+            "xbe", 
+            "xbg", 
             "xbi", 
+            "xbj", 
             "xbm", 
             "xbn", 
             "xbo", 
+            "xbp", 
             "xbr", 
             "xbw", 
             "xbx", 
+            "xby", 
             "xcb", 
             "xcc", 
             "xce", 
@@ -7843,8 +8063,12 @@ namespace Algenta.Globalization.LanguageTags
             "xcv", 
             "xcw", 
             "xcy", 
+            "xda", 
             "xdc", 
+            "xdk", 
             "xdm", 
+            "xdo", 
+            "xdq", 
             "xdy", 
             "xeb", 
             "xed", 
@@ -7859,16 +8083,22 @@ namespace Algenta.Globalization.LanguageTags
             "xfa", 
             "xga", 
             "xgb", 
+            "xgd", 
             "xgf", 
+            "xgg", 
+            "xgi", 
             "xgl", 
+            "xgm", 
             "xgn", 
             "xgr", 
             "xgu", 
+            "xgw", 
             "xh", 
             "xha", 
             "xhc", 
             "xhd", 
             "xhe", 
+            "xhm", 
             "xhr", 
             "xht", 
             "xhu", 
@@ -7880,8 +8110,11 @@ namespace Algenta.Globalization.LanguageTags
             "xin", 
             "xip", 
             "xir", 
+            "xis", 
             "xiv", 
             "xiy", 
+            "xjb", 
+            "xjt", 
             "xka", 
             "xkb", 
             "xkc", 
@@ -7950,11 +8183,18 @@ namespace Algenta.Globalization.LanguageTags
             "xnd", 
             "xng", 
             "xnh", 
+            "xni", 
+            "xnj", 
+            "xnk", 
+            "xnm", 
             "xnn", 
             "xno", 
+            "xnq", 
             "xnr", 
             "xns", 
             "xnt", 
+            "xnu", 
+            "xny", 
             "xnz", 
             "xoc", 
             "xod", 
@@ -7967,12 +8207,18 @@ namespace Algenta.Globalization.LanguageTags
             "xop", 
             "xor", 
             "xow", 
+            "xpa", 
+            "xpb", 
             "xpc", 
+            "xpd", 
             "xpe", 
+            "xpf", 
             "xpg", 
+            "xph", 
             "xpi", 
             "xpj", 
             "xpk", 
+            "xpl", 
             "xpm", 
             "xpn", 
             "xpo", 
@@ -7980,16 +8226,24 @@ namespace Algenta.Globalization.LanguageTags
             "xpq", 
             "xpr", 
             "xps", 
+            "xpt", 
             "xpu", 
+            "xpv", 
+            "xpw", 
+            "xpx", 
             "xpy", 
+            "xpz", 
             "xqa", 
             "xqt", 
             "xra", 
             "xrb", 
+            "xrd", 
             "xre", 
+            "xrg", 
             "xri", 
             "xrm", 
             "xrn", 
+            "xrq", 
             "xrr", 
             "xrt", 
             "xru", 
@@ -8019,6 +8273,7 @@ namespace Algenta.Globalization.LanguageTags
             "xtd", 
             "xte", 
             "xtg", 
+            "xth", 
             "xti", 
             "xtj", 
             "xtl", 
@@ -8031,6 +8286,7 @@ namespace Algenta.Globalization.LanguageTags
             "xts", 
             "xtt", 
             "xtu", 
+            "xtv", 
             "xtw", 
             "xty", 
             "xtz", 
@@ -8039,6 +8295,7 @@ namespace Algenta.Globalization.LanguageTags
             "xud", 
             "xug", 
             "xuj", 
+            "xul", 
             "xum", 
             "xun", 
             "xuo", 
@@ -8053,16 +8310,27 @@ namespace Algenta.Globalization.LanguageTags
             "xvs", 
             "xwa", 
             "xwc", 
+            "xwd", 
             "xwe", 
             "xwg", 
+            "xwj", 
+            "xwk", 
             "xwl", 
             "xwo", 
             "xwr", 
+            "xwt", 
+            "xww", 
             "xxb", 
             "xxk", 
+            "xxm", 
             "xxr", 
             "xxt", 
+            "xya", 
+            "xyb", 
+            "xyj", 
+            "xyk", 
             "xyl", 
+            "xyt", 
             "xyy", 
             "xzh", 
             "xzm", 
@@ -8111,6 +8379,7 @@ namespace Algenta.Globalization.LanguageTags
             "ycl", 
             "ycn", 
             "ycp", 
+            "yda", 
             "ydd", 
             "yde", 
             "ydg", 
@@ -8130,14 +8399,18 @@ namespace Algenta.Globalization.LanguageTags
             "yev", 
             "yey", 
             "yga", 
+            "ygi", 
             "ygl", 
             "ygm", 
             "ygp", 
             "ygr", 
+            "ygs", 
+            "ygu", 
             "ygw", 
             "yha", 
             "yhd", 
             "yhl", 
+            "yhs", 
             "yi", 
             "yia", 
             "yif", 
@@ -8243,13 +8516,17 @@ namespace Algenta.Globalization.LanguageTags
             "yri", 
             "yrk", 
             "yrl", 
+            "yrm", 
             "yrn", 
+            "yro", 
             "yrs", 
             "yrw", 
+            "yry", 
             "ysc", 
             "ysd", 
             "ysg", 
             "ysl", 
+            "ysm", 
             "ysn", 
             "yso", 
             "ysp", 
@@ -8260,6 +8537,7 @@ namespace Algenta.Globalization.LanguageTags
             "ytl", 
             "ytp", 
             "ytw", 
+            "yty", 
             "yua", 
             "yub", 
             "yuc", 
@@ -8285,6 +8563,7 @@ namespace Algenta.Globalization.LanguageTags
             "yva", 
             "yvt", 
             "ywa", 
+            "ywg", 
             "ywl", 
             "ywn", 
             "ywq", 
@@ -8292,8 +8571,13 @@ namespace Algenta.Globalization.LanguageTags
             "ywt", 
             "ywu", 
             "yww", 
+            "yxa", 
             "yxg", 
+            "yxl", 
+            "yxm", 
+            "yxu", 
             "yxy", 
+            "yyr", 
             "yyu", 
             "yyz", 
             "yzg", 
@@ -8324,12 +8608,15 @@ namespace Algenta.Globalization.LanguageTags
             "zax", 
             "zay", 
             "zaz", 
+            "zba", 
             "zbc", 
             "zbe", 
             "zbl", 
             "zbt", 
+            "zbu", 
             "zbw", 
             "zca", 
+            "zcd", 
             "zch", 
             "zdj", 
             "zea", 
@@ -8338,6 +8625,7 @@ namespace Algenta.Globalization.LanguageTags
             "zen", 
             "zga", 
             "zgb", 
+            "zgh", 
             "zgm", 
             "zgn", 
             "zgr", 
@@ -8371,6 +8659,7 @@ namespace Algenta.Globalization.LanguageTags
             "zku", 
             "zkv", 
             "zkz", 
+            "zla", 
             "zle", 
             "zlj", 
             "zlm", 
@@ -8686,6 +8975,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "aji": return Language.Aji;
                 case "ajn": return Language.Ajn;
                 case "ajp": return Language.Ajp;
+                case "ajs": return Language.Ajs;
                 case "ajt": return Language.Ajt;
                 case "aju": return Language.Aju;
                 case "ajw": return Language.Ajw;
@@ -8842,11 +9132,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "aqc": return Language.Aqc;
                 case "aqd": return Language.Aqd;
                 case "aqg": return Language.Aqg;
+                case "aqk": return Language.Aqk;
                 case "aql": return Language.Aql;
                 case "aqm": return Language.Aqm;
                 case "aqn": return Language.Aqn;
                 case "aqp": return Language.Aqp;
                 case "aqr": return Language.Aqr;
+                case "aqt": return Language.Aqt;
                 case "aqz": return Language.Aqz;
                 case "ar": return Language.Ar;
                 case "arb": return Language.Arb;
@@ -8984,6 +9276,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "axe": return Language.Axe;
                 case "axg": return Language.Axg;
                 case "axk": return Language.Axk;
+                case "axl": return Language.Axl;
                 case "axm": return Language.Axm;
                 case "axx": return Language.Axx;
                 case "ay": return Language.Ay;
@@ -9263,6 +9556,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "bjm": return Language.Bjm;
                 case "bjn": return Language.Bjn;
                 case "bjo": return Language.Bjo;
+                case "bjp": return Language.Bjp;
                 case "bjq": return Language.Bjq;
                 case "bjr": return Language.Bjr;
                 case "bjs": return Language.Bjs;
@@ -9402,7 +9696,9 @@ namespace Algenta.Globalization.LanguageTags
                 case "boz": return Language.Boz;
                 case "bpa": return Language.Bpa;
                 case "bpb": return Language.Bpb;
+                case "bpc": return Language.Bpc;
                 case "bpd": return Language.Bpd;
+                case "bpe": return Language.Bpe;
                 case "bpg": return Language.Bpg;
                 case "bph": return Language.Bph;
                 case "bpi": return Language.Bpi;
@@ -9564,6 +9860,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "bvm": return Language.Bvm;
                 case "bvn": return Language.Bvn;
                 case "bvo": return Language.Bvo;
+                case "bvp": return Language.Bvp;
                 case "bvq": return Language.Bvq;
                 case "bvr": return Language.Bvr;
                 case "bvt": return Language.Bvt;
@@ -9712,6 +10009,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "cbl": return Language.Cbl;
                 case "cbn": return Language.Cbn;
                 case "cbo": return Language.Cbo;
+                case "cbq": return Language.Cbq;
                 case "cbr": return Language.Cbr;
                 case "cbs": return Language.Cbs;
                 case "cbt": return Language.Cbt;
@@ -9758,6 +10056,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "cel": return Language.Cel;
                 case "cen": return Language.Cen;
                 case "cet": return Language.Cet;
+                case "cey": return Language.Cey;
                 case "cfa": return Language.Cfa;
                 case "cfd": return Language.Cfd;
                 case "cfg": return Language.Cfg;
@@ -9817,6 +10116,8 @@ namespace Algenta.Globalization.LanguageTags
                 case "ckb": return Language.Ckb;
                 case "ckh": return Language.Ckh;
                 case "ckl": return Language.Ckl;
+                case "ckm": return Language.Ckm;
+                case "ckn": return Language.Ckn;
                 case "cko": return Language.Cko;
                 case "ckq": return Language.Ckq;
                 case "ckr": return Language.Ckr;
@@ -9864,6 +10165,9 @@ namespace Algenta.Globalization.LanguageTags
                 case "cnk": return Language.Cnk;
                 case "cnl": return Language.Cnl;
                 case "cno": return Language.Cno;
+                case "cnp": return Language.Cnp;
+                case "cnq": return Language.Cnq;
+                case "cnr": return Language.Cnr;
                 case "cns": return Language.Cns;
                 case "cnt": return Language.Cnt;
                 case "cnu": return Language.Cnu;
@@ -9901,6 +10205,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "cpg": return Language.Cpg;
                 case "cpi": return Language.Cpi;
                 case "cpn": return Language.Cpn;
+                case "cpo": return Language.Cpo;
                 case "cpp": return Language.Cpp;
                 case "cps": return Language.Cps;
                 case "cpu": return Language.Cpu;
@@ -9943,11 +10248,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "csg": return Language.Csg;
                 case "csh": return Language.Csh;
                 case "csi": return Language.Csi;
+                case "csj": return Language.Csj;
                 case "csk": return Language.Csk;
                 case "csl": return Language.Csl;
                 case "csm": return Language.Csm;
                 case "csn": return Language.Csn;
                 case "cso": return Language.Cso;
+                case "csp": return Language.Csp;
                 case "csq": return Language.Csq;
                 case "csr": return Language.Csr;
                 case "css": return Language.Css;
@@ -9955,6 +10262,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "csu": return Language.Csu;
                 case "csv": return Language.Csv;
                 case "csw": return Language.Csw;
+                case "csx": return Language.Csx;
                 case "csy": return Language.Csy;
                 case "csz": return Language.Csz;
                 case "cta": return Language.Cta;
@@ -9971,6 +10279,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "cts": return Language.Cts;
                 case "ctt": return Language.Ctt;
                 case "ctu": return Language.Ctu;
+                case "cty": return Language.Cty;
                 case "ctz": return Language.Ctz;
                 case "cu": return Language.Cu;
                 case "cua": return Language.Cua;
@@ -9993,6 +10302,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "cuv": return Language.Cuv;
                 case "cuw": return Language.Cuw;
                 case "cux": return Language.Cux;
+                case "cuy": return Language.Cuy;
                 case "cv": return Language.Cv;
                 case "cvg": return Language.Cvg;
                 case "cvn": return Language.Cvn;
@@ -10118,6 +10428,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "dhu": return Language.Dhu;
                 case "dhv": return Language.Dhv;
                 case "dhw": return Language.Dhw;
+                case "dhx": return Language.Dhx;
                 case "dia": return Language.Dia;
                 case "dib": return Language.Dib;
                 case "dic": return Language.Dic;
@@ -10159,12 +10470,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "dju": return Language.Dju;
                 case "djw": return Language.Djw;
                 case "dka": return Language.Dka;
+                case "dkg": return Language.Dkg;
                 case "dkk": return Language.Dkk;
                 case "dkl": return Language.Dkl;
                 case "dkr": return Language.Dkr;
                 case "dks": return Language.Dks;
                 case "dkx": return Language.Dkx;
                 case "dlg": return Language.Dlg;
+                case "dlk": return Language.Dlk;
                 case "dlm": return Language.Dlm;
                 case "dln": return Language.Dln;
                 case "dma": return Language.Dma;
@@ -10172,6 +10485,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "dmc": return Language.Dmc;
                 case "dmd": return Language.Dmd;
                 case "dme": return Language.Dme;
+                case "dmf": return Language.Dmf;
                 case "dmg": return Language.Dmg;
                 case "dmk": return Language.Dmk;
                 case "dml": return Language.Dml;
@@ -10182,6 +10496,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "dms": return Language.Dms;
                 case "dmu": return Language.Dmu;
                 case "dmv": return Language.Dmv;
+                case "dmw": return Language.Dmw;
                 case "dmx": return Language.Dmx;
                 case "dmy": return Language.Dmy;
                 case "dna": return Language.Dna;
@@ -10189,8 +10504,10 @@ namespace Algenta.Globalization.LanguageTags
                 case "dne": return Language.Dne;
                 case "dng": return Language.Dng;
                 case "dni": return Language.Dni;
+                case "dnj": return Language.Dnj;
                 case "dnk": return Language.Dnk;
                 case "dnn": return Language.Dnn;
+                case "dno": return Language.Dno;
                 case "dnr": return Language.Dnr;
                 case "dnt": return Language.Dnt;
                 case "dnu": return Language.Dnu;
@@ -10245,6 +10562,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "dsn": return Language.Dsn;
                 case "dso": return Language.Dso;
                 case "dsq": return Language.Dsq;
+                case "dsz": return Language.Dsz;
                 case "dta": return Language.Dta;
                 case "dtb": return Language.Dtb;
                 case "dtd": return Language.Dtd;
@@ -10252,6 +10570,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "dti": return Language.Dti;
                 case "dtk": return Language.Dtk;
                 case "dtm": return Language.Dtm;
+                case "dtn": return Language.Dtn;
                 case "dto": return Language.Dto;
                 case "dtp": return Language.Dtp;
                 case "dtr": return Language.Dtr;
@@ -10287,10 +10606,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "dv": return Language.Dv;
                 case "dva": return Language.Dva;
                 case "dwa": return Language.Dwa;
+                case "dwk": return Language.Dwk;
                 case "dwl": return Language.Dwl;
                 case "dwr": return Language.Dwr;
                 case "dws": return Language.Dws;
+                case "dwu": return Language.Dwu;
                 case "dww": return Language.Dww;
+                case "dwy": return Language.Dwy;
+                case "dwz": return Language.Dwz;
                 case "dya": return Language.Dya;
                 case "dyb": return Language.Dyb;
                 case "dyd": return Language.Dyd;
@@ -10304,9 +10627,12 @@ namespace Algenta.Globalization.LanguageTags
                 case "dz": return Language.Dz;
                 case "dza": return Language.Dza;
                 case "dzd": return Language.Dzd;
+                case "dze": return Language.Dze;
                 case "dzg": return Language.Dzg;
                 case "dzl": return Language.Dzl;
                 case "dzn": return Language.Dzn;
+                case "eaa": return Language.Eaa;
+                case "ebc": return Language.Ebc;
                 case "ebg": return Language.Ebg;
                 case "ebk": return Language.Ebk;
                 case "ebo": return Language.Ebo;
@@ -10322,15 +10648,18 @@ namespace Algenta.Globalization.LanguageTags
                 case "efi": return Language.Efi;
                 case "ega": return Language.Ega;
                 case "egl": return Language.Egl;
+                case "egm": return Language.Egm;
                 case "ego": return Language.Ego;
                 case "egx": return Language.Egx;
                 case "egy": return Language.Egy;
+                case "ehs": return Language.Ehs;
                 case "ehu": return Language.Ehu;
                 case "eip": return Language.Eip;
                 case "eit": return Language.Eit;
                 case "eiv": return Language.Eiv;
                 case "eja": return Language.Eja;
                 case "eka": return Language.Eka;
+                case "ekc": return Language.Ekc;
                 case "eke": return Language.Eke;
                 case "ekg": return Language.Ekg;
                 case "eki": return Language.Eki;
@@ -10361,11 +10690,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "emn": return Language.Emn;
                 case "emo": return Language.Emo;
                 case "emp": return Language.Emp;
+                case "emq": return Language.Emq;
                 case "ems": return Language.Ems;
                 case "emu": return Language.Emu;
                 case "emw": return Language.Emw;
                 case "emx": return Language.Emx;
                 case "emy": return Language.Emy;
+                case "emz": return Language.Emz;
                 case "en": return Language.En;
                 case "ena": return Language.Ena;
                 case "enb": return Language.Enb;
@@ -10373,6 +10704,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "end": return Language.End;
                 case "enf": return Language.Enf;
                 case "enh": return Language.Enh;
+                case "enl": return Language.Enl;
                 case "enm": return Language.Enm;
                 case "enn": return Language.Enn;
                 case "eno": return Language.Eno;
@@ -10381,6 +10713,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "enu": return Language.Enu;
                 case "env": return Language.Env;
                 case "enw": return Language.Enw;
+                case "enx": return Language.Enx;
                 case "eo": return Language.Eo;
                 case "eot": return Language.Eot;
                 case "epi": return Language.Epi;
@@ -10396,6 +10729,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "erw": return Language.Erw;
                 case "es": return Language.Es;
                 case "ese": return Language.Ese;
+                case "esg": return Language.Esg;
                 case "esh": return Language.Esh;
                 case "esi": return Language.Esi;
                 case "esk": return Language.Esk;
@@ -10407,6 +10741,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ess": return Language.Ess;
                 case "esu": return Language.Esu;
                 case "esx": return Language.Esx;
+                case "esy": return Language.Esy;
                 case "et": return Language.Et;
                 case "etb": return Language.Etb;
                 case "etc": return Language.Etc;
@@ -10428,6 +10763,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ext": return Language.Ext;
                 case "eya": return Language.Eya;
                 case "eyo": return Language.Eyo;
+                case "eza": return Language.Eza;
                 case "eze": return Language.Eze;
                 case "fa": return Language.Fa;
                 case "faa": return Language.Faa;
@@ -10459,6 +10795,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "fi": return Language.Fi;
                 case "fia": return Language.Fia;
                 case "fie": return Language.Fie;
+                case "fif": return Language.Fif;
                 case "fil": return Language.Fil;
                 case "fip": return Language.Fip;
                 case "fir": return Language.Fir;
@@ -10477,6 +10814,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "fly": return Language.Fly;
                 case "fmp": return Language.Fmp;
                 case "fmu": return Language.Fmu;
+                case "fnb": return Language.Fnb;
                 case "fng": return Language.Fng;
                 case "fni": return Language.Fni;
                 case "fo": return Language.Fo;
@@ -10571,6 +10909,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "gbs": return Language.Gbs;
                 case "gbu": return Language.Gbu;
                 case "gbv": return Language.Gbv;
+                case "gbw": return Language.Gbw;
                 case "gbx": return Language.Gbx;
                 case "gby": return Language.Gby;
                 case "gbz": return Language.Gbz;
@@ -10601,12 +10940,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "gdq": return Language.Gdq;
                 case "gdr": return Language.Gdr;
                 case "gds": return Language.Gds;
+                case "gdt": return Language.Gdt;
                 case "gdu": return Language.Gdu;
                 case "gdx": return Language.Gdx;
                 case "gea": return Language.Gea;
                 case "geb": return Language.Geb;
                 case "gec": return Language.Gec;
                 case "ged": return Language.Ged;
+                case "gef": return Language.Gef;
                 case "geg": return Language.Geg;
                 case "geh": return Language.Geh;
                 case "gei": return Language.Gei;
@@ -10616,6 +10957,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "gem": return Language.Gem;
                 case "geq": return Language.Geq;
                 case "ges": return Language.Ges;
+                case "gev": return Language.Gev;
                 case "gew": return Language.Gew;
                 case "gex": return Language.Gex;
                 case "gey": return Language.Gey;
@@ -10651,7 +10993,10 @@ namespace Algenta.Globalization.LanguageTags
                 case "gib": return Language.Gib;
                 case "gic": return Language.Gic;
                 case "gid": return Language.Gid;
+                case "gie": return Language.Gie;
                 case "gig": return Language.Gig;
+                case "gih": return Language.Gih;
+                case "gii": return Language.Gii;
                 case "gil": return Language.Gil;
                 case "gim": return Language.Gim;
                 case "gin": return Language.Gin;
@@ -10668,20 +11013,26 @@ namespace Algenta.Globalization.LanguageTags
                 case "giz": return Language.Giz;
                 case "gji": return Language.Gji;
                 case "gjk": return Language.Gjk;
+                case "gjm": return Language.Gjm;
                 case "gjn": return Language.Gjn;
+                case "gjr": return Language.Gjr;
                 case "gju": return Language.Gju;
                 case "gka": return Language.Gka;
+                case "gkd": return Language.Gkd;
                 case "gke": return Language.Gke;
                 case "gkn": return Language.Gkn;
                 case "gko": return Language.Gko;
                 case "gkp": return Language.Gkp;
+                case "gku": return Language.Gku;
                 case "gl": return Language.Gl;
+                case "glb": return Language.Glb;
                 case "glc": return Language.Glc;
                 case "gld": return Language.Gld;
                 case "glh": return Language.Glh;
                 case "gli": return Language.Gli;
                 case "glj": return Language.Glj;
                 case "glk": return Language.Glk;
+                case "gll": return Language.Gll;
                 case "glo": return Language.Glo;
                 case "glr": return Language.Glr;
                 case "glu": return Language.Glu;
@@ -10691,16 +11042,19 @@ namespace Algenta.Globalization.LanguageTags
                 case "gmb": return Language.Gmb;
                 case "gmd": return Language.Gmd;
                 case "gme": return Language.Gme;
+                case "gmg": return Language.Gmg;
                 case "gmh": return Language.Gmh;
                 case "gml": return Language.Gml;
                 case "gmm": return Language.Gmm;
                 case "gmn": return Language.Gmn;
                 case "gmq": return Language.Gmq;
+                case "gmr": return Language.Gmr;
                 case "gmu": return Language.Gmu;
                 case "gmv": return Language.Gmv;
                 case "gmw": return Language.Gmw;
                 case "gmx": return Language.Gmx;
                 case "gmy": return Language.Gmy;
+                case "gmz": return Language.Gmz;
                 case "gn": return Language.Gn;
                 case "gna": return Language.Gna;
                 case "gnb": return Language.Gnb;
@@ -10710,6 +11064,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "gng": return Language.Gng;
                 case "gnh": return Language.Gnh;
                 case "gni": return Language.Gni;
+                case "gnj": return Language.Gnj;
                 case "gnk": return Language.Gnk;
                 case "gnl": return Language.Gnl;
                 case "gnm": return Language.Gnm;
@@ -10742,6 +11097,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "gos": return Language.Gos;
                 case "got": return Language.Got;
                 case "gou": return Language.Gou;
+                case "gov": return Language.Gov;
                 case "gow": return Language.Gow;
                 case "gox": return Language.Gox;
                 case "goy": return Language.Goy;
@@ -10786,6 +11142,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "gsw": return Language.Gsw;
                 case "gta": return Language.Gta;
                 case "gti": return Language.Gti;
+                case "gtu": return Language.Gtu;
                 case "gu": return Language.Gu;
                 case "gua": return Language.Gua;
                 case "gub": return Language.Gub;
@@ -10852,8 +11209,10 @@ namespace Algenta.Globalization.LanguageTags
                 case "gyl": return Language.Gyl;
                 case "gym": return Language.Gym;
                 case "gyn": return Language.Gyn;
+                case "gyo": return Language.Gyo;
                 case "gyr": return Language.Gyr;
                 case "gyy": return Language.Gyy;
+                case "gyz": return Language.Gyz;
                 case "gza": return Language.Gza;
                 case "gzi": return Language.Gzi;
                 case "gzn": return Language.Gzn;
@@ -10924,7 +11283,9 @@ namespace Algenta.Globalization.LanguageTags
                 case "hji": return Language.Hji;
                 case "hka": return Language.Hka;
                 case "hke": return Language.Hke;
+                case "hkh": return Language.Hkh;
                 case "hkk": return Language.Hkk;
+                case "hkn": return Language.Hkn;
                 case "hks": return Language.Hks;
                 case "hla": return Language.Hla;
                 case "hlb": return Language.Hlb;
@@ -10960,6 +11321,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "hna": return Language.Hna;
                 case "hnd": return Language.Hnd;
                 case "hne": return Language.Hne;
+                case "hng": return Language.Hng;
                 case "hnh": return Language.Hnh;
                 case "hni": return Language.Hni;
                 case "hnj": return Language.Hnj;
@@ -10992,13 +11354,16 @@ namespace Algenta.Globalization.LanguageTags
                 case "hps": return Language.Hps;
                 case "hr": return Language.Hr;
                 case "hra": return Language.Hra;
+                case "hrc": return Language.Hrc;
                 case "hre": return Language.Hre;
                 case "hrk": return Language.Hrk;
                 case "hrm": return Language.Hrm;
                 case "hro": return Language.Hro;
+                case "hrp": return Language.Hrp;
                 case "hrr": return Language.Hrr;
                 case "hrt": return Language.Hrt;
                 case "hru": return Language.Hru;
+                case "hrw": return Language.Hrw;
                 case "hrx": return Language.Hrx;
                 case "hrz": return Language.Hrz;
                 case "hsb": return Language.Hsb;
@@ -11047,6 +11412,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "hwo": return Language.Hwo;
                 case "hy": return Language.Hy;
                 case "hya": return Language.Hya;
+                case "hyw": return Language.Hyw;
                 case "hyx": return Language.Hyx;
                 case "hz": return Language.Hz;
                 case "ia": return Language.Ia;
@@ -11059,6 +11425,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ibd": return Language.Ibd;
                 case "ibe": return Language.Ibe;
                 case "ibg": return Language.Ibg;
+                case "ibh": return Language.Ibh;
                 case "ibi": return Language.Ibi;
                 case "ibl": return Language.Ibl;
                 case "ibm": return Language.Ibm;
@@ -11105,6 +11472,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ihp": return Language.Ihp;
                 case "ihw": return Language.Ihw;
                 case "ii": return Language.Ii;
+                case "iin": return Language.Iin;
                 case "iir": return Language.Iir;
                 case "ijc": return Language.Ijc;
                 case "ije": return Language.Ije;
@@ -11119,6 +11487,8 @@ namespace Algenta.Globalization.LanguageTags
                 case "ikl": return Language.Ikl;
                 case "iko": return Language.Iko;
                 case "ikp": return Language.Ikp;
+                case "ikr": return Language.Ikr;
+                case "iks": return Language.Iks;
                 case "ikt": return Language.Ikt;
                 case "ikv": return Language.Ikv;
                 case "ikw": return Language.Ikw;
@@ -11130,7 +11500,9 @@ namespace Algenta.Globalization.LanguageTags
                 case "ili": return Language.Ili;
                 case "ilk": return Language.Ilk;
                 case "ill": return Language.Ill;
+                case "ilm": return Language.Ilm;
                 case "ilo": return Language.Ilo;
+                case "ilp": return Language.Ilp;
                 case "ils": return Language.Ils;
                 case "ilu": return Language.Ilu;
                 case "ilv": return Language.Ilv;
@@ -11143,6 +11515,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "imo": return Language.Imo;
                 case "imr": return Language.Imr;
                 case "ims": return Language.Ims;
+                case "imt": return Language.Imt;
                 case "imy": return Language.Imy;
                 case "in": return Language.In;
                 case "inb": return Language.Inb;
@@ -11166,6 +11539,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ipi": return Language.Ipi;
                 case "ipo": return Language.Ipo;
                 case "iqu": return Language.Iqu;
+                case "iqw": return Language.Iqw;
                 case "ira": return Language.Ira;
                 case "ire": return Language.Ire;
                 case "irh": return Language.Irh;
@@ -11195,6 +11569,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "it": return Language.It;
                 case "itb": return Language.Itb;
                 case "itc": return Language.Itc;
+                case "itd": return Language.Itd;
                 case "ite": return Language.Ite;
                 case "iti": return Language.Iti;
                 case "itk": return Language.Itk;
@@ -11226,6 +11601,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "izh": return Language.Izh;
                 case "izi": return Language.Izi;
                 case "izr": return Language.Izr;
+                case "izz": return Language.Izz;
                 case "ja": return Language.Ja;
                 case "jaa": return Language.Jaa;
                 case "jab": return Language.Jab;
@@ -11249,8 +11625,10 @@ namespace Algenta.Globalization.LanguageTags
                 case "jay": return Language.Jay;
                 case "jaz": return Language.Jaz;
                 case "jbe": return Language.Jbe;
+                case "jbi": return Language.Jbi;
                 case "jbj": return Language.Jbj;
                 case "jbk": return Language.Jbk;
+                case "jbm": return Language.Jbm;
                 case "jbn": return Language.Jbn;
                 case "jbo": return Language.Jbo;
                 case "jbr": return Language.Jbr;
@@ -11296,11 +11674,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "jiu": return Language.Jiu;
                 case "jiv": return Language.Jiv;
                 case "jiy": return Language.Jiy;
+                case "jje": return Language.Jje;
                 case "jjr": return Language.Jjr;
+                case "jka": return Language.Jka;
                 case "jkm": return Language.Jkm;
                 case "jko": return Language.Jko;
                 case "jkp": return Language.Jkp;
                 case "jkr": return Language.Jkr;
+                case "jks": return Language.Jks;
                 case "jku": return Language.Jku;
                 case "jle": return Language.Jle;
                 case "jls": return Language.Jls;
@@ -11324,6 +11705,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "jns": return Language.Jns;
                 case "job": return Language.Job;
                 case "jod": return Language.Jod;
+                case "jog": return Language.Jog;
                 case "jor": return Language.Jor;
                 case "jos": return Language.Jos;
                 case "jow": return Language.Jow;
@@ -11609,6 +11991,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "kjs": return Language.Kjs;
                 case "kjt": return Language.Kjt;
                 case "kju": return Language.Kju;
+                case "kjv": return Language.Kjv;
                 case "kjx": return Language.Kjx;
                 case "kjy": return Language.Kjy;
                 case "kjz": return Language.Kjz;
@@ -12087,6 +12470,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "lcp": return Language.Lcp;
                 case "lcq": return Language.Lcq;
                 case "lcs": return Language.Lcs;
+                case "lda": return Language.Lda;
                 case "ldb": return Language.Ldb;
                 case "ldd": return Language.Ldd;
                 case "ldg": return Language.Ldg;
@@ -12138,6 +12522,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "lgl": return Language.Lgl;
                 case "lgm": return Language.Lgm;
                 case "lgn": return Language.Lgn;
+                case "lgo": return Language.Lgo;
                 case "lgq": return Language.Lgq;
                 case "lgr": return Language.Lgr;
                 case "lgt": return Language.Lgt;
@@ -12177,10 +12562,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "lix": return Language.Lix;
                 case "liy": return Language.Liy;
                 case "liz": return Language.Liz;
+                case "lja": return Language.Lja;
                 case "lje": return Language.Lje;
                 case "lji": return Language.Lji;
                 case "ljl": return Language.Ljl;
                 case "ljp": return Language.Ljp;
+                case "ljw": return Language.Ljw;
+                case "ljx": return Language.Ljx;
                 case "lka": return Language.Lka;
                 case "lkb": return Language.Lkb;
                 case "lkc": return Language.Lkc;
@@ -12190,11 +12578,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "lki": return Language.Lki;
                 case "lkj": return Language.Lkj;
                 case "lkl": return Language.Lkl;
+                case "lkm": return Language.Lkm;
                 case "lkn": return Language.Lkn;
                 case "lko": return Language.Lko;
                 case "lkr": return Language.Lkr;
                 case "lks": return Language.Lks;
                 case "lkt": return Language.Lkt;
+                case "lku": return Language.Lku;
                 case "lky": return Language.Lky;
                 case "lla": return Language.Lla;
                 case "llb": return Language.Llb;
@@ -12254,6 +12644,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "lno": return Language.Lno;
                 case "lns": return Language.Lns;
                 case "lnu": return Language.Lnu;
+                case "lnw": return Language.Lnw;
                 case "lnz": return Language.Lnz;
                 case "lo": return Language.Lo;
                 case "loa": return Language.Loa;
@@ -12286,6 +12677,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "lpn": return Language.Lpn;
                 case "lpo": return Language.Lpo;
                 case "lpx": return Language.Lpx;
+                case "lqr": return Language.Lqr;
                 case "lra": return Language.Lra;
                 case "lrc": return Language.Lrc;
                 case "lre": return Language.Lre;
@@ -12301,6 +12693,8 @@ namespace Algenta.Globalization.LanguageTags
                 case "lrv": return Language.Lrv;
                 case "lrz": return Language.Lrz;
                 case "lsa": return Language.Lsa;
+                case "lsb": return Language.Lsb;
+                case "lsc": return Language.Lsc;
                 case "lsd": return Language.Lsd;
                 case "lse": return Language.Lse;
                 case "lsg": return Language.Lsg;
@@ -12308,15 +12702,19 @@ namespace Algenta.Globalization.LanguageTags
                 case "lsi": return Language.Lsi;
                 case "lsl": return Language.Lsl;
                 case "lsm": return Language.Lsm;
+                case "lsn": return Language.Lsn;
                 case "lso": return Language.Lso;
                 case "lsp": return Language.Lsp;
                 case "lsr": return Language.Lsr;
                 case "lss": return Language.Lss;
                 case "lst": return Language.Lst;
+                case "lsv": return Language.Lsv;
+                case "lsw": return Language.Lsw;
                 case "lsy": return Language.Lsy;
                 case "lt": return Language.Lt;
                 case "ltc": return Language.Ltc;
                 case "ltg": return Language.Ltg;
+                case "lth": return Language.Lth;
                 case "lti": return Language.Lti;
                 case "ltn": return Language.Ltn;
                 case "lto": return Language.Lto;
@@ -12347,6 +12745,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "luz": return Language.Luz;
                 case "lv": return Language.Lv;
                 case "lva": return Language.Lva;
+                case "lvi": return Language.Lvi;
                 case "lvk": return Language.Lvk;
                 case "lvs": return Language.Lvs;
                 case "lvu": return Language.Lvu;
@@ -12357,8 +12756,11 @@ namespace Algenta.Globalization.LanguageTags
                 case "lwl": return Language.Lwl;
                 case "lwm": return Language.Lwm;
                 case "lwo": return Language.Lwo;
+                case "lws": return Language.Lws;
                 case "lwt": return Language.Lwt;
+                case "lwu": return Language.Lwu;
                 case "lww": return Language.Lww;
+                case "lxm": return Language.Lxm;
                 case "lya": return Language.Lya;
                 case "lyg": return Language.Lyg;
                 case "lyn": return Language.Lyn;
@@ -12593,6 +12995,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "miy": return Language.Miy;
                 case "miz": return Language.Miz;
                 case "mja": return Language.Mja;
+                case "mjb": return Language.Mjb;
                 case "mjc": return Language.Mjc;
                 case "mjd": return Language.Mjd;
                 case "mje": return Language.Mje;
@@ -13087,6 +13490,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ncn": return Language.Ncn;
                 case "nco": return Language.Nco;
                 case "ncp": return Language.Ncp;
+                case "ncq": return Language.Ncq;
                 case "ncr": return Language.Ncr;
                 case "ncs": return Language.Ncs;
                 case "nct": return Language.Nct;
@@ -13273,11 +13677,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "nlj": return Language.Nlj;
                 case "nlk": return Language.Nlk;
                 case "nll": return Language.Nll;
+                case "nlm": return Language.Nlm;
                 case "nln": return Language.Nln;
                 case "nlo": return Language.Nlo;
+                case "nlq": return Language.Nlq;
                 case "nlr": return Language.Nlr;
                 case "nlu": return Language.Nlu;
                 case "nlv": return Language.Nlv;
+                case "nlw": return Language.Nlw;
                 case "nlx": return Language.Nlx;
                 case "nly": return Language.Nly;
                 case "nlz": return Language.Nlz;
@@ -13344,6 +13751,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "noi": return Language.Noi;
                 case "noj": return Language.Noj;
                 case "nok": return Language.Nok;
+                case "nol": return Language.Nol;
                 case "nom": return Language.Nom;
                 case "non": return Language.Non;
                 case "noo": return Language.Noo;
@@ -13366,20 +13774,26 @@ namespace Algenta.Globalization.LanguageTags
                 case "npo": return Language.Npo;
                 case "nps": return Language.Nps;
                 case "npu": return Language.Npu;
+                case "npx": return Language.Npx;
                 case "npy": return Language.Npy;
                 case "nqg": return Language.Nqg;
                 case "nqk": return Language.Nqk;
+                case "nql": return Language.Nql;
                 case "nqm": return Language.Nqm;
                 case "nqn": return Language.Nqn;
                 case "nqo": return Language.Nqo;
+                case "nqq": return Language.Nqq;
+                case "nqt": return Language.Nqt;
                 case "nqy": return Language.Nqy;
                 case "nr": return Language.Nr;
                 case "nra": return Language.Nra;
                 case "nrb": return Language.Nrb;
                 case "nrc": return Language.Nrc;
                 case "nre": return Language.Nre;
+                case "nrf": return Language.Nrf;
                 case "nrg": return Language.Nrg;
                 case "nri": return Language.Nri;
+                case "nrk": return Language.Nrk;
                 case "nrl": return Language.Nrl;
                 case "nrm": return Language.Nrm;
                 case "nrn": return Language.Nrn;
@@ -13390,6 +13804,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "nrx": return Language.Nrx;
                 case "nrz": return Language.Nrz;
                 case "nsa": return Language.Nsa;
+                case "nsb": return Language.Nsb;
                 case "nsc": return Language.Nsc;
                 case "nsd": return Language.Nsd;
                 case "nse": return Language.Nse;
@@ -13413,7 +13828,9 @@ namespace Algenta.Globalization.LanguageTags
                 case "nsx": return Language.Nsx;
                 case "nsy": return Language.Nsy;
                 case "nsz": return Language.Nsz;
+                case "ntd": return Language.Ntd;
                 case "nte": return Language.Nte;
+                case "ntg": return Language.Ntg;
                 case "nti": return Language.Nti;
                 case "ntj": return Language.Ntj;
                 case "ntk": return Language.Ntk;
@@ -13466,6 +13883,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "nwm": return Language.Nwm;
                 case "nwo": return Language.Nwo;
                 case "nwr": return Language.Nwr;
+                case "nww": return Language.Nww;
                 case "nwx": return Language.Nwx;
                 case "nwy": return Language.Nwy;
                 case "nxa": return Language.Nxa;
@@ -13477,6 +13895,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "nxl": return Language.Nxl;
                 case "nxm": return Language.Nxm;
                 case "nxn": return Language.Nxn;
+                case "nxo": return Language.Nxo;
                 case "nxq": return Language.Nxq;
                 case "nxr": return Language.Nxr;
                 case "nxu": return Language.Nxu;
@@ -13508,6 +13927,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "nyy": return Language.Nyy;
                 case "nza": return Language.Nza;
                 case "nzb": return Language.Nzb;
+                case "nzd": return Language.Nzd;
                 case "nzi": return Language.Nzi;
                 case "nzk": return Language.Nzk;
                 case "nzm": return Language.Nzm;
@@ -13530,6 +13950,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "oc": return Language.Oc;
                 case "oca": return Language.Oca;
                 case "och": return Language.Och;
+                case "ocm": return Language.Ocm;
                 case "oco": return Language.Oco;
                 case "ocu": return Language.Ocu;
                 case "oda": return Language.Oda;
@@ -13548,6 +13969,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "oht": return Language.Oht;
                 case "ohu": return Language.Ohu;
                 case "oia": return Language.Oia;
+                case "oie": return Language.Oie;
                 case "oin": return Language.Oin;
                 case "oj": return Language.Oj;
                 case "ojb": return Language.Ojb;
@@ -13559,6 +13981,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ojw": return Language.Ojw;
                 case "oka": return Language.Oka;
                 case "okb": return Language.Okb;
+                case "okc": return Language.Okc;
                 case "okd": return Language.Okd;
                 case "oke": return Language.Oke;
                 case "okg": return Language.Okg;
@@ -13575,12 +13998,16 @@ namespace Algenta.Globalization.LanguageTags
                 case "oku": return Language.Oku;
                 case "okv": return Language.Okv;
                 case "okx": return Language.Okx;
+                case "okz": return Language.Okz;
                 case "ola": return Language.Ola;
                 case "old": return Language.Old;
                 case "ole": return Language.Ole;
+                case "olk": return Language.Olk;
                 case "olm": return Language.Olm;
                 case "olo": return Language.Olo;
                 case "olr": return Language.Olr;
+                case "olt": return Language.Olt;
+                case "olu": return Language.Olu;
                 case "om": return Language.Om;
                 case "oma": return Language.Oma;
                 case "omb": return Language.Omb;
@@ -13600,6 +14027,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "omv": return Language.Omv;
                 case "omw": return Language.Omw;
                 case "omx": return Language.Omx;
+                case "omy": return Language.Omy;
                 case "ona": return Language.Ona;
                 case "onb": return Language.Onb;
                 case "one": return Language.One;
@@ -13648,6 +14076,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "osa": return Language.Osa;
                 case "osc": return Language.Osc;
                 case "osi": return Language.Osi;
+                case "osn": return Language.Osn;
                 case "oso": return Language.Oso;
                 case "osp": return Language.Osp;
                 case "ost": return Language.Ost;
@@ -13678,6 +14107,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "oui": return Language.Oui;
                 case "oum": return Language.Oum;
                 case "oun": return Language.Oun;
+                case "ovd": return Language.Ovd;
                 case "owi": return Language.Owi;
                 case "owl": return Language.Owl;
                 case "oyb": return Language.Oyb;
@@ -13718,6 +14148,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "pbh": return Language.Pbh;
                 case "pbi": return Language.Pbi;
                 case "pbl": return Language.Pbl;
+                case "pbm": return Language.Pbm;
                 case "pbn": return Language.Pbn;
                 case "pbo": return Language.Pbo;
                 case "pbp": return Language.Pbp;
@@ -13776,6 +14207,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "pfe": return Language.Pfe;
                 case "pfl": return Language.Pfl;
                 case "pga": return Language.Pga;
+                case "pgd": return Language.Pgd;
                 case "pgg": return Language.Pgg;
                 case "pgi": return Language.Pgi;
                 case "pgk": return Language.Pgk;
@@ -13784,11 +14216,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "pgs": return Language.Pgs;
                 case "pgu": return Language.Pgu;
                 case "pgy": return Language.Pgy;
+                case "pgz": return Language.Pgz;
                 case "pha": return Language.Pha;
                 case "phd": return Language.Phd;
                 case "phg": return Language.Phg;
                 case "phh": return Language.Phh;
                 case "phi": return Language.Phi;
+                case "phj": return Language.Phj;
                 case "phk": return Language.Phk;
                 case "phl": return Language.Phl;
                 case "phm": return Language.Phm;
@@ -13888,11 +14322,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "pna": return Language.Pna;
                 case "pnb": return Language.Pnb;
                 case "pnc": return Language.Pnc;
+                case "pnd": return Language.Pnd;
                 case "pne": return Language.Pne;
                 case "png": return Language.Png;
                 case "pnh": return Language.Pnh;
                 case "pni": return Language.Pni;
+                case "pnj": return Language.Pnj;
                 case "pnk": return Language.Pnk;
+                case "pnl": return Language.Pnl;
                 case "pnm": return Language.Pnm;
                 case "pnn": return Language.Pnn;
                 case "pno": return Language.Pno;
@@ -13996,6 +14433,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ptn": return Language.Ptn;
                 case "pto": return Language.Pto;
                 case "ptp": return Language.Ptp;
+                case "ptq": return Language.Ptq;
                 case "ptr": return Language.Ptr;
                 case "ptt": return Language.Ptt;
                 case "ptu": return Language.Ptu;
@@ -14026,6 +14464,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "pwa": return Language.Pwa;
                 case "pwb": return Language.Pwb;
                 case "pwg": return Language.Pwg;
+                case "pwi": return Language.Pwi;
                 case "pwm": return Language.Pwm;
                 case "pwn": return Language.Pwn;
                 case "pwo": return Language.Pwo;
@@ -14039,6 +14478,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "pyu": return Language.Pyu;
                 case "pyx": return Language.Pyx;
                 case "pyy": return Language.Pyy;
+                case "pzh": return Language.Pzh;
                 case "pzn": return Language.Pzn;
                 case "qaa": return Language.Qaa;
                 case "qab": return Language.Qab;
@@ -14673,6 +15113,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "rhg": return Language.Rhg;
                 case "rhp": return Language.Rhp;
                 case "ria": return Language.Ria;
+                case "rib": return Language.Rib;
                 case "rie": return Language.Rie;
                 case "rif": return Language.Rif;
                 case "ril": return Language.Ril;
@@ -14690,6 +15131,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "rki": return Language.Rki;
                 case "rkm": return Language.Rkm;
                 case "rkt": return Language.Rkt;
+                case "rkw": return Language.Rkw;
                 case "rm": return Language.Rm;
                 case "rma": return Language.Rma;
                 case "rmb": return Language.Rmb;
@@ -14718,6 +15160,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "rmz": return Language.Rmz;
                 case "rn": return Language.Rn;
                 case "rna": return Language.Rna;
+                case "rnb": return Language.Rnb;
                 case "rnd": return Language.Rnd;
                 case "rng": return Language.Rng;
                 case "rnl": return Language.Rnl;
@@ -14747,10 +15190,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "rrt": return Language.Rrt;
                 case "rsb": return Language.Rsb;
                 case "rsi": return Language.Rsi;
+                case "rsk": return Language.Rsk;
                 case "rsl": return Language.Rsl;
+                case "rsm": return Language.Rsm;
+                case "rsn": return Language.Rsn;
                 case "rtc": return Language.Rtc;
                 case "rth": return Language.Rth;
                 case "rtm": return Language.Rtm;
+                case "rts": return Language.Rts;
                 case "rtw": return Language.Rtw;
                 case "ru": return Language.Ru;
                 case "rub": return Language.Rub;
@@ -14771,12 +15218,16 @@ namespace Algenta.Globalization.LanguageTags
                 case "rw": return Language.Rw;
                 case "rwa": return Language.Rwa;
                 case "rwk": return Language.Rwk;
+                case "rwl": return Language.Rwl;
                 case "rwm": return Language.Rwm;
                 case "rwo": return Language.Rwo;
                 case "rwr": return Language.Rwr;
+                case "rxd": return Language.Rxd;
+                case "rxw": return Language.Rxw;
                 case "ryn": return Language.Ryn;
                 case "rys": return Language.Rys;
                 case "ryu": return Language.Ryu;
+                case "rzh": return Language.Rzh;
                 case "sa": return Language.Sa;
                 case "saa": return Language.Saa;
                 case "sab": return Language.Sab;
@@ -14843,6 +15294,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "scp": return Language.Scp;
                 case "scq": return Language.Scq;
                 case "scs": return Language.Scs;
+                case "sct": return Language.Sct;
                 case "scu": return Language.Scu;
                 case "scv": return Language.Scv;
                 case "scw": return Language.Scw;
@@ -14862,6 +15314,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "sdn": return Language.Sdn;
                 case "sdo": return Language.Sdo;
                 case "sdp": return Language.Sdp;
+                case "sdq": return Language.Sdq;
                 case "sdr": return Language.Sdr;
                 case "sds": return Language.Sds;
                 case "sdt": return Language.Sdt;
@@ -15122,6 +15575,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "spk": return Language.Spk;
                 case "spl": return Language.Spl;
                 case "spm": return Language.Spm;
+                case "spn": return Language.Spn;
                 case "spo": return Language.Spo;
                 case "spp": return Language.Spp;
                 case "spq": return Language.Spq;
@@ -15145,6 +15599,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "sqs": return Language.Sqs;
                 case "sqt": return Language.Sqt;
                 case "squ": return Language.Squ;
+                case "sqx": return Language.Sqx;
                 case "sr": return Language.Sr;
                 case "sra": return Language.Sra;
                 case "srb": return Language.Srb;
@@ -15218,6 +15673,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "stu": return Language.Stu;
                 case "stv": return Language.Stv;
                 case "stw": return Language.Stw;
+                case "sty": return Language.Sty;
                 case "su": return Language.Su;
                 case "sua": return Language.Sua;
                 case "sub": return Language.Sub;
@@ -15229,6 +15685,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "suk": return Language.Suk;
                 case "sul": return Language.Sul;
                 case "sum": return Language.Sum;
+                case "suo": return Language.Suo;
                 case "suq": return Language.Suq;
                 case "sur": return Language.Sur;
                 case "sus": return Language.Sus;
@@ -15244,6 +15701,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "svc": return Language.Svc;
                 case "sve": return Language.Sve;
                 case "svk": return Language.Svk;
+                case "svm": return Language.Svm;
                 case "svr": return Language.Svr;
                 case "svs": return Language.Svs;
                 case "svx": return Language.Svx;
@@ -15296,6 +15754,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "syr": return Language.Syr;
                 case "sys": return Language.Sys;
                 case "syw": return Language.Syw;
+                case "syx": return Language.Syx;
                 case "syy": return Language.Syy;
                 case "sza": return Language.Sza;
                 case "szb": return Language.Szb;
@@ -15306,8 +15765,10 @@ namespace Algenta.Globalization.LanguageTags
                 case "szl": return Language.Szl;
                 case "szn": return Language.Szn;
                 case "szp": return Language.Szp;
+                case "szs": return Language.Szs;
                 case "szv": return Language.Szv;
                 case "szw": return Language.Szw;
+                case "szy": return Language.Szy;
                 case "ta": return Language.Ta;
                 case "taa": return Language.Taa;
                 case "tab": return Language.Tab;
@@ -15393,6 +15854,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "tdj": return Language.Tdj;
                 case "tdk": return Language.Tdk;
                 case "tdl": return Language.Tdl;
+                case "tdm": return Language.Tdm;
                 case "tdn": return Language.Tdn;
                 case "tdo": return Language.Tdo;
                 case "tdq": return Language.Tdq;
@@ -15427,6 +15889,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "tew": return Language.Tew;
                 case "tex": return Language.Tex;
                 case "tey": return Language.Tey;
+                case "tez": return Language.Tez;
                 case "tfi": return Language.Tfi;
                 case "tfn": return Language.Tfn;
                 case "tfo": return Language.Tfo;
@@ -15506,12 +15969,15 @@ namespace Algenta.Globalization.LanguageTags
                 case "tja": return Language.Tja;
                 case "tjg": return Language.Tjg;
                 case "tji": return Language.Tji;
+                case "tjj": return Language.Tjj;
                 case "tjl": return Language.Tjl;
                 case "tjm": return Language.Tjm;
                 case "tjn": return Language.Tjn;
                 case "tjo": return Language.Tjo;
+                case "tjp": return Language.Tjp;
                 case "tjs": return Language.Tjs;
                 case "tju": return Language.Tju;
+                case "tjw": return Language.Tjw;
                 case "tk": return Language.Tk;
                 case "tka": return Language.Tka;
                 case "tkb": return Language.Tkb;
@@ -15529,6 +15995,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "tks": return Language.Tks;
                 case "tkt": return Language.Tkt;
                 case "tku": return Language.Tku;
+                case "tkv": return Language.Tkv;
                 case "tkw": return Language.Tkw;
                 case "tkx": return Language.Tkx;
                 case "tkz": return Language.Tkz;
@@ -15618,6 +16085,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "toh": return Language.Toh;
                 case "toi": return Language.Toi;
                 case "toj": return Language.Toj;
+                case "tok": return Language.Tok;
                 case "tol": return Language.Tol;
                 case "tom": return Language.Tom;
                 case "too": return Language.Too;
@@ -15778,6 +16246,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "tvt": return Language.Tvt;
                 case "tvu": return Language.Tvu;
                 case "tvw": return Language.Tvw;
+                case "tvx": return Language.Tvx;
                 case "tvy": return Language.Tvy;
                 case "tw": return Language.Tw;
                 case "twa": return Language.Twa;
@@ -15807,6 +16276,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "txg": return Language.Txg;
                 case "txh": return Language.Txh;
                 case "txi": return Language.Txi;
+                case "txj": return Language.Txj;
                 case "txm": return Language.Txm;
                 case "txn": return Language.Txn;
                 case "txo": return Language.Txo;
@@ -15832,10 +16302,12 @@ namespace Algenta.Globalization.LanguageTags
                 case "tyu": return Language.Tyu;
                 case "tyv": return Language.Tyv;
                 case "tyx": return Language.Tyx;
+                case "tyy": return Language.Tyy;
                 case "tyz": return Language.Tyz;
                 case "tza": return Language.Tza;
                 case "tzh": return Language.Tzh;
                 case "tzj": return Language.Tzj;
+                case "tzl": return Language.Tzl;
                 case "tzm": return Language.Tzm;
                 case "tzn": return Language.Tzn;
                 case "tzo": return Language.Tzo;
@@ -15863,6 +16335,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "uga": return Language.Uga;
                 case "ugb": return Language.Ugb;
                 case "uge": return Language.Uge;
+                case "ugh": return Language.Ugh;
                 case "ugn": return Language.Ugn;
                 case "ugo": return Language.Ugo;
                 case "ugy": return Language.Ugy;
@@ -15875,16 +16348,20 @@ namespace Algenta.Globalization.LanguageTags
                 case "uka": return Language.Uka;
                 case "ukg": return Language.Ukg;
                 case "ukh": return Language.Ukh;
+                case "uki": return Language.Uki;
+                case "ukk": return Language.Ukk;
                 case "ukl": return Language.Ukl;
                 case "ukp": return Language.Ukp;
                 case "ukq": return Language.Ukq;
                 case "uks": return Language.Uks;
                 case "uku": return Language.Uku;
+                case "ukv": return Language.Ukv;
                 case "ukw": return Language.Ukw;
                 case "uky": return Language.Uky;
                 case "ula": return Language.Ula;
                 case "ulb": return Language.Ulb;
                 case "ulc": return Language.Ulc;
+                case "ule": return Language.Ule;
                 case "ulf": return Language.Ulf;
                 case "uli": return Language.Uli;
                 case "ulk": return Language.Ulk;
@@ -15910,13 +16387,17 @@ namespace Algenta.Globalization.LanguageTags
                 case "und": return Language.Und;
                 case "une": return Language.Une;
                 case "ung": return Language.Ung;
+                case "uni": return Language.Uni;
                 case "unk": return Language.Unk;
                 case "unm": return Language.Unm;
+                case "unn": return Language.Unn;
                 case "unp": return Language.Unp;
                 case "unr": return Language.Unr;
+                case "unu": return Language.Unu;
                 case "unx": return Language.Unx;
                 case "unz": return Language.Unz;
                 case "uok": return Language.Uok;
+                case "uon": return Language.Uon;
                 case "upi": return Language.Upi;
                 case "upv": return Language.Upv;
                 case "ur": return Language.Ur;
@@ -15948,9 +16429,11 @@ namespace Algenta.Globalization.LanguageTags
                 case "usi": return Language.Usi;
                 case "usk": return Language.Usk;
                 case "usp": return Language.Usp;
+                case "uss": return Language.Uss;
                 case "usu": return Language.Usu;
                 case "uta": return Language.Uta;
                 case "ute": return Language.Ute;
+                case "uth": return Language.Uth;
                 case "utp": return Language.Utp;
                 case "utr": return Language.Utr;
                 case "utu": return Language.Utu;
@@ -16011,10 +16494,12 @@ namespace Algenta.Globalization.LanguageTags
                 case "vkk": return Language.Vkk;
                 case "vkl": return Language.Vkl;
                 case "vkm": return Language.Vkm;
+                case "vkn": return Language.Vkn;
                 case "vko": return Language.Vko;
                 case "vkp": return Language.Vkp;
                 case "vkt": return Language.Vkt;
                 case "vku": return Language.Vku;
+                case "vkz": return Language.Vkz;
                 case "vlp": return Language.Vlp;
                 case "vls": return Language.Vls;
                 case "vma": return Language.Vma;
@@ -16098,6 +16583,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "wbp": return Language.Wbp;
                 case "wbq": return Language.Wbq;
                 case "wbr": return Language.Wbr;
+                case "wbs": return Language.Wbs;
                 case "wbt": return Language.Wbt;
                 case "wbv": return Language.Wbv;
                 case "wbw": return Language.Wbw;
@@ -16106,10 +16592,14 @@ namespace Algenta.Globalization.LanguageTags
                 case "wdd": return Language.Wdd;
                 case "wdg": return Language.Wdg;
                 case "wdj": return Language.Wdj;
+                case "wdk": return Language.Wdk;
+                case "wdt": return Language.Wdt;
                 case "wdu": return Language.Wdu;
+                case "wdy": return Language.Wdy;
                 case "wea": return Language.Wea;
                 case "wec": return Language.Wec;
                 case "wed": return Language.Wed;
+                case "weg": return Language.Weg;
                 case "weh": return Language.Weh;
                 case "wei": return Language.Wei;
                 case "wem": return Language.Wem;
@@ -16158,12 +16648,15 @@ namespace Algenta.Globalization.LanguageTags
                 case "wkb": return Language.Wkb;
                 case "wkd": return Language.Wkd;
                 case "wkl": return Language.Wkl;
+                case "wkr": return Language.Wkr;
                 case "wku": return Language.Wku;
                 case "wkw": return Language.Wkw;
+                case "wky": return Language.Wky;
                 case "wla": return Language.Wla;
                 case "wlc": return Language.Wlc;
                 case "wle": return Language.Wle;
                 case "wlg": return Language.Wlg;
+                case "wlh": return Language.Wlh;
                 case "wli": return Language.Wli;
                 case "wlk": return Language.Wlk;
                 case "wll": return Language.Wll;
@@ -16181,6 +16674,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "wmc": return Language.Wmc;
                 case "wmd": return Language.Wmd;
                 case "wme": return Language.Wme;
+                case "wmg": return Language.Wmg;
                 case "wmh": return Language.Wmh;
                 case "wmi": return Language.Wmi;
                 case "wmm": return Language.Wmm;
@@ -16198,9 +16692,11 @@ namespace Algenta.Globalization.LanguageTags
                 case "wni": return Language.Wni;
                 case "wnk": return Language.Wnk;
                 case "wnm": return Language.Wnm;
+                case "wnn": return Language.Wnn;
                 case "wno": return Language.Wno;
                 case "wnp": return Language.Wnp;
                 case "wnu": return Language.Wnu;
+                case "wnw": return Language.Wnw;
                 case "wny": return Language.Wny;
                 case "wo": return Language.Wo;
                 case "woa": return Language.Woa;
@@ -16241,6 +16737,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "wry": return Language.Wry;
                 case "wrz": return Language.Wrz;
                 case "wsa": return Language.Wsa;
+                case "wsg": return Language.Wsg;
                 case "wsi": return Language.Wsi;
                 case "wsk": return Language.Wsk;
                 case "wsr": return Language.Wsr;
@@ -16248,6 +16745,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "wsu": return Language.Wsu;
                 case "wsv": return Language.Wsv;
                 case "wtf": return Language.Wtf;
+                case "wth": return Language.Wth;
                 case "wti": return Language.Wti;
                 case "wtk": return Language.Wtk;
                 case "wtm": return Language.Wtm;
@@ -16271,9 +16769,12 @@ namespace Algenta.Globalization.LanguageTags
                 case "wwr": return Language.Wwr;
                 case "www": return Language.Www;
                 case "wxa": return Language.Wxa;
+                case "wxw": return Language.Wxw;
                 case "wya": return Language.Wya;
                 case "wyb": return Language.Wyb;
+                case "wyi": return Language.Wyi;
                 case "wym": return Language.Wym;
+                case "wyn": return Language.Wyn;
                 case "wyr": return Language.Wyr;
                 case "wyy": return Language.Wyy;
                 case "xaa": return Language.Xaa;
@@ -16283,6 +16784,8 @@ namespace Algenta.Globalization.LanguageTags
                 case "xae": return Language.Xae;
                 case "xag": return Language.Xag;
                 case "xai": return Language.Xai;
+                case "xaj": return Language.Xaj;
+                case "xak": return Language.Xak;
                 case "xal": return Language.Xal;
                 case "xam": return Language.Xam;
                 case "xan": return Language.Xan;
@@ -16299,13 +16802,19 @@ namespace Algenta.Globalization.LanguageTags
                 case "xba": return Language.Xba;
                 case "xbb": return Language.Xbb;
                 case "xbc": return Language.Xbc;
+                case "xbd": return Language.Xbd;
+                case "xbe": return Language.Xbe;
+                case "xbg": return Language.Xbg;
                 case "xbi": return Language.Xbi;
+                case "xbj": return Language.Xbj;
                 case "xbm": return Language.Xbm;
                 case "xbn": return Language.Xbn;
                 case "xbo": return Language.Xbo;
+                case "xbp": return Language.Xbp;
                 case "xbr": return Language.Xbr;
                 case "xbw": return Language.Xbw;
                 case "xbx": return Language.Xbx;
+                case "xby": return Language.Xby;
                 case "xcb": return Language.Xcb;
                 case "xcc": return Language.Xcc;
                 case "xce": return Language.Xce;
@@ -16321,8 +16830,12 @@ namespace Algenta.Globalization.LanguageTags
                 case "xcv": return Language.Xcv;
                 case "xcw": return Language.Xcw;
                 case "xcy": return Language.Xcy;
+                case "xda": return Language.Xda;
                 case "xdc": return Language.Xdc;
+                case "xdk": return Language.Xdk;
                 case "xdm": return Language.Xdm;
+                case "xdo": return Language.Xdo;
+                case "xdq": return Language.Xdq;
                 case "xdy": return Language.Xdy;
                 case "xeb": return Language.Xeb;
                 case "xed": return Language.Xed;
@@ -16337,16 +16850,22 @@ namespace Algenta.Globalization.LanguageTags
                 case "xfa": return Language.Xfa;
                 case "xga": return Language.Xga;
                 case "xgb": return Language.Xgb;
+                case "xgd": return Language.Xgd;
                 case "xgf": return Language.Xgf;
+                case "xgg": return Language.Xgg;
+                case "xgi": return Language.Xgi;
                 case "xgl": return Language.Xgl;
+                case "xgm": return Language.Xgm;
                 case "xgn": return Language.Xgn;
                 case "xgr": return Language.Xgr;
                 case "xgu": return Language.Xgu;
+                case "xgw": return Language.Xgw;
                 case "xh": return Language.Xh;
                 case "xha": return Language.Xha;
                 case "xhc": return Language.Xhc;
                 case "xhd": return Language.Xhd;
                 case "xhe": return Language.Xhe;
+                case "xhm": return Language.Xhm;
                 case "xhr": return Language.Xhr;
                 case "xht": return Language.Xht;
                 case "xhu": return Language.Xhu;
@@ -16358,8 +16877,11 @@ namespace Algenta.Globalization.LanguageTags
                 case "xin": return Language.Xin;
                 case "xip": return Language.Xip;
                 case "xir": return Language.Xir;
+                case "xis": return Language.Xis;
                 case "xiv": return Language.Xiv;
                 case "xiy": return Language.Xiy;
+                case "xjb": return Language.Xjb;
+                case "xjt": return Language.Xjt;
                 case "xka": return Language.Xka;
                 case "xkb": return Language.Xkb;
                 case "xkc": return Language.Xkc;
@@ -16428,11 +16950,18 @@ namespace Algenta.Globalization.LanguageTags
                 case "xnd": return Language.Xnd;
                 case "xng": return Language.Xng;
                 case "xnh": return Language.Xnh;
+                case "xni": return Language.Xni;
+                case "xnj": return Language.Xnj;
+                case "xnk": return Language.Xnk;
+                case "xnm": return Language.Xnm;
                 case "xnn": return Language.Xnn;
                 case "xno": return Language.Xno;
+                case "xnq": return Language.Xnq;
                 case "xnr": return Language.Xnr;
                 case "xns": return Language.Xns;
                 case "xnt": return Language.Xnt;
+                case "xnu": return Language.Xnu;
+                case "xny": return Language.Xny;
                 case "xnz": return Language.Xnz;
                 case "xoc": return Language.Xoc;
                 case "xod": return Language.Xod;
@@ -16445,12 +16974,18 @@ namespace Algenta.Globalization.LanguageTags
                 case "xop": return Language.Xop;
                 case "xor": return Language.Xor;
                 case "xow": return Language.Xow;
+                case "xpa": return Language.Xpa;
+                case "xpb": return Language.Xpb;
                 case "xpc": return Language.Xpc;
+                case "xpd": return Language.Xpd;
                 case "xpe": return Language.Xpe;
+                case "xpf": return Language.Xpf;
                 case "xpg": return Language.Xpg;
+                case "xph": return Language.Xph;
                 case "xpi": return Language.Xpi;
                 case "xpj": return Language.Xpj;
                 case "xpk": return Language.Xpk;
+                case "xpl": return Language.Xpl;
                 case "xpm": return Language.Xpm;
                 case "xpn": return Language.Xpn;
                 case "xpo": return Language.Xpo;
@@ -16458,16 +16993,24 @@ namespace Algenta.Globalization.LanguageTags
                 case "xpq": return Language.Xpq;
                 case "xpr": return Language.Xpr;
                 case "xps": return Language.Xps;
+                case "xpt": return Language.Xpt;
                 case "xpu": return Language.Xpu;
+                case "xpv": return Language.Xpv;
+                case "xpw": return Language.Xpw;
+                case "xpx": return Language.Xpx;
                 case "xpy": return Language.Xpy;
+                case "xpz": return Language.Xpz;
                 case "xqa": return Language.Xqa;
                 case "xqt": return Language.Xqt;
                 case "xra": return Language.Xra;
                 case "xrb": return Language.Xrb;
+                case "xrd": return Language.Xrd;
                 case "xre": return Language.Xre;
+                case "xrg": return Language.Xrg;
                 case "xri": return Language.Xri;
                 case "xrm": return Language.Xrm;
                 case "xrn": return Language.Xrn;
+                case "xrq": return Language.Xrq;
                 case "xrr": return Language.Xrr;
                 case "xrt": return Language.Xrt;
                 case "xru": return Language.Xru;
@@ -16497,6 +17040,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "xtd": return Language.Xtd;
                 case "xte": return Language.Xte;
                 case "xtg": return Language.Xtg;
+                case "xth": return Language.Xth;
                 case "xti": return Language.Xti;
                 case "xtj": return Language.Xtj;
                 case "xtl": return Language.Xtl;
@@ -16509,6 +17053,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "xts": return Language.Xts;
                 case "xtt": return Language.Xtt;
                 case "xtu": return Language.Xtu;
+                case "xtv": return Language.Xtv;
                 case "xtw": return Language.Xtw;
                 case "xty": return Language.Xty;
                 case "xtz": return Language.Xtz;
@@ -16517,6 +17062,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "xud": return Language.Xud;
                 case "xug": return Language.Xug;
                 case "xuj": return Language.Xuj;
+                case "xul": return Language.Xul;
                 case "xum": return Language.Xum;
                 case "xun": return Language.Xun;
                 case "xuo": return Language.Xuo;
@@ -16531,16 +17077,27 @@ namespace Algenta.Globalization.LanguageTags
                 case "xvs": return Language.Xvs;
                 case "xwa": return Language.Xwa;
                 case "xwc": return Language.Xwc;
+                case "xwd": return Language.Xwd;
                 case "xwe": return Language.Xwe;
                 case "xwg": return Language.Xwg;
+                case "xwj": return Language.Xwj;
+                case "xwk": return Language.Xwk;
                 case "xwl": return Language.Xwl;
                 case "xwo": return Language.Xwo;
                 case "xwr": return Language.Xwr;
+                case "xwt": return Language.Xwt;
+                case "xww": return Language.Xww;
                 case "xxb": return Language.Xxb;
                 case "xxk": return Language.Xxk;
+                case "xxm": return Language.Xxm;
                 case "xxr": return Language.Xxr;
                 case "xxt": return Language.Xxt;
+                case "xya": return Language.Xya;
+                case "xyb": return Language.Xyb;
+                case "xyj": return Language.Xyj;
+                case "xyk": return Language.Xyk;
                 case "xyl": return Language.Xyl;
+                case "xyt": return Language.Xyt;
                 case "xyy": return Language.Xyy;
                 case "xzh": return Language.Xzh;
                 case "xzm": return Language.Xzm;
@@ -16589,6 +17146,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ycl": return Language.Ycl;
                 case "ycn": return Language.Ycn;
                 case "ycp": return Language.Ycp;
+                case "yda": return Language.Yda;
                 case "ydd": return Language.Ydd;
                 case "yde": return Language.Yde;
                 case "ydg": return Language.Ydg;
@@ -16608,14 +17166,18 @@ namespace Algenta.Globalization.LanguageTags
                 case "yev": return Language.Yev;
                 case "yey": return Language.Yey;
                 case "yga": return Language.Yga;
+                case "ygi": return Language.Ygi;
                 case "ygl": return Language.Ygl;
                 case "ygm": return Language.Ygm;
                 case "ygp": return Language.Ygp;
                 case "ygr": return Language.Ygr;
+                case "ygs": return Language.Ygs;
+                case "ygu": return Language.Ygu;
                 case "ygw": return Language.Ygw;
                 case "yha": return Language.Yha;
                 case "yhd": return Language.Yhd;
                 case "yhl": return Language.Yhl;
+                case "yhs": return Language.Yhs;
                 case "yi": return Language.Yi;
                 case "yia": return Language.Yia;
                 case "yif": return Language.Yif;
@@ -16721,13 +17283,17 @@ namespace Algenta.Globalization.LanguageTags
                 case "yri": return Language.Yri;
                 case "yrk": return Language.Yrk;
                 case "yrl": return Language.Yrl;
+                case "yrm": return Language.Yrm;
                 case "yrn": return Language.Yrn;
+                case "yro": return Language.Yro;
                 case "yrs": return Language.Yrs;
                 case "yrw": return Language.Yrw;
+                case "yry": return Language.Yry;
                 case "ysc": return Language.Ysc;
                 case "ysd": return Language.Ysd;
                 case "ysg": return Language.Ysg;
                 case "ysl": return Language.Ysl;
+                case "ysm": return Language.Ysm;
                 case "ysn": return Language.Ysn;
                 case "yso": return Language.Yso;
                 case "ysp": return Language.Ysp;
@@ -16738,6 +17304,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ytl": return Language.Ytl;
                 case "ytp": return Language.Ytp;
                 case "ytw": return Language.Ytw;
+                case "yty": return Language.Yty;
                 case "yua": return Language.Yua;
                 case "yub": return Language.Yub;
                 case "yuc": return Language.Yuc;
@@ -16763,6 +17330,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "yva": return Language.Yva;
                 case "yvt": return Language.Yvt;
                 case "ywa": return Language.Ywa;
+                case "ywg": return Language.Ywg;
                 case "ywl": return Language.Ywl;
                 case "ywn": return Language.Ywn;
                 case "ywq": return Language.Ywq;
@@ -16770,8 +17338,13 @@ namespace Algenta.Globalization.LanguageTags
                 case "ywt": return Language.Ywt;
                 case "ywu": return Language.Ywu;
                 case "yww": return Language.Yww;
+                case "yxa": return Language.Yxa;
                 case "yxg": return Language.Yxg;
+                case "yxl": return Language.Yxl;
+                case "yxm": return Language.Yxm;
+                case "yxu": return Language.Yxu;
                 case "yxy": return Language.Yxy;
+                case "yyr": return Language.Yyr;
                 case "yyu": return Language.Yyu;
                 case "yyz": return Language.Yyz;
                 case "yzg": return Language.Yzg;
@@ -16802,12 +17375,15 @@ namespace Algenta.Globalization.LanguageTags
                 case "zax": return Language.Zax;
                 case "zay": return Language.Zay;
                 case "zaz": return Language.Zaz;
+                case "zba": return Language.Zba;
                 case "zbc": return Language.Zbc;
                 case "zbe": return Language.Zbe;
                 case "zbl": return Language.Zbl;
                 case "zbt": return Language.Zbt;
+                case "zbu": return Language.Zbu;
                 case "zbw": return Language.Zbw;
                 case "zca": return Language.Zca;
+                case "zcd": return Language.Zcd;
                 case "zch": return Language.Zch;
                 case "zdj": return Language.Zdj;
                 case "zea": return Language.Zea;
@@ -16816,6 +17392,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "zen": return Language.Zen;
                 case "zga": return Language.Zga;
                 case "zgb": return Language.Zgb;
+                case "zgh": return Language.Zgh;
                 case "zgm": return Language.Zgm;
                 case "zgn": return Language.Zgn;
                 case "zgr": return Language.Zgr;
@@ -16849,6 +17426,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "zku": return Language.Zku;
                 case "zkv": return Language.Zkv;
                 case "zkz": return Language.Zkz;
+                case "zla": return Language.Zla;
                 case "zle": return Language.Zle;
                 case "zlj": return Language.Zlj;
                 case "zlm": return Language.Zlm;
@@ -16989,6 +17567,7 @@ namespace Algenta.Globalization.LanguageTags
             "afb", 
             "afg", 
             "ajp", 
+            "ajs", 
             "apc", 
             "apd", 
             "arb", 
@@ -17023,6 +17602,7 @@ namespace Algenta.Globalization.LanguageTags
             "cds", 
             "cjy", 
             "cmn", 
+            "cnp", 
             "coa", 
             "cpx", 
             "csc", 
@@ -17032,15 +17612,19 @@ namespace Algenta.Globalization.LanguageTags
             "csg", 
             "csl", 
             "csn", 
+            "csp", 
             "csq", 
             "csr", 
+            "csx", 
             "czh", 
             "czo", 
             "doq", 
             "dse", 
             "dsl", 
+            "dsz", 
             "dup", 
             "ecs", 
+            "ehs", 
             "esl", 
             "esn", 
             "eso", 
@@ -17069,6 +17653,7 @@ namespace Algenta.Globalization.LanguageTags
             "hsl", 
             "hsn", 
             "icl", 
+            "iks", 
             "ils", 
             "inl", 
             "ins", 
@@ -17079,6 +17664,7 @@ namespace Algenta.Globalization.LanguageTags
             "jax", 
             "jcs", 
             "jhs", 
+            "jks", 
             "jls", 
             "jos", 
             "jsl", 
@@ -17094,14 +17680,20 @@ namespace Algenta.Globalization.LanguageTags
             "lcf", 
             "liw", 
             "lls", 
+            "lsb", 
+            "lsc", 
             "lsg", 
             "lsl", 
+            "lsn", 
             "lso", 
             "lsp", 
             "lst", 
+            "lsv", 
+            "lsw", 
             "lsy", 
             "ltg", 
             "lvs", 
+            "lws", 
             "lzh", 
             "max", 
             "mdl", 
@@ -17133,6 +17725,7 @@ namespace Algenta.Globalization.LanguageTags
             "ors", 
             "pel", 
             "pga", 
+            "pgz", 
             "pks", 
             "prl", 
             "prz", 
@@ -17145,9 +17738,13 @@ namespace Algenta.Globalization.LanguageTags
             "psp", 
             "psr", 
             "pys", 
+            "rib", 
             "rms", 
+            "rnb", 
             "rsi", 
             "rsl", 
+            "rsm", 
+            "rsn", 
             "sdl", 
             "sfb", 
             "sfs", 
@@ -17158,6 +17755,7 @@ namespace Algenta.Globalization.LanguageTags
             "sls", 
             "sqk", 
             "sqs", 
+            "sqx", 
             "ssh", 
             "ssp", 
             "ssr", 
@@ -17166,6 +17764,7 @@ namespace Algenta.Globalization.LanguageTags
             "swh", 
             "swl", 
             "syy", 
+            "szs", 
             "tmw", 
             "tse", 
             "tsm", 
@@ -17186,13 +17785,17 @@ namespace Algenta.Globalization.LanguageTags
             "vsi", 
             "vsl", 
             "vsv", 
+            "wbs", 
             "wuu", 
             "xki", 
             "xml", 
             "xmm", 
             "xms", 
             "yds", 
+            "ygs", 
+            "yhs", 
             "ysl", 
+            "ysm", 
             "yue", 
             "zib", 
             "zlm", 
@@ -17206,9 +17809,12 @@ namespace Algenta.Globalization.LanguageTags
         public static string[] Scripts { get { return _scripts; } }
         private static string[] _scripts =
         {
+            "adlm", 
             "afak", 
             "aghb", 
+            "ahom", 
             "arab", 
+            "aran", 
             "armi", 
             "armn", 
             "avst", 
@@ -17217,6 +17823,7 @@ namespace Algenta.Globalization.LanguageTags
             "bass", 
             "batk", 
             "beng", 
+            "bhks", 
             "blis", 
             "bopo", 
             "brah", 
@@ -17228,48 +17835,62 @@ namespace Algenta.Globalization.LanguageTags
             "cari", 
             "cham", 
             "cher", 
+            "chrs", 
             "cirt", 
             "copt", 
+            "cpmn", 
             "cprt", 
             "cyrl", 
             "cyrs", 
             "deva", 
+            "diak", 
+            "dogr", 
             "dsrt", 
             "dupl", 
             "egyd", 
             "egyh", 
             "egyp", 
             "elba", 
+            "elym", 
             "ethi", 
             "geok", 
             "geor", 
             "glag", 
+            "gong", 
+            "gonm", 
             "goth", 
             "gran", 
             "grek", 
             "gujr", 
             "guru", 
+            "hanb", 
             "hang", 
             "hani", 
             "hano", 
             "hans", 
             "hant", 
+            "hatr", 
             "hebr", 
             "hira", 
             "hluw", 
             "hmng", 
+            "hmnp", 
             "hrkt", 
             "hung", 
             "inds", 
             "ital", 
+            "jamo", 
             "java", 
             "jpan", 
             "jurc", 
             "kali", 
             "kana", 
+            "kawi", 
             "khar", 
             "khmr", 
             "khoj", 
+            "kitl", 
+            "kits", 
             "knda", 
             "kore", 
             "kpel", 
@@ -17279,6 +17900,7 @@ namespace Algenta.Globalization.LanguageTags
             "latf", 
             "latg", 
             "latn", 
+            "leke", 
             "lepc", 
             "limb", 
             "lina", 
@@ -17288,20 +17910,29 @@ namespace Algenta.Globalization.LanguageTags
             "lyci", 
             "lydi", 
             "mahj", 
+            "maka", 
             "mand", 
             "mani", 
+            "marc", 
             "maya", 
+            "medf", 
             "mend", 
             "merc", 
             "mero", 
             "mlym", 
+            "modi", 
             "mong", 
             "moon", 
             "mroo", 
             "mtei", 
+            "mult", 
             "mymr", 
+            "nagm", 
+            "nand", 
             "narb", 
             "nbat", 
+            "newa", 
+            "nkdb", 
             "nkgb", 
             "nkoo", 
             "nshu", 
@@ -17309,16 +17940,23 @@ namespace Algenta.Globalization.LanguageTags
             "olck", 
             "orkh", 
             "orya", 
+            "osge", 
             "osma", 
+            "ougr", 
             "palm", 
+            "pauc", 
+            "pcun", 
+            "pelm", 
             "perm", 
             "phag", 
             "phli", 
             "phlp", 
             "phlv", 
             "phnx", 
+            "piqd", 
             "plrd", 
             "prti", 
+            "psin", 
             "qaaa", 
             "qaab", 
             "qaac", 
@@ -17369,7 +18007,9 @@ namespace Algenta.Globalization.LanguageTags
             "qabv", 
             "qabw", 
             "qabx", 
+            "ranj", 
             "rjng", 
+            "rohg", 
             "roro", 
             "runr", 
             "samr", 
@@ -17379,10 +18019,16 @@ namespace Algenta.Globalization.LanguageTags
             "sgnw", 
             "shaw", 
             "shrd", 
+            "shui", 
+            "sidd", 
             "sind", 
             "sinh", 
+            "sogd", 
+            "sogo", 
             "sora", 
+            "soyo", 
             "sund", 
+            "sunu", 
             "sylo", 
             "syrc", 
             "syre", 
@@ -17403,16 +18049,23 @@ namespace Algenta.Globalization.LanguageTags
             "thai", 
             "tibt", 
             "tirh", 
+            "tnsa", 
+            "toto", 
             "ugar", 
             "vaii", 
             "visp", 
+            "vith", 
             "wara", 
+            "wcho", 
             "wole", 
             "xpeo", 
             "xsux", 
+            "yezi", 
             "yiii", 
+            "zanb", 
             "zinh", 
             "zmth", 
+            "zsye", 
             "zsym", 
             "zxxx", 
             "zyyy", 
@@ -17453,6 +18106,7 @@ namespace Algenta.Globalization.LanguageTags
             "151", 
             "154", 
             "155", 
+            "202", 
             "419", 
             "aa", 
             "ac", 
@@ -17533,6 +18187,7 @@ namespace Algenta.Globalization.LanguageTags
             "es", 
             "et", 
             "eu", 
+            "ez", 
             "fi", 
             "fj", 
             "fk", 
@@ -17716,6 +18371,7 @@ namespace Algenta.Globalization.LanguageTags
             "ua", 
             "ug", 
             "um", 
+            "un", 
             "us", 
             "uy", 
             "uz", 
@@ -17800,6 +18456,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "151": return Region.M49_151;
                 case "154": return Region.M49_154;
                 case "155": return Region.M49_155;
+                case "202": return Region.M49_202;
                 case "419": return Region.M49_419;
                 case "aa": return Region.AA;
                 case "ac": return Region.AC;
@@ -17880,6 +18537,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "es": return Region.ES;
                 case "et": return Region.ET;
                 case "eu": return Region.EU;
+                case "ez": return Region.EZ;
                 case "fi": return Region.FI;
                 case "fj": return Region.FJ;
                 case "fk": return Region.FK;
@@ -18063,6 +18721,7 @@ namespace Algenta.Globalization.LanguageTags
                 case "ua": return Region.UA;
                 case "ug": return Region.UG;
                 case "um": return Region.UM;
+                case "un": return Region.UN;
                 case "us": return Region.US;
                 case "uy": return Region.UY;
                 case "uz": return Region.UZ;
@@ -18127,61 +18786,108 @@ namespace Algenta.Globalization.LanguageTags
             "1959acad", 
             "1994", 
             "1996", 
+            "abl1943", 
+            "akuapem", 
             "alalc97", 
             "aluku", 
+            "ao1990", 
+            "aranes", 
             "arevela", 
             "arevmda", 
+            "arkaika", 
+            "asante", 
+            "auvern", 
             "baku1926", 
+            "balanka", 
+            "barla", 
+            "basiceng", 
             "bauddha", 
             "biscayan", 
             "biske", 
             "bohoric", 
             "boont", 
+            "bornholm", 
+            "cisaup", 
+            "colb1945", 
+            "cornu", 
+            "creiss", 
             "dajnko", 
+            "ekavsk", 
             "emodeng", 
             "fonipa", 
+            "fonkirsh", 
+            "fonnapa", 
             "fonupa", 
             "fonxsamp", 
+            "gallo", 
+            "gascon", 
+            "grclass", 
+            "grital", 
+            "grmistr", 
             "hepburn", 
             "heploc", 
             "hognorsk", 
+            "hsistemo", 
+            "ijekavsk", 
             "itihasa", 
+            "ivanchov", 
             "jauer", 
             "jyutping", 
             "kkcor", 
+            "kociewie", 
             "kscor", 
             "laukika", 
+            "lemosin", 
+            "lengadoc", 
             "lipaw", 
             "luna1918", 
             "metelko", 
             "monoton", 
             "ndyuka", 
             "nedis", 
+            "newfound", 
+            "nicard", 
             "njiva", 
             "nulik", 
             "osojs", 
+            "oxendict", 
+            "pahawh2", 
+            "pahawh3", 
+            "pahawh4", 
             "pamaka", 
+            "peano", 
             "petr1708", 
             "pinyin", 
             "polyton", 
+            "provenc", 
             "puter", 
             "rigik", 
             "rozaj", 
             "rumgr", 
             "scotland", 
             "scouse", 
+            "simple", 
             "solba", 
+            "sotav", 
+            "spanglis", 
             "surmiran", 
             "sursilv", 
             "sutsilv", 
+            "synnejyl", 
             "tarask", 
+            "tongyong", 
+            "tunumiit", 
             "uccor", 
             "ucrcor", 
             "ulster", 
+            "unifon", 
             "vaidika", 
             "valencia", 
             "vallader", 
-            "wadegile"
+            "vecdruka", 
+            "vivaraup", 
+            "wadegile", 
+            "xsistemo"
       };
         #endregion
 
@@ -18295,10 +19001,10 @@ namespace Algenta.Globalization.LanguageTags
 
 }
 
-//language: Type Subtag Description* Added (Suppress-Script) (Scope) (Macrolanguage) (Deprecated) (Preferred-Value) (Comments) 
-//extlang: Type Subtag Description* Added Preferred-Value Prefix (Macrolanguage) 
+//language: Type Subtag Description* Added (Suppress-Script) (Scope) (Macrolanguage) (Comments) (Deprecated) (Preferred-Value) 
+//extlang: Type Subtag Description* Added Preferred-Value Prefix (Macrolanguage) (Deprecated) 
 //script: Type Subtag Description* Added (Comments) 
-//region: Type Subtag Description Added (Deprecated) (Comments) (Preferred-Value) 
+//region: Type Subtag Description* Added (Deprecated) (Comments) (Preferred-Value) 
 //variant: Type Subtag Description* Added (Prefix)* (Comments) (Deprecated) (Preferred-Value) 
-//grandfathered: Type Tag Description Added (Deprecated) (Preferred-Value) 
+//grandfathered: Type Tag Description Added (Deprecated) (Preferred-Value) (Comments) 
 //redundant: Type Tag Description Added (Deprecated) (Preferred-Value) 

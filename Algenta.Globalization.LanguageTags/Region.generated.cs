@@ -446,6 +446,20 @@ namespace Algenta.Globalization.LanguageTags
 
         #endregion
 
+        #region 202
+        /// <summary>
+        /// Sub-Saharan Africa
+        /// </summary>
+        public static Region M49_202 { get { return _M49_202; } }
+        private static Region _M49_202 = new Region("202", // Subtag
+                                new string[]{ "Sub-Saharan Africa" }, // Description
+                                new DateTime(2017, 4, 18 ), // Added
+                                null, // Deprecated
+                                null, // PreferredValue
+                                null); // Comments
+
+        #endregion
+
         #region 419
         /// <summary>
         /// Latin America and the Caribbean
@@ -1262,11 +1276,12 @@ namespace Algenta.Globalization.LanguageTags
 
         #region CV
         /// <summary>
+        /// Cabo Verde
         /// Cape Verde
         /// </summary>
         public static Region CV { get { return _CV; } }
         private static Region _CV = new Region("CV", // Subtag
-                                new string[]{ "Cape Verde" }, // Description
+                                new string[]{ "Cabo Verde", "Cape Verde" }, // Description
                                 new DateTime(2005, 10, 16 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
@@ -1318,11 +1333,12 @@ namespace Algenta.Globalization.LanguageTags
 
         #region CZ
         /// <summary>
+        /// Czechia
         /// Czech Republic
         /// </summary>
         public static Region CZ { get { return _CZ; } }
         private static Region _CZ = new Region("CZ", // Subtag
-                                new string[]{ "Czech Republic" }, // Description
+                                new string[]{ "Czechia", "Czech Republic" }, // Description
                                 new DateTime(2005, 10, 16 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
@@ -1562,6 +1578,20 @@ namespace Algenta.Globalization.LanguageTags
         private static Region _EU = new Region("EU", // Subtag
                                 new string[]{ "European Union" }, // Description
                                 new DateTime(2009, 7, 29 ), // Added
+                                null, // Deprecated
+                                null, // PreferredValue
+                                null); // Comments
+
+        #endregion
+
+        #region EZ
+        /// <summary>
+        /// Eurozone
+        /// </summary>
+        public static Region EZ { get { return _EZ; } }
+        private static Region _EZ = new Region("EZ", // Subtag
+                                new string[]{ "Eurozone" }, // Description
+                                new DateTime(2016, 7, 14 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
                                 null); // Comments
@@ -2635,11 +2665,11 @@ namespace Algenta.Globalization.LanguageTags
 
         #region MK
         /// <summary>
-        /// The Former Yugoslav Republic of Macedonia
+        /// North Macedonia
         /// </summary>
         public static Region MK { get { return _MK; } }
         private static Region _MK = new Region("MK", // Subtag
-                                new string[]{ "The Former Yugoslav Republic of Macedonia" }, // Description
+                                new string[]{ "North Macedonia" }, // Description
                                 new DateTime(2005, 10, 16 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
@@ -3195,11 +3225,11 @@ namespace Algenta.Globalization.LanguageTags
 
         #region PS
         /// <summary>
-        /// Occupied Palestinian Territory
+        /// State of Palestine
         /// </summary>
         public static Region PS { get { return _PS; } }
         private static Region _PS = new Region("PS", // Subtag
-                                new string[]{ "Occupied Palestinian Territory" }, // Description
+                                new string[]{ "State of Palestine" }, // Description
                                 new DateTime(2005, 10, 16 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
@@ -3825,11 +3855,13 @@ namespace Algenta.Globalization.LanguageTags
 
         #region SZ
         /// <summary>
+        /// Eswatini
+        /// eSwatini
         /// Swaziland
         /// </summary>
         public static Region SZ { get { return _SZ; } }
         private static Region _SZ = new Region("SZ", // Subtag
-                                new string[]{ "Swaziland" }, // Description
+                                new string[]{ "Eswatini", "eSwatini", "Swaziland" }, // Description
                                 new DateTime(2005, 10, 16 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
@@ -4125,6 +4157,20 @@ namespace Algenta.Globalization.LanguageTags
         private static Region _UM = new Region("UM", // Subtag
                                 new string[]{ "United States Minor Outlying Islands" }, // Description
                                 new DateTime(2005, 10, 16 ), // Added
+                                null, // Deprecated
+                                null, // PreferredValue
+                                null); // Comments
+
+        #endregion
+
+        #region UN
+        /// <summary>
+        /// United Nations
+        /// </summary>
+        public static Region UN { get { return _UN; } }
+        private static Region _UN = new Region("UN", // Subtag
+                                new string[]{ "United Nations" }, // Description
+                                new DateTime(2016, 7, 14 ), // Added
                                 null, // Deprecated
                                 null, // PreferredValue
                                 null); // Comments
@@ -4864,6 +4910,8 @@ namespace Algenta.Globalization.LanguageTags
   
                             regions.Add(M49_155);
   
+                            regions.Add(M49_202);
+  
                             regions.Add(M49_419);
   
                             regions.Add(AA);
@@ -5023,6 +5071,8 @@ namespace Algenta.Globalization.LanguageTags
                             regions.Add(ET);
   
                             regions.Add(EU);
+  
+                            regions.Add(EZ);
   
                             regions.Add(FI);
   
@@ -5389,6 +5439,8 @@ namespace Algenta.Globalization.LanguageTags
                             regions.Add(UG);
   
                             regions.Add(UM);
+  
+                            regions.Add(UN);
   
                             regions.Add(US);
   

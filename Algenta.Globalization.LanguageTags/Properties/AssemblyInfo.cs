@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Algenta.Globalization.LanguageTags")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("LanguageTags")]
+[assembly: AssemblyDescription("Implementation of BCP 47 and rfc 5646 for xml:lang language tags")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Dan Smith")]
 [assembly: AssemblyProduct("Algenta.Globalization.LanguageTags")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

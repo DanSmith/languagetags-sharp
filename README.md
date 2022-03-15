@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/v/LanguageTags)
+
 # languagetags-sharp
 Languagetags-sharp is a library to validate xml:lang tags commonly found in xml and html documents.
 Language tags are validated according to BCP 47 and RFC 5646. It is written in C# for the .NET framework.

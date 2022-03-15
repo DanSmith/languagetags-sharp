@@ -1,21 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algenta.Globalization.LanguageTags", "Algenta.Globalization.LanguageTags\Algenta.Globalization.LanguageTags.csproj", "{73AAF656-4BA4-420E-91D8-9AA36A23AD1D}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algenta.Globalization.LanguageTags", "Algenta.Globalization.LanguageTags\Algenta.Globalization.LanguageTags.csproj", "{73AAF656-4BA4-420E-91D8-9AA36A23AD1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algenta.Globalization.LanguageTags.Test", "Algenta.Globalization.LanguageTags.Test\Algenta.Globalization.LanguageTags.Test.csproj", "{903FBBA3-A5FC-4F3A-9A1E-284047F9FE7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algenta.Globalization.LanguageTags.Test", "Algenta.Globalization.LanguageTags.Test\Algenta.Globalization.LanguageTags.Test.csproj", "{903FBBA3-A5FC-4F3A-9A1E-284047F9FE7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{091C5EE5-7C4C-498D-B731-5317156C21B7}"
-	ProjectSection(SolutionItems) = preProject
-		Algenta.Globalization.LanguageTags.vsmdi = Algenta.Globalization.LanguageTags.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Algenta.Globalization.LanguageTags.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -32,5 +26,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5744B57A-FE15-48DC-8286-C4383A7EEB78}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Algenta.Globalization.LanguageTags.vsmdi
 	EndGlobalSection
 EndGlobal
